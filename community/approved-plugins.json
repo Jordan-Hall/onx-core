@@ -418,5 +418,15 @@
     "name": "@nxlv/python",
     "description": "Nx plugin designed to extend the Nx features to work with Python projects based on Poetry.",
     "url": "https://github.com/lucasvieirasilva/nx-plugins/tree/main/packages/nx-python"
+  },
+  {
+    "name": "@nx-bun/nx",
+    "description": "Nx plugin bringing Bun runtime to Nx",
+    "url": "https://github.com/Jordan-Hall/nx-bun/tree/master/packages/nx-bun"
+  },
+  {
+    "name": "@nx-bun/nx",
+    "description": "Nx task worker runner instand of child spawn",
+    "url": "https://github.com/Jordan-Hall/nx-bun/tree/master/packages/task-worker-runner"
   }
 ]
