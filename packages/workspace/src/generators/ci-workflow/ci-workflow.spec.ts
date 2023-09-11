@@ -38,7 +38,7 @@ describe('CI Workflow generator', () => {
     vol.reset();
   });
 
-  ['npm', 'yarn', 'pnpm'].forEach((packageManager: PackageManager) => {
+  ['npm', 'yarn', 'pnpm', 'bun'].forEach((packageManager: PackageManager) => {
     describe(`with ${packageManager}`, () => {
       beforeEach(() => {
         let fileSys;
@@ -46,6 +46,8 @@ describe('CI Workflow generator', () => {
           fileSys = { 'yarn.lock': '' };
         } else if (packageManager === 'pnpm') {
           fileSys = { 'pnpm-lock.yaml': '' };
+        } else if (packageManager === 'bun') {
+          fileSys = { 'bun.lockb': '' };
         } else {
           fileSys = { 'package-lock.json': '' };
         }
