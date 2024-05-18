@@ -40,7 +40,7 @@ export function getPackageManagerCommand(
   exec: string;
   preInstall?: string;
   globalAdd: string;
-  getRegistryUrl: string;
+  getRegistryUrl?: string;
 } {
   const pmVersion = getPackageManagerVersion(packageManager);
   const [pmMajor, pmMinor] = pmVersion.split('.');

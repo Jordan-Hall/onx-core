@@ -27,7 +27,7 @@ export interface PackageManagerCommands {
   dlx: string;
   list: string;
   run: (script: string, args: string) => string;
-  getRegistryUrl: string;
+  getRegistryUrl?: string;
 }
 
 /**
