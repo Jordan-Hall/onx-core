@@ -8,8 +8,6 @@ import {
   generatePackageSchemas,
 } from '../package-schemas/generatePackageSchemas';
 import { generateCliDocumentation } from './generate-cli-data';
-import { generateCnwDocumentation } from './generate-cnw-documentation';
-import { generateDevkitDocumentation } from './generate-devkit-documentation';
 import { generateManifests } from './generate-manifests';
 
 const workspaceRoot = resolve(__dirname, '../../../');
@@ -26,10 +24,8 @@ async function generate() {
       'generated',
       'cli'
     );
-    await generateCnwDocumentation(commandsOutputDirectory);
     await generateCliDocumentation(commandsOutputDirectory);
 
-    await generateDevkitDocumentation();
     await generateLocalPackageSchemas();
     await generateExternalPackageSchemas();
 

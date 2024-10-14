@@ -1,1 +1,0 @@
-<% if (!skipModule) { %>export * from './lib/<%= fileName %>.module';<% } else { %>export const greeting = 'Hello World!';<% } %>

@@ -434,8 +434,6 @@ To generate API documentation for plugins in the ocean repository, run the `nx d
 NX_OCEAN_RELATIVE_PATH=../ocean nx documentation
 ```
 
-This will create generated API documentation in the `docs/external-generated` folder. This API will be merged into the normal `docs/generated` documentation when the docs site is built.
-
 Because there are two separate output folders, if someone runs `nx documentation` without the `NX_OCEAN_RELATIVE_PATH` environment variable, the ocean documentation will not be overwritten. The ocean documentation will only be updated or deleted when someone explicitly chooses to do so.
 
 ## Publishing Process

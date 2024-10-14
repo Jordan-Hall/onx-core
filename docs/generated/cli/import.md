@@ -10,10 +10,10 @@ Import code and git history from another repository into this repository.
 ## Usage
 
 ```shell
-nx import [sourceRepository] [destinationDirectory]
+nxcc import [sourceRepository] [destinationDirectory]
 ```
 
-Install `nx` globally to invoke the command directly using `nx`, or use `npx nx`, `yarn nx`, or `pnpm nx`.
+Install `nxcc` globally to invoke the command directly using `nxcc`, or use `npx nxcc`, `yarn nxcc`, or `pnpm nxcc`.
 
 ## Options
 

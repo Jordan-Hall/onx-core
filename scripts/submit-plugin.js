@@ -11,7 +11,7 @@ function createPullRequest() {
     .execSync('git rev-parse --abbrev-ref HEAD')
     .toString('utf-8')
     .trim();
-  const prUrl = `https://github.com/nrwl/nx/compare/master...${remoteName}:${branchName}?expand=1&template=COMMUNITY_PLUGIN.md`;
+  const prUrl = `https://github.com/Jordan-Hall/onx-core/compare/master...${remoteName}:${branchName}?expand=1&template=COMMUNITY_PLUGIN.md`;
   open(prUrl);
 }
 

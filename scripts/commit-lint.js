@@ -14,7 +14,7 @@ const gitRemotes = childProcess
   .trim()
   .split('\n');
 const upstreamRemote = gitRemotes.find((remote) =>
-  remote.includes('nrwl/nx.git')
+  remote.includes('jordan-hall/onx-core.git')
 );
 if (upstreamRemote) {
   const upstreamRemoteIdentifier = upstreamRemote.split('\t')[0].trim();
@@ -29,7 +29,7 @@ if (upstreamRemote) {
     gitLogCmd + ` ${currentBranch} ^${upstreamRemoteIdentifier}/master`;
 } else {
   console.error(
-    'No upstream remote found for nrwl/nx.git. Skipping comparison against upstream master.'
+    'No upstream remote found for jordan-hall/onx-core.git. Skipping comparison against upstream master.'
   );
 }
 

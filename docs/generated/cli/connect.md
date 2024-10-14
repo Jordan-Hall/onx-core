@@ -10,10 +10,10 @@ Connect workspace to Nx Cloud.
 ## Usage
 
 ```shell
-nx connect
+nxcc connect
 ```
 
-Install `nx` globally to invoke the command directly using `nx`, or use `npx nx`, `yarn nx`, or `pnpm nx`.
+Install `nxcc` globally to invoke the command directly using `nxcc`, or use `npx nxcc`, `yarn nxcc`, or `pnpm nxcc`.
 
 ## Options
 

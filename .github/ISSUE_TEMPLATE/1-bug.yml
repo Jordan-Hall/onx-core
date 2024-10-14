@@ -1,66 +1,73 @@
 name: 🐞 Bug Report
-description: This form is to report unexpected behavior in Nx.
+description: This form is to report unexpected behavior in our fork of Nx.
 labels: ["type: bug"]
 type: Bug
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for taking your precious time to file an issue! 🙏 We are sorry for the inconvenience this issue has caused you and want to resolve it as soon as possible.
+        Thank you for taking the time to file an issue! 🙏 We apologise for any inconvenience this has caused you and are eager to resolve it as soon as possible.
 
-        Help us help you! We know that your time is precious and hate to ask for any more of it, but the first step in fixing this issue is to understand the issue. Taking some extra time to ensure that we are able to reproduce the issue will help us significantly in resolving the issue.
+        Help us help you! We value your time and appreciate your efforts in ensuring that we can reproduce the issue. The more details you provide, the easier it will be for us to fix the problem.
+
   - type: textarea
     id: current-behavior
     attributes:
       label: Current Behavior
-      description: What is the behavior that currently you experience?
+      description: What behavior are you currently experiencing?
     validations:
       required: true
+
   - type: textarea
     id: expected-behavior
     attributes:
       label: Expected Behavior
-      description: What is the behavior that you expect to happen?
+      description: What behavior do you expect to occur?
     validations:
       required: true
+
   - type: input
     id: repo
     attributes:
       label: GitHub Repo
       description: |
-        This is extremely important! If this issue is reproduce-able on https://github.com/nrwl/nx-examples, you may use that as the repo.
-        If not, please do take a few minutes of your time to create a repo to help us reproduce the issue.
-        This is the best way to help us reproduce the issue and fix it as soon as possible.
+        This is extremely important! If this issue can be reproduced on https://github.com/nrwl/nx-examples, you may use that as the repo. 
+        If not, please take a few minutes to create a repository that helps us reproduce the issue. This greatly aids in resolving the issue quickly.
+
   - type: textarea
     id: reproduction
     attributes:
       label: Steps to Reproduce
-      description: Please provide some instructions to reproduce the issue in the repo provided above. Be as detailed as possible.
+      description: Please provide detailed instructions to reproduce the issue in the repository provided above.
       value: |
         1.
     validations:
       required: true
+
   - type: textarea
-    id: nx-report
+    id: nxcc-report
     attributes:
-      label: Nx Report
-      description: Please paste the contents shown by `nx report`. This will be automatically formatted into code, so no need for backticks.
+      label: Nxcc Report
+      description: Please paste the output of `nxcc report`. This will be automatically formatted into code, so no need for backticks.
       render: shell
     validations:
       required: true
+
   - type: textarea
     id: logs
     attributes:
       label: Failure Logs
       description: Please include any relevant log snippets or files here. This will be automatically formatted into code, so no need for backticks.
       render: shell
+
   - type: input
     id: pm
     attributes:
       label: Package Manager Version
       description: |
-        If `nx report` doesn't work, please provide the name and the version of your package manager.
-        You can get version information by running `yarn --version`, `pnpm --version` or `npm --version`, depending on the package manager used.
+        If `nxcc report` doesn't work, please provide the name and version of your package manager. 
+        You can find this information by running `yarn --version`, `pnpm --version`, or `npm --version`, depending on which package manager you are using.
+
   - type: checkboxes
     id: os
     attributes:
@@ -71,13 +78,15 @@ body:
         - label: Linux
         - label: Windows
         - label: Other (Please specify)
+
   - type: textarea
     id: additional
     attributes:
       label: Additional Information
-      description: Is there any additional information that you can provide?
+      description: Is there any other information you can provide?
+
   - type: markdown
     id: disclaimer
     attributes:
       value: |
-        > If we are not able to reproduce the issue, we will likely prioritize fixing other issues we can reproduce. Please do your best to fill out all of the sections above.
+        > Please note that if we cannot reproduce the issue, we may prioritise fixing other issues that we can reproduce. Your detailed input is crucial for us to assist you effectively. Thank you!

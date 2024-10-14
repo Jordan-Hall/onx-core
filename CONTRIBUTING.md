@@ -1,27 +1,31 @@
-# Contributing to Nx
+# Contributing to Nxcc (NX fork)
 
-We would love for you to contribute to Nx! Read this document to see how to do it.
+## Overview
 
-## How to Get Started Video
+We are forking NXCC with a primary focus on the core package, 'nx'. This decision arises from the need to provide a fully compatible alternative for the community, enabling them to create their own remote caching solutions without incurring costs associated with PowerPack. 
 
-Watch this 5-minute video:
+## Goals
 
-<a href="https://www.youtube.com/watch?v=8LCA_4qxc08" target="_blank" rel="noreferrer">
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/how-to-contribute.png" width="600" alt="Nx - How to contribute"></p>
-</a>
+1. **Compatibility**: Ensure that the fork remains a drop-in replacement for the existing NX functionality, allowing seamless transitions for current users.
+  
+2. **Cost-Effective Solution**: Eliminate the need for users to pay for PowerPack by providing a fully functional caching solution that meets their needs.
 
-## Got a Question?
+3. **Community-Centric Development**: Foster an environment where the community can contribute to and customize their caching solutions, empowering users to shape the future of NXCC.
 
-We are trying to keep GitHub issues for bug reports and feature requests. Using the `nrwl` tag
-on [Stack Overflow](https://stackoverflow.com/questions/tagged/nrwl) is a much better place to ask general questions
-about how to use Nx.
+## Features
+
+- **Core Package Enhancements**: Focus on improving the 'nx' package to support robust remote caching capabilities.
+  
+- **Open Source Contribution**: Encourage contributions from the community to enhance the functionality and performance of NXCC.
+
+- **API Integration**: Develop an API within the Rust solution, potentially retaining the 'create workspace' functionality to facilitate a smooth user experience.
 
 ## Found an Issue?
 
 If you find a bug in the source code or a mistake in the documentation, you can help us
-by [submitting an issue](https://github.com/nrwl/nx/blob/master/CONTRIBUTING.md#submit-issue)
+by [submitting an issue](https://github.com/Jordan-Hall/onx-core/blob/master/CONTRIBUTING.md#submit-issue)
 to [our GitHub Repository](https://github.com/nrwl/nx). Even better, you
-can [submit a Pull Request](https://github.com/nrwl/nx/blob/master/CONTRIBUTING.md#submit-pr) with a fix.
+can [submit a Pull Request](https://github.com/Jordan-Hall/onx-core/blob/master/CONTRIBUTING.md#submit-pr) with a fix.
 
 ## Project Structure
 
@@ -30,8 +34,7 @@ Source code and documentation are included in the top-level folders listed below
 - `docs` - Markdown and configuration files for documentation including tutorials, guides for each supported platform,
   and API docs.
 - `e2e` - E2E tests.
-- `packages` - Source code for Nx packages such as Angular, React, Web, NestJS, Next and others including generators and
-  executors (or builders).
+- `packages` - Source code for Nxcc package
 - `scripts` - Miscellaneous scripts for project tasks such as building documentation, testing, and code formatting.
 - `tmp` - Folder used by e2e tests. If you are a WebStorm user, make sure to mark this folder as excluded.
 
@@ -277,15 +280,15 @@ bugs. Interestingly, from our experience, users often find coding problems thems
 reproduction repository. We understand that sometimes it might be hard to extract essentials bits of code from a larger
 codebase, but we really need to isolate the problem before we can fix it.
 
-You can file new issues by filling out our [issue form](https://github.com/nrwl/nx/issues/new/choose).
+You can file new issues by filling out our [issue form](https://github.com/Jordan-Hall/onx-core/issues/new/choose).
 
 ### <a name="submit-pr"></a> Submitting a PR
 
 Please follow the following guidelines:
 
 - Make sure unit tests pass (`nx affected --target=test`)
-  - Target a specific project with: `nx run proj:test` (i.e. `nx run angular:test` to target `packages/angular`)
-  - Target a specific unit test file (i.e. `packages/angular/src/utils/ast-command-line-utils.spec.ts`)
+  - Target a specific project with: `nx run proj:test` (i.e. `nx run nxcc:test` to target `packages/nxcc`)
+  - Target a specific unit test file (i.e. `packages/nxcc/src/utils/ast-command-line-utils.spec.ts`)
     with `npx jest angular/src/utils/ast-utils` or `npx jest packages/angular/src/utils/ast-utils`
   - For more options on running tests - check `npx jest --help` or visit [jestjs.io](https://jestjs.io/)
   - Debug with `node --inspect-brk ./node_modules/jest/bin/jest.js build/packages/angular/src/utils/ast-utils.spec.js`

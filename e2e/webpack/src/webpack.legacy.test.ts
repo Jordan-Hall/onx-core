@@ -69,7 +69,7 @@ describe('Webpack Plugin (legacy)', () => {
     }
   });
 
-  // Issue: https://github.com/nrwl/nx/issues/20179
+  // Issue: https://github.com/Jordan-Hall/onx-core/issues/20179
   it('should allow main/styles entries to be spread within composePlugins() function (#20179)', () => {
     const appName = uniq('app');
     runCLI(`generate @nx/web:app ${appName} --bundler webpack`);

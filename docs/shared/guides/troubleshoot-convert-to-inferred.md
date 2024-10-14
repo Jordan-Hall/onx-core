@@ -16,7 +16,7 @@ This will prompt you to choose a plugin to run the migration for.
 
 Although the `convert-to-inferred` generator should work for most projects, there are situations that require additional
 changes to be done by hand. If you run into issues that are not covered on this page, please open an issue
-on [GitHub](https://github.com/nrwl/nx/issues).
+on [GitHub](https://github.com/Jordan-Hall/onx-core/issues).
 
 ## Error: The nx plugin did not find a project inside...
 

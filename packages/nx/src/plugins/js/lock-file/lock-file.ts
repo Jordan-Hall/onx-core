@@ -249,7 +249,7 @@ export function createLockFile(
 // generate body lines for error message
 function errorBodyLines(originalError: Error, additionalInfo: string[] = []) {
   return [
-    'Please open an issue at `https://github.com/nrwl/nx/issues/new?template=1-bug.yml` and provide a reproduction.',
+    'Please open an issue at `https://github.com/Jordan-Hall/onx-core/issues/new?template=1-bug.yml` and provide a reproduction.',
 
     ...additionalInfo,
 

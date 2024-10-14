@@ -117,7 +117,7 @@ const VALID_AUTHORS_FOR_LATEST = [
     });
 
     console.log(
-      'Check github: https://github.com/nrwl/nx/actions/workflows/publish.yml'
+      'Check github: https://github.com/Jordan-Hall/onx-core/actions/workflows/publish.yml'
     );
     process.exit(0);
   }

@@ -128,7 +128,7 @@ describe('Node Applications + webpack', () => {
       // Only Fastify generates with unit tests since it supports them without additional libraries.
       expect(() => runCLI(`test ${fastifyApp}`)).not.toThrow();
 
-      // https://github.com/nrwl/nx/issues/16601
+      // https://github.com/Jordan-Hall/onx-core/issues/16601
       const nestMainContent = readFile(`apps/${nestApp}/src/main.ts`);
       updateFile(
         `apps/${nestApp}/src/main.ts`,

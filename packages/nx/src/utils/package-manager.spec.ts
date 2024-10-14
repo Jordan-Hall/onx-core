@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as childProcess from 'child_process';
 import * as configModule from '../config/configuration';
 import * as projectGraphFileUtils from '../project-graph/file-utils';
-import * as fileUtils from '../utils/fileutils';
+import * as fileUtils from './fileutils';
 import {
   detectPackageManager,
   getPackageManagerVersion,

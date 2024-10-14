@@ -4,7 +4,7 @@ import { ProjectConfiguration } from '../../config/workspace-json-project-json';
 
 import { createTree } from '../testing-utils/create-tree';
 import { createTreeWithEmptyWorkspace } from '../testing-utils/create-tree-with-empty-workspace';
-import { readJson, writeJson } from '../utils/json';
+import { readJson, writeJson } from './json';
 import {
   addProjectConfiguration,
   getProjects,

@@ -98,7 +98,7 @@ describe('@nx/next (legacy)', () => {
   xit('should produce a self-contained artifact in dist', async () => {
     // Remove apps/libs folder and use packages.
     // Allows us to test other integrated monorepo setup that had a regression.
-    // See: https://github.com/nrwl/nx/issues/16658
+    // See: https://github.com/Jordan-Hall/onx-core/issues/16658
     removeSync(`${tmpProjPath()}/libs`);
     removeSync(`${tmpProjPath()}/apps`);
     mkdirSync(`${tmpProjPath()}/packages`);

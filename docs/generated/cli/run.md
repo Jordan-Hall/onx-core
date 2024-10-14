@@ -22,47 +22,47 @@ Run a target for a project
 ## Usage
 
 ```shell
-nx run [project][:target][:configuration] [_..]
+nxcc run [project][:target][:configuration] [_..]
 ```
 
-Install `nx` globally to invoke the command directly using `nx`, or use `npx nx`, `yarn nx`, or `pnpm nx`.
+Install `nxcc` globally to invoke the command directly using `nxcc`, or use `npx nxcc`, `yarn nxcc`, or `pnpm nxcc`.
 
 ### Examples
 
 Run the target build for the myapp project:
 
 ```shell
- nx run myapp:build
+ nxcc run myapp:build
 ```
 
 Run the target build for the myapp project, with production configuration:
 
 ```shell
- nx run myapp:build:production
+ nxcc run myapp:build:production
 ```
 
 Preview the task graph that Nx would run inside a webview:
 
 ```shell
- nx run myapp:build --graph
+ nxcc run myapp:build --graph
 ```
 
 Save the task graph to a file:
 
 ```shell
- nx run myapp:build --graph=output.json
+ nxcc run myapp:build --graph=output.json
 ```
 
 Print the task graph to the console:
 
 ```shell
- nx run myapp:build --graph=stdout
+ nxcc run myapp:build --graph=stdout
 ```
 
 Run's a target named build:test for the myapp project. Note the quotes around the target name to prevent "test" from being considered a configuration:
 
 ```shell
- nx run myapp:"build:test"
+ nxcc run myapp:"build:test"
 ```
 
 ## Options

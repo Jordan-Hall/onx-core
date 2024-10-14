@@ -28,7 +28,7 @@ jobs:
     #  run: npx snync -d .
 
   report:
-    if: ${{ always() && github.repository_owner == 'nrwl' && github.event_name != 'workflow_dispatch' }}
+    if: ${{ always() && github.repository_owner == 'jordan-hall' && github.event_name != 'workflow_dispatch' }}
     needs: audit
     runs-on: ubuntu-latest
     name: Report status

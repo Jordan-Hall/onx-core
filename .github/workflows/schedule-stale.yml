@@ -8,7 +8,7 @@ permissions: { }
 
 jobs:
   build:
-    if: ${{ github.repository_owner == 'nrwl' }}
+    if: ${{ github.repository_owner == 'jordan-hall' }}
     permissions:
       issues: write  #  to close stale issues (actions/stale)
       pull-requests: write  #  to close stale PRs (actions/stale)

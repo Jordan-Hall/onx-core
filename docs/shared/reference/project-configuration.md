@@ -60,7 +60,7 @@ The project details view also shows where each setting is defined so that you kn
 ## Project Level Configuration Files
 
 If you need to edit your project settings or modify an inferred task, you can do so in either `package.json` or `project.json` files. The examples on this page show both styles, and the only functional difference is that tasks that use executors must be defined in a `project.json`. Nx merges the two
-files to get each project's configuration. The full [machine readable schema](https://github.com/nrwl/nx/blob/master/packages/nx/schemas/project-schema.json) is available on GitHub.
+files to get each project's configuration. The full [machine readable schema](https://github.com/Jordan-Hall/onx-core/blob/master/packages/nx/schemas/project-schema.json) is available on GitHub.
 
 The following configuration creates `build` and `test` targets for Nx.
 

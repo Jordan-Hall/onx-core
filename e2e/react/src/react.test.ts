@@ -420,7 +420,7 @@ describe('React Applications', () => {
         `generate @nx/react:lib libs/${libName} --no-interactive --js --unit-test-runner=none --skipFormat`
       );
       // Make sure plain JS libs can be imported as well.
-      // There was an issue previously: https://github.com/nrwl/nx/issues/10990
+      // There was an issue previously: https://github.com/Jordan-Hall/onx-core/issues/10990
       runCLI(
         `generate @nx/js:lib libs/${plainJsLib} --js --unit-test-runner=none --bundler=none --compiler=tsc --no-interactive --skipFormat`
       );

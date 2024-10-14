@@ -301,231 +301,6 @@
       }
     },
     {
-      "name": "create-nx-workspace",
-      "type": "lib",
-      "data": {
-        "tags": [],
-        "root": "packages/create-nx-workspace",
-        "files": [
-          {
-            "file": "packages/create-nx-workspace/.eslintrc.json",
-            "hash": "ff47ddace4d5155dd8a9f2542fda521d497ba0e7"
-          },
-          {
-            "file": "packages/create-nx-workspace/bin/ab-testing.ts",
-            "hash": "236ff17b4adb3c9d560c4e3df929464a3bf93a58"
-          },
-          {
-            "file": "packages/create-nx-workspace/bin/ci.ts",
-            "hash": "a559af7aa0e9a91df4f0f53c4e925bf56d889755"
-          },
-          {
-            "file": "packages/create-nx-workspace/bin/create-nx-workspace.ts",
-            "hash": "259209e52cb08a56d74218ef22406e5a3ad16506",
-            "deps": [
-              "npm:enquirer",
-              "npm:tmp",
-              "npm:yargs",
-              "npm:ora",
-              "npm:chalk"
-            ]
-          },
-          {
-            "file": "packages/create-nx-workspace/bin/decorator.ts",
-            "hash": "10bdbeffd18343095a0faf8997a4ca387a75ebe2",
-            "deps": ["npm:chalk"]
-          },
-          {
-            "file": "packages/create-nx-workspace/bin/default-base.ts",
-            "hash": "e94f951707b1d051d2bb0af8c4c2d932351c3462"
-          },
-          {
-            "file": "packages/create-nx-workspace/bin/git.spec.ts",
-            "hash": "e38214c6d3fbe0e8c74a8c30e70832dacfd8627b"
-          },
-          {
-            "file": "packages/create-nx-workspace/bin/git.ts",
-            "hash": "73a45c1200a1b91bec8975bf0068df844515b503"
-          },
-          {
-            "file": "packages/create-nx-workspace/bin/index.ts",
-            "hash": "0f88bbe6c12e17c601ce1918a9cfc4fed4bf444d"
-          },
-          {
-            "file": "packages/create-nx-workspace/bin/output.ts",
-            "hash": "8e79887e18740fdbe7a3e269d3809fd4c2287726",
-            "deps": ["npm:chalk"]
-          },
-          {
-            "file": "packages/create-nx-workspace/bin/package-manager.ts",
-            "hash": "a7c7585f862753d099e25c0aec552c808aa5a121"
-          },
-          {
-            "file": "packages/create-nx-workspace/bin/shared.ts",
-            "hash": "cd5178f5f9d0c0da18c02cffa8ef895ffb43455c",
-            "deps": ["npm:flat"]
-          },
-          {
-            "file": "packages/create-nx-workspace/bin/utils.spec.ts",
-            "hash": "be3b9fd958fa73ab0d82cefebd97a6d27606b5ab"
-          },
-          {
-            "file": "packages/create-nx-workspace/bin/utils.ts",
-            "hash": "e4de827f90f0213a95eff24df15ea2a05bb3d378"
-          },
-          {
-            "file": "packages/create-nx-workspace/bin/validate-npm-package.ts",
-            "hash": "afe1f460367d5eb894e3b36ae3b5ca5bee7652b8"
-          },
-          {
-            "file": "packages/create-nx-workspace/jest.config.ts",
-            "hash": "f452efc6372482a73cef570e0d64046a84cbda7f"
-          },
-          {
-            "file": "packages/create-nx-workspace/package.json",
-            "hash": "e6d3cdc5a4bb57e625e27956b29d7dced267ee40",
-            "deps": [
-              "npm:chalk",
-              "npm:enquirer",
-              "npm:flat",
-              "npm:ora",
-              "npm:tmp",
-              "npm:tslib",
-              "npm:yargs",
-              "npm:axios"
-            ]
-          },
-          {
-            "file": "packages/create-nx-workspace/project.json",
-            "hash": "2f23d980b0404948d02d162fc2a5b703795868ea"
-          },
-          {
-            "file": "packages/create-nx-workspace/README.md",
-            "hash": "29bb94157955c3b5f3598f2236962f40e7c95eb2"
-          },
-          {
-            "file": "packages/create-nx-workspace/tsconfig.json",
-            "hash": "58bd2c97a66f5e5ea5d05c8a5709ee79bad02094"
-          },
-          {
-            "file": "packages/create-nx-workspace/tsconfig.lib.json",
-            "hash": "1d2ddef3c1be3aa86cb55b66b9c912d3c6bf1a07"
-          },
-          {
-            "file": "packages/create-nx-workspace/tsconfig.spec.json",
-            "hash": "869c90c526a0fe7b4b32c39d3989c66259545d9a"
-          }
-        ],
-        "targets": {
-          "test": {
-            "executor": "@nrwl/jest:jest",
-            "options": {
-              "jestConfig": "packages/create-nx-workspace/jest.config.ts",
-              "passWithNoTests": true
-            },
-            "outputs": [
-              "{workspaceRoot}/coverage/packages/create-nx-workspace"
-            ],
-            "dependsOn": ["build"],
-            "inputs": [
-              "default",
-              "^production",
-              "{workspaceRoot}/jest.preset.js"
-            ]
-          },
-          "build-base": {
-            "executor": "@nrwl/js:tsc",
-            "options": {
-              "outputPath": "build/packages/create-nx-workspace",
-              "tsConfig": "packages/create-nx-workspace/tsconfig.lib.json",
-              "main": "packages/create-nx-workspace/bin/create-nx-workspace.ts",
-              "assets": [
-                {
-                  "input": "packages/create-nx-workspace",
-                  "glob": "**/files/**",
-                  "output": "/"
-                },
-                {
-                  "input": "packages/create-nx-workspace",
-                  "glob": "**/files/**/.gitkeep",
-                  "output": "/"
-                },
-                {
-                  "input": "packages/create-nx-workspace",
-                  "glob": "**/*.json",
-                  "ignore": [
-                    "**/tsconfig*.json",
-                    "project.json",
-                    ".eslintrc.json"
-                  ],
-                  "output": "/"
-                },
-                {
-                  "input": "packages/create-nx-workspace",
-                  "glob": "**/*.js",
-                  "ignore": ["**/jest.config.js"],
-                  "output": "/"
-                },
-                {
-                  "input": "packages/create-nx-workspace",
-                  "glob": "**/*.d.ts",
-                  "output": "/"
-                },
-                {
-                  "input": "",
-                  "glob": "LICENSE",
-                  "output": "/"
-                }
-              ]
-            },
-            "outputs": ["{options.outputPath}"],
-            "dependsOn": ["^build-base"],
-            "inputs": ["production", "^production"]
-          },
-          "build": {
-            "executor": "nx:run-commands",
-            "outputs": ["{workspaceRoot}/build/packages/create-nx-workspace"],
-            "options": {
-              "commands": [
-                {
-                  "command": "node ./scripts/chmod build/packages/create-nx-workspace/bin/create-nx-workspace.js"
-                },
-                {
-                  "command": "node ./scripts/copy-readme.js create-nx-workspace"
-                },
-                {
-                  "command": "node ./scripts/replace-versions.js build/packages/create-nx-workspace/bin/create-nx-workspace.js"
-                }
-              ],
-              "parallel": false
-            },
-            "dependsOn": ["build-base"],
-            "inputs": ["production", "^production"]
-          },
-          "lint": {
-            "executor": "@nrwl/linter:eslint",
-            "options": {
-              "lintFilePatterns": [
-                "packages/create-nx-workspace/**/*.ts",
-                "packages/create-nx-workspace/**/*.spec.ts",
-                "packages/create-nx-workspace/**/*_spec.ts",
-                "packages/create-nx-workspace/**/*.spec.tsx",
-                "packages/create-nx-workspace/**/*.spec.js",
-                "packages/create-nx-workspace/**/*.spec.jsx",
-                "packages/create-nx-workspace/**/*.d.ts"
-              ]
-            },
-            "outputs": ["{options.outputFile}"],
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/tools/eslint-rules/**/*"
-            ]
-          }
-        }
-      }
-    },
-    {
       "name": "nx-dev-data-access-packages",
       "type": "lib",
       "data": {
@@ -992,7 +767,7 @@
             "deps": [
               "npm:jsonc-eslint-parser",
               "npm:@typescript-eslint/utils",
-              "devkit",
+              "devkitcopy-readme",
               "nx",
               "npm:semver"
             ]
@@ -27054,10 +26829,7 @@
             "file": "scripts/build.sh",
             "hash": "ee290611d8cef4509f680be406dc79cf830d648f"
           },
-          {
-            "file": "scripts/check-imports.js",
-            "hash": "4b309ab80df5b035487ba0fb48f109db291469cd"
-          },
+
           {
             "file": "scripts/check-lock-files.js",
             "hash": "89156e8f1018efaf7671f40c13adbd21bd7dfaeb"
@@ -27114,16 +26886,6 @@
               "nx",
               "npm:import-fresh"
             ]
-          },
-          {
-            "file": "scripts/documentation/generate-cnw-documentation.ts",
-            "hash": "af2dea744dc96c4f6902d1d5c048964bf47fba7c",
-            "deps": ["npm:chalk", "npm:import-fresh"]
-          },
-          {
-            "file": "scripts/documentation/generate-devkit-documentation.ts",
-            "hash": "e404eee93742a0aabe8f09564c97b2b96537e444",
-            "deps": ["npm:chalk"]
           },
           {
             "file": "scripts/documentation/get-package-configurations.ts",
@@ -27253,18 +27015,6 @@
             "deps": ["npm:typescript", "npm:enhanced-resolve"]
           },
           {
-            "file": "scripts/readme-fragments/content.md",
-            "hash": "ae4d0bdb78c896fa95960b64eb35beccc9cd05f7"
-          },
-          {
-            "file": "scripts/readme-fragments/links.md",
-            "hash": "96fd58b3d2a5fa6a40503f73dda282267529be8e"
-          },
-          {
-            "file": "scripts/readme-fragments/resources.md",
-            "hash": "ff861228367b062920045957543b919588242b68"
-          },
-          {
             "file": "scripts/replace-versions.js",
             "hash": "75959a3270105960743786d5f114219404270276"
           },
@@ -27313,12 +27063,6 @@
             "executor": "nx:run-script",
             "options": {
               "script": "check-format"
-            }
-          },
-          "check-imports": {
-            "executor": "nx:run-script",
-            "options": {
-              "script": "check-imports"
             }
           },
           "check-lock-files": {
@@ -39982,18 +39726,6 @@
         }
       },
       "dependencies": { "@nrwl/nx-source:check-format": [] }
-    },
-    "@nrwl/nx-source:check-imports": {
-      "roots": ["@nrwl/nx-source:check-imports"],
-      "tasks": {
-        "@nrwl/nx-source:check-imports": {
-          "id": "@nrwl/nx-source:check-imports",
-          "target": { "project": "@nrwl/nx-source", "target": "check-imports" },
-          "projectRoot": ".",
-          "overrides": {}
-        }
-      },
-      "dependencies": { "@nrwl/nx-source:check-imports": [] }
     },
     "@nrwl/nx-source:check-lock-files": {
       "roots": ["@nrwl/nx-source:check-lock-files"],

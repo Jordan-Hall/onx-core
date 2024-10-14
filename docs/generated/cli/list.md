@@ -10,23 +10,23 @@ Lists installed plugins, capabilities of installed plugins and other available p
 ## Usage
 
 ```shell
-nx list [plugin]
+nxcc list [plugin]
 ```
 
-Install `nx` globally to invoke the command directly using `nx`, or use `npx nx`, `yarn nx`, or `pnpm nx`.
+Install `nxcc` globally to invoke the command directly using `nxcc`, or use `npx nxcc`, `yarn nxcc`, or `pnpm nxcc`.
 
 ### Examples
 
 List the plugins installed in the current workspace:
 
 ```shell
- nx list
+ nxcc list
 ```
 
 List the generators and executors available in the `@nx/web` plugin if it is installed (If the plugin is not installed `nx` will show advice on how to add it to your workspace):
 
 ```shell
- nx list @nx/web
+ nxcc list @nx/web
 ```
 
 ## Options

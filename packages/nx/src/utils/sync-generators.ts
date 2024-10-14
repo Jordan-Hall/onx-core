@@ -380,8 +380,8 @@ export function getFlushFailureMessageLines(
           : []),
         '',
         verbose
-          ? 'Please report the error at: https://github.com/nrwl/nx/issues/new/choose'
-          : 'Please run with `--verbose` and report the error at: https://github.com/nrwl/nx/issues/new/choose',
+          ? 'Please report the error at: https://github.com/Jordan-Hall/onx-core/issues/new/choose'
+          : 'Please run with `--verbose` and report the error at: https://github.com/Jordan-Hall/onx-core/issues/new/choose',
       ]
     );
   }

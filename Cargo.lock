@@ -1462,7 +1462,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "nx"
+name = "nxcc"
 version = "0.1.0"
 dependencies = [
  "anyhow",

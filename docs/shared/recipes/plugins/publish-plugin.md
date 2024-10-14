@@ -36,8 +36,8 @@ We reserve the right to remove unmaintained plugins from the registry. If the pl
 
 Once those criteria are met, you can submit your plugin by following the steps below:
 
-- Fork the [Nx repo](https://github.com/nrwl/nx/fork) (if you haven't already)
-- Update the [`community/approved-plugins.json` file](https://github.com/nrwl/nx/blob/master/community/approved-plugins.json) with a new entry for your plugin that includes name, url and description
+- Fork the [Nx repo](https://github.com/Jordan-Hall/onx-core/fork) (if you haven't already)
+- Update the [`community/approved-plugins.json` file](https://github.com/Jordan-Hall/onx-core/blob/master/community/approved-plugins.json) with a new entry for your plugin that includes name, url and description
 - Use the following commit message template: `chore(core): nx plugin submission [PLUGIN_NAME]`
 - push your changes, and run `pnpm submit-plugin`
 

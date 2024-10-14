@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 jobs:
   cache-and-install:
-    if: github.repository == 'nrwl/nx'
+    if: github.repository == 'jordan-hall/nx'
     runs-on: ubuntu-latest
     strategy:
       matrix:

@@ -110,12 +110,7 @@ export function findPackageMetadataList(
 ): PackageData[] {
   const packagesDir = resolve(join(absoluteRoot, packagesDirectory));
 
-  /**
-   * Get all the custom overview information on each package if available
-   */
-  const additionalApiReferences: DocumentMetadata[] = DocumentationMap.content
-    .find((data) => data.id === 'additional-api-references')!
-    .itemList.map((item) => convertToDocumentMetadata(item));
+
 
   // Do not use map.json, but add a documentation property on the package.json directly that can be easily resolved
   return sync(`${packagesDir}/${prefix}*`, {
@@ -131,30 +126,17 @@ export function findPackageMetadataList(
       );
       const isPrivate =
         packageJson.private && process.env.NODE_ENV !== 'development'; // skip this check in dev mode
-      const hasDocumentation = additionalApiReferences.find(
-        (pkg) => pkg.id === folderName
-      );
 
       return isPrivate
         ? null
         : {
-            githubRoot: 'https://github.com/nrwl/nx/blob/master',
+            githubRoot: 'https://github.com/Jordan-Hall/onx-core/blob/master',
             name: folderName,
             packageName: packageJson.name,
             description: packageJson.description,
             root: relativeFolderPath,
             source: join(relativeFolderPath, '/src'),
-            documents: !!hasDocumentation
-              ? hasDocumentation.itemList.map((item) => ({
-                  ...item,
-                  path: item.path,
-                  file: item.file,
-                  content: readFileSync(
-                    join('docs', item.file + '.md'),
-                    'utf8'
-                  ),
-                }))
-              : [],
+            documents: [],
             generators: getSchemaList(
               {
                 absoluteRoot,

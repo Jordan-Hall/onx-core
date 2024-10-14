@@ -59,7 +59,7 @@ The configuration lives in your `nx.json` file under the `"release"` section.
 
 ### Customize changelog output
 
-Changelog render options can be passed as [an object](https://github.com/nrwl/nx/blob/master/packages/nx/release/changelog-renderer/index.ts) under `release.changelog.projectChangelogs.renderOptions` and `release.changelog.workspaceChangelog.renderOptions` in your `nx.json` file. Below are all options with their default values for the built-in changelog renderer.
+Changelog render options can be passed as [an object](https://github.com/Jordan-Hall/onx-core/blob/master/packages/nx/release/changelog-renderer/index.ts) under `release.changelog.projectChangelogs.renderOptions` and `release.changelog.workspaceChangelog.renderOptions` in your `nx.json` file. Below are all options with their default values for the built-in changelog renderer.
 
 ```jsonc {% fileName="nx.json" %}
 {

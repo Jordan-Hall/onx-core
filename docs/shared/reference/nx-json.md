@@ -1,6 +1,6 @@
 # nx.json
 
-The `nx.json` file configures the Nx CLI and project defaults. The full [machine readable schema](https://github.com/nrwl/nx/blob/master/packages/nx/schemas/nx-schema.json) is available on GitHub.
+The `nx.json` file configures the Nx CLI and project defaults. The full [machine readable schema](https://github.com/Jordan-Hall/onx-core/blob/master/packages/nx/schemas/nx-schema.json) is available on GitHub.
 
 The following is an expanded example showing all options. Your `nx.json` will likely be much shorter.
 
@@ -338,7 +338,7 @@ The `release` property in `nx.json` configures the `nx release` command. It is a
 
 For more information on how `nx release` works, see [manage releases](/features/manage-releases).
 
-The full list of configuration options available for `"release"` can be found here: [https://github.com/nrwl/nx/blob/master/packages/nx/src/config/nx-json.ts](https://github.com/nrwl/nx/blob/master/packages/nx/src/config/nx-json.ts) under `NxReleaseConfiguration`.
+The full list of configuration options available for `"release"` can be found here: [https://github.com/Jordan-Hall/onx-core/blob/master/packages/nx/src/config/nx-json.ts](https://github.com/Jordan-Hall/onx-core/blob/master/packages/nx/src/config/nx-json.ts) under `NxReleaseConfiguration`.
 
 ### Projects
 
@@ -553,7 +553,7 @@ pass `--buildable=true` when creating new libraries with the `@nx/js` plugin.
 
 ## Extends
 
-Some presets use the `extends` property to hide some default options in a separate json file. The json file specified in the `extends` property is located in your `node_modules` folder. The Nx preset files are specified in [the `nx` package](https://github.com/nrwl/nx/tree/master/packages/nx/presets).
+Some presets use the `extends` property to hide some default options in a separate json file. The json file specified in the `extends` property is located in your `node_modules` folder. The Nx preset files are specified in [the `nx` package](https://github.com/Jordan-Hall/onx-core/tree/master/packages/nx/presets).
 
 ## Nx Cloud
 
