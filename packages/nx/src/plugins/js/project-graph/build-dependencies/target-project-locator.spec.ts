@@ -25,7 +25,7 @@ jest.mock('nx/src/utils/workspace-root', () => ({
 jest.mock('nx/src/plugins/js/utils/resolve-relative-to-dir', () => ({
   resolveRelativeToDir: jest.fn().mockImplementation((pathOrPackage) => {
     // We intentionally don't want to find this package on disk to test fallback behavior
-    if (pathOrPackage.startsWith('@nx/nx-win32-x64-msvc')) {
+    if (pathOrPackage.startsWith('@nxcc/nxcc-win32-x64-msvc')) {
       return null;
     }
     // We intentionally don't allow access to the package.json (emulating package exports)
@@ -712,26 +712,26 @@ describe('TargetProjectLocator', () => {
           },
         },
         /**
-         * These @nx/nx-win32-x64-msvc external nodes have intentionally not had their locations on disk
+         * These @nxcc/nxcc-win32-x64-msvc external nodes have intentionally not had their locations on disk
          * mocked so that we can evaluate the fallback behavior of the target project locator.
          *
          * We want to preferentially match the unversioned node out of these two, as it is the root dependency.
          */
-        'npm:@nx/nx-win32-x64-msvc@17.1.2': {
+        'npm:@nxcc/nxcc-win32-x64-msvc@17.1.2': {
           type: 'npm',
-          name: 'npm:@nx/nx-win32-x64-msvc@17.1.2',
+          name: 'npm:@nxcc/nxcc-win32-x64-msvc@17.1.2',
           data: {
             version: '17.1.2',
-            packageName: '@nx/nx-win32-x64-msvc',
+            packageName: '@nxcc/nxcc-win32-x64-msvc',
             hash: 'sha512-oxKCKunuo4wRusMlNu7PlhBijhtNy7eBZPAWyqUsdfnb+CjY2QncjCguW3fnsG9gHQFCa+y0b1WkSkvJ5G1DiQ==',
           },
         },
-        'npm:@nx/nx-win32-x64-msvc': {
+        'npm:@nxcc/nxcc-win32-x64-msvc': {
           type: 'npm',
-          name: 'npm:@nx/nx-win32-x64-msvc',
+          name: 'npm:@nxcc/nxcc-win32-x64-msvc',
           data: {
             version: '19.2.0-beta.2',
-            packageName: '@nx/nx-win32-x64-msvc',
+            packageName: '@nxcc/nxcc-win32-x64-msvc',
             hash: 'sha512-ggewenDQWc5azOEM/HI7AREuIHXSPO0STL+ehAG2PvoQPHglCdfLQy904D85ttm9wS7AKdK+d3wqMzSQaj7FsA==',
           },
         },
@@ -877,12 +877,12 @@ describe('TargetProjectLocator', () => {
 
     it('should fall back to matching external nodes from the graph if they could not be resolved on disk', () => {
       const result = targetProjectLocator.findProjectFromImport(
-        '@nx/nx-win32-x64-msvc',
+        '@nxcc/nxcc-win32-x64-msvc',
         'libs/proj/index.ts'
       );
-      // We don't want to match npm:@nx/nx-win32-x64-msvc@17.1.2 in this fallback case even though it came first
+      // We don't want to match npm:@nxcc/nxcc-win32-x64-msvc@17.1.2 in this fallback case even though it came first
       // in the external nodes list
-      expect(result).toEqual('npm:@nx/nx-win32-x64-msvc');
+      expect(result).toEqual('npm:@nxcc/nxcc-win32-x64-msvc');
     });
 
     it('should handle resolving multi module build packages such as minimatch', () => {

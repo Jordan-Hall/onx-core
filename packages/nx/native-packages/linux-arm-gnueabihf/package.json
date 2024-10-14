@@ -1,5 +1,5 @@
 {
-  "name": "@nx/nx-linux-arm-gnueabihf",
+  "name": "@nxcc/nxcc-linux-arm-gnueabihf",
   "version": "0.0.0",
   "license": "MIT",
   "repository": {

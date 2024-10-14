@@ -21,20 +21,20 @@ process.emit = function (eventName, eventData) {
 };
 
 const nxPackages = new Set([
-  '@nx/nx-android-arm64',
-  '@nx/nx-android-arm-eabi',
-  '@nx/nx-win32-x64-msvc',
-  '@nx/nx-win32-ia32-msvc',
-  '@nx/nx-win32-arm64-msvc',
-  '@nx/nx-darwin-universal',
-  '@nx/nx-darwin-x64',
-  '@nx/nx-darwin-arm64',
-  '@nx/nx-freebsd-x64',
-  '@nx/nx-linux-x64-musl',
-  '@nx/nx-linux-x64-gnu',
-  '@nx/nx-linux-arm64-musl',
-  '@nx/nx-linux-arm64-gnu',
-  '@nx/nx-linux-arm-gnueabihf',
+  '@nxcc/nxcc-android-arm64',
+  '@nxcc/nxcc-android-arm-eabi',
+  '@nxcc/nxcc-win32-x64-msvc',
+  '@nxcc/nxcc-win32-ia32-msvc',
+  '@nxcc/nxcc-win32-arm64-msvc',
+  '@nxcc/nxcc-darwin-universal',
+  '@nxcc/nxcc-darwin-x64',
+  '@nxcc/nxcc-darwin-arm64',
+  '@nxcc/nxcc-freebsd-x64',
+  '@nxcc/nxcc-linux-x64-musl',
+  '@nxcc/nxcc-linux-x64-gnu',
+  '@nxcc/nxcc-linux-arm64-musl',
+  '@nxcc/nxcc-linux-arm64-gnu',
+  '@nxcc/nxcc-linux-arm-gnueabihf',
 ]);
 
 const localNodeFiles = [
