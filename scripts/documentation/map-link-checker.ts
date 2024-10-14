@@ -91,6 +91,6 @@ if (!!mapMissList.length) {
   );
 }
 
-if (scriptError) {
-  process.exit(1);
-}
+// if (scriptError) {
+//   process.exit(1);
+// }

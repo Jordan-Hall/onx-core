@@ -38,7 +38,9 @@ export async function generateCliDocumentation(
   ).compilerOptions;
   registerTsConfigPaths(config);
 
-  console.log(`\n${chalk.blue('i')} Generating Documentation for nxcc Commands`);
+  console.log(
+    `\n${chalk.blue('i')} Generating Documentation for nxcc Commands`
+  );
 
   const { commandsObject } = importFresh(
     '../../../packages/nx/src/command-line/nx-commands'
@@ -115,34 +117,6 @@ description: "${command.description}"
       .map(async (templateObject) =>
         generateMarkdownFile(commandsOutputDirectory, await templateObject)
       )
-  );
-
-  await Promise.all(
-    sharedCommands.map((command) => {
-      const sharedCommandsDirectory = join(
-        __dirname,
-        '../../../docs/shared/cli'
-      );
-      const sharedCommandsOutputDirectory = join(
-        __dirname,
-        '../../../docs/',
-        'generated',
-        'cli'
-      );
-
-      const templateObject = {
-        name: command,
-        template: readFileSync(
-          join(sharedCommandsDirectory, `${command}.md`),
-          'utf-8'
-        ),
-      };
-
-      return generateMarkdownFile(
-        sharedCommandsOutputDirectory,
-        templateObject
-      );
-    })
   );
 
   delete process.env.NX_GENERATE_DOCS_PROCESS;

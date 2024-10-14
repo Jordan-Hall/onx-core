@@ -33,7 +33,7 @@ export function TeamAndCommunity(): JSX.Element {
           Founded {yearsAgo} years ago by two <Strong>ex-Googlers</Strong>, our
           mission is to revolutionize software development with the power of{' '}
           <TextLink
-            href="https://github.com/nrwl/nx"
+            href="https://github.com/Jordan-Hall/onx-core"
             title="Monorepo & OSS"
             target="_blank"
             rel="noopener"

@@ -124,19 +124,6 @@ export default function ConfPage(): JSX.Element {
           </div>
           <LaunchWeekSpeakers />
 
-          {/*COMMUNITY PARTNERS*/}
-          <div className="mx-auto max-w-screen-lg px-5 py-5 xl:max-w-screen-xl">
-            <div className="mt-24">
-              <h2
-                id="community-partners"
-                className="font-input-mono my-20 text-3xl"
-              >
-                Community Partners
-              </h2>
-            </div>
-          </div>
-          <LaunchNxCommunityPartners />
-
           {/*CODE OF CONDUCT*/}
           <div className="mx-auto max-w-screen-lg px-5 py-5 xl:max-w-screen-xl">
             <div className="mt-24">

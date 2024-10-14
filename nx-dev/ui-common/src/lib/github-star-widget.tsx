@@ -35,7 +35,7 @@ export function GitHubStarWidget({ starsCount }: { starsCount: number }) {
   return (
     <div className="flex items-center justify-between space-x-2 rounded-md border border-slate-200 pl-2 pr-2 hover:border-slate-400 dark:border-slate-700 print:hidden">
       <a
-        href="https://github.com/nrwl/nx"
+        href="https://github.com/Jordan-Hall/onx-core"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center justify-between space-x-2"
@@ -45,7 +45,7 @@ export function GitHubStarWidget({ starsCount }: { starsCount: number }) {
         <span className="text-md font-semibold">{formatStars(starsCount)}</span>
       </a>
       <a
-        href="https://github.com/nrwl/nx"
+        href="https://github.com/Jordan-Hall/onx-core"
         target="_blank"
         rel="noreferrer noopener"
         className="whitespace-nowrap border-transparent px-4 py-2 font-bold hover:text-slate-900 dark:hover:text-sky-400"

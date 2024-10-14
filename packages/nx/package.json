@@ -5,7 +5,7 @@
   "description": "The core Nx plugin contains the core functionality of Nx like the project graph, nx commands and task orchestration.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nrwl/nx.git",
+    "url": "https://github.com/Jordan-Hall/onx-core.git",
     "directory": "packages/nx"
   },
   "scripts": {

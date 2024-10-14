@@ -109,7 +109,7 @@ The advantage of a global installation is that you don't have to prefix your com
 Nx can manage its own installation without requiring a `package.json` file or a `node_modules` folder. This type of installation is useful for repositories that may not contain any JavaScript or TypeScript (e.g. .Net or Java based workspaces that want to leverage Nx features). In this setup, the Nx CLI is all contained within a `.nx` folder. To set this up run the `nx init` command in a folder without a `package.json` file.
 
 ```shell
-npx nx init
+npx nxcc init
 ```
 
 See the [install Nx in a non-javascript repo](/recipes/installation/install-non-javascript) recipe for more information.

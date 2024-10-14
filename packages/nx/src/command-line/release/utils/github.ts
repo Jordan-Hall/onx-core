@@ -219,7 +219,7 @@ async function createOrUpdateGithubReleaseInternal(
       } else {
         console.log(result.error);
         console.error(
-          `An unknown error occurred while trying to create a release on GitHub, please report this on https://github.com/nrwl/nx (NOTE: make sure to redact your GitHub token from the error message!)`
+          `An unknown error occurred while trying to create a release on GitHub, please report this on https://github.com/Jordan-Hall/onx-core (NOTE: make sure to redact your GitHub token from the error message!)`
         );
       }
     }

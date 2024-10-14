@@ -545,7 +545,7 @@ function appendVersionData(
   for (const [key, value] of Object.entries(newVersionData)) {
     if (existingVersionData[key]) {
       throw new Error(
-        `Version data key "${key}" already exists in version data. This is likely a bug, please report your use-case on https://github.com/nrwl/nx`
+        `Version data key "${key}" already exists in version data. This is likely a bug, please report your use-case on https://github.com/Jordan-Hall/onx-core`
       );
     }
     existingVersionData[key] = value;

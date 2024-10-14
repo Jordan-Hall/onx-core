@@ -1,51 +1,52 @@
-[
-  {
+{
+  "nx": {
+    "githubRoot": "https://github.com/Jordan-Hall/onx-core/blob/master",
+    "name": "nx",
+    "packageName": "nx",
     "description": "The core Nx plugin contains the core functionality of Nx like the project graph, nx commands and task orchestration.",
-    "documents": [],
-    "executors": [
-      {
+    "documents": {},
+    "root": "/packages/nx",
+    "source": "/packages/nx/src",
+    "executors": {
+      "/nx-api/nx/executors/noop": {
         "description": "An executor that does nothing",
         "file": "generated/packages/nx/executors/noop.json",
         "hidden": false,
         "name": "noop",
         "originalFilePath": "/packages/nx/src/executors/noop/schema.json",
-        "path": "nx/executors/noop",
+        "path": "/nx-api/nx/executors/noop",
         "type": "executor"
       },
-      {
+      "/nx-api/nx/executors/run-commands": {
         "description": "Run any custom commands with Nx.",
         "file": "generated/packages/nx/executors/run-commands.json",
         "hidden": false,
         "name": "run-commands",
         "originalFilePath": "/packages/nx/src/executors/run-commands/schema.json",
-        "path": "nx/executors/run-commands",
+        "path": "/nx-api/nx/executors/run-commands",
         "type": "executor"
       },
-      {
+      "/nx-api/nx/executors/run-script": {
         "description": "Run an NPM script using Nx.",
         "file": "generated/packages/nx/executors/run-script.json",
         "hidden": false,
         "name": "run-script",
         "originalFilePath": "/packages/nx/src/executors/run-script/schema.json",
-        "path": "nx/executors/run-script",
+        "path": "/nx-api/nx/executors/run-script",
         "type": "executor"
       }
-    ],
-    "generators": [
-      {
+    },
+    "generators": {
+      "/nx-api/nx/generators/connect-to-nx-cloud": {
         "description": "Connect a workspace to Nx Cloud",
         "file": "generated/packages/nx/generators/connect-to-nx-cloud.json",
         "hidden": false,
         "name": "connect-to-nx-cloud",
         "originalFilePath": "/packages/nx/src/nx-cloud/generators/connect-to-nx-cloud/schema.json",
-        "path": "nx/generators/connect-to-nx-cloud",
+        "path": "/nx-api/nx/generators/connect-to-nx-cloud",
         "type": "generator"
       }
-    ],
-    "githubRoot": "https://github.com/Jordan-Hall/onx-core/blob/master",
-    "name": "nx",
-    "packageName": "nx",
-    "root": "/packages/nx",
-    "source": "/packages/nx/src"
+    },
+    "path": "/nx-api/nx"
   }
-]
+}

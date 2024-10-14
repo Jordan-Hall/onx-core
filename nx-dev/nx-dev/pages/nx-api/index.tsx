@@ -12,7 +12,6 @@ import {
   Footer,
   SidebarContainer,
 } from '@nx/nx-dev/ui-common';
-import { iconsMap } from '@nx/nx-dev/ui-references';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -99,55 +98,6 @@ export default function Packages({
             toggleNav={toggleNav}
           />
           <ScrollableContent>
-            <div className="mx-auto w-full grow items-stretch px-4 sm:px-6 lg:px-8 2xl:max-w-6xl">
-              <div id="content-wrapper" className="w-full flex-auto flex-col">
-                <div className="mb-6 pt-8">
-                  <Breadcrumbs path={router.asPath} />
-                </div>
-                <div data-document="main">
-                  <Heading1 title={'Official Packages Reference'} />
-
-                  <section id="packages-section" className="py-1">
-                    <p>
-                      Read more about what Nx plugins are on our{' '}
-                      <Link
-                        href="/concepts/nx-plugins"
-                        className="text-blue-600 transition-colors ease-out hover:text-blue-700 dark:text-sky-500 dark:hover:text-sky-400"
-                        prefetch={false}
-                      >
-                        docs page.
-                      </Link>
-                    </p>
-                  </section>
-                  <section id="packages-section" className="py-6">
-                    <nav
-                      aria-labelledby="package-index-navigation"
-                      className="relative mb-24 grid grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-5"
-                    >
-                      {vm.packages.map((pkg) => (
-                        <Link
-                          key={'ref-' + pkg.name}
-                          href={pkg.path}
-                          className="group relative flex items-center gap-3 rounded-md border border-slate-200 bg-slate-50/40 p-4 text-sm capitalize shadow-sm transition hover:bg-slate-50 dark:border-slate-800/40 dark:bg-slate-800/60 dark:hover:bg-slate-800"
-                          prefetch={false}
-                        >
-                          <img
-                            className="h-5 w-5 object-cover opacity-75 dark:invert"
-                            loading="lazy"
-                            src={iconsMap[pkg.name]}
-                            alt={pkg.name + ' illustration'}
-                            aria-hidden="true"
-                          />
-                          <span className="text-base font-medium">
-                            {pkg.name.replace(/-/gi, ' ')}
-                          </span>
-                        </Link>
-                      ))}
-                    </nav>
-                  </section>
-                </div>
-              </div>
-            </div>
             <Footer />
           </ScrollableContent>
         </main>

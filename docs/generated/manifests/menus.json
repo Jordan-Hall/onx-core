@@ -1,0 +1,64 @@
+[
+  {
+    "id": "nxcc",
+    "menu": [
+      {
+        "name": "Getting Started",
+        "path": "/getting-started",
+        "id": "getting-started",
+        "isExternal": false,
+        "children": [
+          {
+            "name": "Intro to Nxcc",
+            "path": "/getting-started/intro",
+            "id": "intro",
+            "isExternal": false,
+            "children": [],
+            "disableCollapsible": false
+          },
+          {
+            "name": "Installation",
+            "path": "/getting-started/installation",
+            "id": "installation",
+            "isExternal": false,
+            "children": [],
+            "disableCollapsible": false
+          },
+          {
+            "name": "Why Nxcc?",
+            "path": "/getting-started/why-nxcc",
+            "id": "why-nxcc",
+            "isExternal": false,
+            "children": [],
+            "disableCollapsible": false
+          }
+        ],
+        "disableCollapsible": false
+      },
+      {
+        "name": "Intro to Nxcc",
+        "path": "/getting-started/intro",
+        "id": "intro",
+        "isExternal": false,
+        "children": [],
+        "disableCollapsible": false
+      },
+      {
+        "name": "Installation",
+        "path": "/getting-started/installation",
+        "id": "installation",
+        "isExternal": false,
+        "children": [],
+        "disableCollapsible": false
+      },
+      {
+        "name": "Why Nxcc?",
+        "path": "/getting-started/why-nxcc",
+        "id": "why-nxcc",
+        "isExternal": false,
+        "children": [],
+        "disableCollapsible": false
+      }
+    ]
+  }
+]

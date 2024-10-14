@@ -2,12 +2,12 @@
 
 ## Overview
 
-We are forking NXCC with a primary focus on the core package, 'nx'. This decision arises from the need to provide a fully compatible alternative for the community, enabling them to create their own remote caching solutions without incurring costs associated with PowerPack. 
+We are forking NXCC with a primary focus on the core package, 'nx'. This decision arises from the need to provide a fully compatible alternative for the community, enabling them to create their own remote caching solutions without incurring costs associated with PowerPack.
 
 ## Goals
 
 1. **Compatibility**: Ensure that the fork remains a drop-in replacement for the existing NX functionality, allowing seamless transitions for current users.
-  
+
 2. **Cost-Effective Solution**: Eliminate the need for users to pay for PowerPack by providing a fully functional caching solution that meets their needs.
 
 3. **Community-Centric Development**: Foster an environment where the community can contribute to and customize their caching solutions, empowering users to shape the future of NXCC.
@@ -15,7 +15,6 @@ We are forking NXCC with a primary focus on the core package, 'nx'. This decisio
 ## Features
 
 - **Core Package Enhancements**: Focus on improving the 'nx' package to support robust remote caching capabilities.
-  
 - **Open Source Contribution**: Encourage contributions from the community to enhance the functionality and performance of NXCC.
 
 - **API Integration**: Develop an API within the Rust solution, potentially retaining the 'create workspace' functionality to facilitate a smooth user experience.
@@ -24,7 +23,7 @@ We are forking NXCC with a primary focus on the core package, 'nx'. This decisio
 
 If you find a bug in the source code or a mistake in the documentation, you can help us
 by [submitting an issue](https://github.com/Jordan-Hall/onx-core/blob/master/CONTRIBUTING.md#submit-issue)
-to [our GitHub Repository](https://github.com/nrwl/nx). Even better, you
+to [our GitHub Repository](https://github.com/Jordan-Hall/onx-core). Even better, you
 can [submit a Pull Request](https://github.com/Jordan-Hall/onx-core/blob/master/CONTRIBUTING.md#submit-pr) with a fix.
 
 ## Project Structure
@@ -99,7 +98,6 @@ Check out [this video for a live walkthrough](https://youtu.be/Tx257WpNsxc) or f
   be logged in. You can use test/test/test@test.io.)
 - Run `pnpm nx-release 20.0.0 --local` in Terminal 2 - you can choose any nonexistent version number here, but it's recommended to use the next major
 - Run `cd ./tmp` in Terminal 2
-- Run `npx create-nx-workspace@20.0.0` in Terminal 2
 
 If you have problems publishing, make sure you use Node 18 and NPM 8.
 

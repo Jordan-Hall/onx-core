@@ -34,7 +34,7 @@ export function ContactLinks(): JSX.Element {
             File a bug report, check releases or contribute to the OSS products.
           </p>
           <a
-            href="https://github.com/nrwl/nx"
+            href="https://github.com/Jordan-Hall/onx-core"
             rel="noreferrer"
             target="_blank"
             title="Nx GitHub"

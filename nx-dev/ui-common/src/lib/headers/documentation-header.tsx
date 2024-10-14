@@ -151,7 +151,7 @@ export function DocumentationHeader({
     {
       name: 'GitHub',
       label: 'Nx is open source, check the code on GitHub',
-      href: 'https://github.com/nrwl/nx?utm_source=nx.dev',
+      href: 'https://github.com/Jordan-Hall/onx-core?utm_source=nx.dev',
       icon: (props: any) => (
         <svg
           fill="currentColor"

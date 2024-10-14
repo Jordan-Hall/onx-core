@@ -1,10 +1,10 @@
 {
-  "name": "@nx/nx-darwin-arm64",
+  "name": "@ngcc/ngcc-darwin-arm64",
   "version": "0.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nrwl/nx.git",
+    "url": "https://github.com/Jordan-Hall/onx-core.git",
     "directory": "packages/nx/native-packages/darwin-arm64"
   },
   "os": [
