@@ -1,98 +1,59 @@
-<p style="text-align: center;">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-dark.svg">
-    <img alt="Nx - Smart Monorepos · Fast CI" src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-light.svg" width="100%">
-  </picture>
-</p>
+# ONX - Custom Remote Caching Support
 
-<div style="text-align: center;">
+It's with a heavy heart that I’ve decided to fork the core NX package (`nx`). I’ve been a huge supporter of NX for over 6 years, promoting and using it extensively. However, due to the recent decision to move remote caching behind the Powerpack paywall, I feel, on principle, that this fork is necessary until the feature is restored.
 
-[![CircleCI](https://circleci.com/gh/nrwl/nx.svg?style=svg)](https://circleci.com/gh/nrwl/nx)
-[![License](https://img.shields.io/npm/l/nx.svg?style=flat-square)]()
-[![NPM Version](https://badge.fury.io/js/nx.svg)](https://www.npmjs.com/package/nx)
-[![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)]()
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![Join the chat at https://gitter.im/nrwl-nx/community](https://badges.gitter.im/nrwl-nx/community.svg)](https://gitter.im/nrwl-nx/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Join the Official Nx Discord Server](https://img.shields.io/discord/1143497901675401286?label=discord)](https://go.nx.dev/community)
+note: ONX name is subject to change once pacakge has been created!
 
-</div>
+## Why Fork NX?
 
-<hr>
+NX has been an amazing tool, but forcing users to pay for something that was previously available, like remote caching, is not acceptable. While I understand NX needs to generate revenue, this move impacts small to medium-sized teams who relied on this functionality. Enterprises might be fine paying for Powerpack, but indie developers should have the freedom to implement their own caching solutions without being forced to buy the entire pack.
 
-# Smart Monorepos · Fast CI
+This fork restores remote caching through a new `nx.json` config property, giving developers back control over their own remote caching solutions.
 
-Nx is a build system, optimized for monorepos, with plugins for popular frameworks and tools and advanced CI capabilities including caching and distribution.
+For reference, see:
 
-Create a new Nx workspace with
+- [NX Issue #28150](https://github.com/nrwl/nx/issues/28150)
+- [NX Issue #28434](https://github.com/nrwl/nx/issues/28434)
+- [Custom Remote Cache Issue #48](https://github.com/NiklasPor/nx-remotecache-custom/issues/48)
 
-```shell
-npx create-nx-workspace
-```
+## Key Features
 
-...or run
+- **1-to-1 Compatibility**: This fork maintains full compatibility with the original NX package, so swapping is straightforward.
+- **Custom Remote Caching**: Indie developers can create their own remote caching setup without relying on Powerpack.
+- **Rust API**: This fork will also aim to support a pure Rust version of NX in the future.
+
+## Installation (soon)
+
+To use this fork:
 
 ```
-npx nx init
+npm install
 ```
 
-to add Nx to your existing workspace to get faster task scheduling, caching and more. More [in the docs](https://nx.dev/getting-started/intro#try-nx-yourself).
-
-## Learn about CI with Nx Cloud
-
-[Nx Cloud](https://nx.dev/nx-cloud) connects directly to your existing CI setup, helping you scale your monorepos on CI by leveraging [remote caching](https://nx.dev/ci/features/remote-cache?utm_source=nxrepo&utm_medium=readme&utm_campaign=nxrepo), [task distribution across multiple machines](https://nx.dev/ci/features/distribute-task-execution?utm_source=nxrepo&utm_medium=readme&utm_campaign=nxrepo), [automated e2e test splitting](https://nx.dev/ci/features/split-e2e-tasks?utm_source=nxrepo&utm_medium=readme&utm_campaign=nxrepo) and [automated task flakiness detection](https://nx.dev/ci/features/flaky-tasks?utm_source=nxrepo&utm_medium=readme&utm_campaign=nxrepo)
-
-Connect your existing Nx workspace with
+For new workspaces:
 
 ```
-npx nx connect
+npx create-nx-workspace --package
 ```
 
-Learn more in the [Nx CI docs &raquo;](https://nx.dev/ci/intro?utm_source=nxrepo&utm_medium=readme&utm_campaign=nxrepo)
+## Contributing
 
-## Useful links
+Contributions are welcome! If you want to improve this project or help keep remote caching open for the community, feel free to submit issues or pull requests.
 
-- [Our docs](https://nx.dev/docs)
-- [Our blog](https://nx.dev/blog)
-- [Our community discord, live stream,...](https://nx.dev/community)
-- [Our YouTube channel](https://www.youtube.com/@NxDevtools)
-- [Our Twitter/X](https://x.com/nxdevtools)
+Here’s a revised section that maintains respect for the NX team while clarifying that there is no official support for this fork:
 
-<p style="text-align: center;"><a href="https://www.youtube.com/@nxdevtools/videos" target="_blank" rel="noreferrer"><img src="./images/nx-courses-and-videos.svg" 
-width="100%" alt="Nx - Smart Monorepos · Fast CI"></a></p>
+---
 
-## Want to help?
+## Acknowledgements
 
-If you want to file a bug or submit a PR, read up on
-our [guidelines for contributing](https://github.com/nrwl/nx/blob/master/CONTRIBUTING.md) and watch this video that will
-help you get started.
+I’ve been a dedicated user and advocate of NX for over six years, and I want to acknowledge the incredible work of the NX team. This fork is not created in opposition to their efforts, but rather out of necessity. The recent changes that moved remote caching behind the Powerpack paywall have left many in the community, particularly indie developers and smaller teams, without access to essential functionality. While this fork restores that functionality, it’s important to note that **this project is entirely independent and has no affiliation with or support from the official NX team**.
 
-<a href="https://www.youtube.com/watch?v=8LCA_4qxc08" target="_blank" rel="noreferrer">
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/how-to-contribute.png" width="600" alt="Nx - How to contribute video"></p>
-</a>
+## Useful links to NX
 
-## Core Team
+For those continuing to use NX or wanting to learn more about their official offerings, here are some helpful resources:
 
-| Victor Savkin                                                          | Jason Jean                                                            | Benjamin Cabanes                                                            | Jack Hsu                                                          |
-| ---------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| ![Victor Savkin](https://avatars1.githubusercontent.com/u/35996?s=160) | ![Jason Jean](https://avatars2.githubusercontent.com/u/8104246?s=160) | ![Benjamin Cabanes](https://avatars2.githubusercontent.com/u/3447705?s=160) | ![Jack Hsu](https://avatars0.githubusercontent.com/u/53559?s=160) |
-| [vsavkin](https://github.com/vsavkin)                                  | [FrozenPandaz](https://github.com/FrozenPandaz)                       | [bcabanes](https://github.com/bcabanes)                                     | [jaysoo](https://github.com/jaysoo)                               |
-
-| Jo Hanna Pearce                                                           | Jon Cammisuli                                                            | Isaac Mann                                                           | Juri Strumpflohner                                                           |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------ | -------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| ![Jo Hanna Pearce](https://avatars1.githubusercontent.com/u/439121?s=160) | ![Jon Cammisuli](https://avatars2.githubusercontent.com/u/4332460?s=160) | ![Isaac Mann](https://avatars1.githubusercontent.com/u/861504?s=160) | ![Juri Strumpflohner](https://avatars1.githubusercontent.com/u/542458?s=160) |
-| [jdpearce](https://github.com/jdpearce)                                   | [cammisuli](https://github.com/cammisuli)                                | [isaacplmann](https://github.com/isaacplmann)                        | [juristr](https://github.com/juristr)                                        |
-
-| Philip Fulcher                                                            | Caleb Ukle                                                            | Katerina Skroumpelou                                                            | Colum Ferry                                                            |
-| ------------------------------------------------------------------------- | --------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| ![Philip Fulcher](https://avatars1.githubusercontent.com/u/1536471?s=160) | ![Caleb Ukle](https://avatars.githubusercontent.com/u/23272162?s=160) | ![Katerina Skroumpelou](https://avatars0.githubusercontent.com/u/6603745?s=160) | ![Colum Ferry](https://avatars.githubusercontent.com/u/12140467?s=160) |
-| [philipjfulcher](https://github.com/philipjfulcher)                       | [barbados-clemens](https://github.com/barbados-clemens)               | [mandarini](https://github.com/mandarini)                                       | [Coly010](https://github.com/Coly010)                                  |
-
-| Emily Xiong                                                            | Miroslav Jonaš                                                          | Leosvel Pérez Espinosa                                                            | Zachary DeRose                                                           |
-| ---------------------------------------------------------------------- | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| ![Emily Xiong](https://avatars.githubusercontent.com/u/16211801?s=160) | ![Miroslav Jonaš](https://avatars.githubusercontent.com/u/881612?s=160) | ![Leosvel Pérez Espinosa](https://avatars.githubusercontent.com/u/12051310?s=160) | ![Zachary DeRose](https://avatars.githubusercontent.com/u/3788405?s=160) |
-| [xiongemi](https://github.com/xiongemi)                                | [meeroslav](https://github.com/meeroslav)                               | [leosvelperez](https://github.com/leosvelperez)                                   | [ZackDeRose](https://github.com/ZackDeRose)                              |
-
-| Craigory Coppola                                                           | Chau Tran                                                            | Nicholas Cunningham                                                          | Max Kless                                                            |
-| -------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| ![Craigory Coppola](https://avatars.githubusercontent.com/u/6933928?s=160) | ![Chau Tran](https://avatars.githubusercontent.com/u/25516557?s=160) | ![Nicholas Cunningham](https://avatars.githubusercontent.com/u/338948?s=160) | ![Max Kless](https://avatars.githubusercontent.com/u/34165455?s=160) |
-| [AgentEnder](https://github.com/AgentEnder)                                | [nartc](https://github.com/nartc)                                    | [ndcunningham](https://github.com/ndcunningham)                              | [MaxKless](https://github.com/MaxKless)                              |
+- [NX Documentation](https://nx.dev/docs)
+- [NX Blog](https://nx.dev/blog)
+- [NX Community](https://nx.dev/community)
+- [NX YouTube Channel](https://www.youtube.com/@NxDevtools)
+- [NX Twitter/X](https://x.com/nxdevtools)
