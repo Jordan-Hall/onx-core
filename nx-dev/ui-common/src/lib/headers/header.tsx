@@ -250,7 +250,7 @@ export function Header(): JSX.Element {
             </ButtonLink>
             <a
               title="Nx is open source, check the code on GitHub"
-              href="https://github.com/nrwl/nx"
+              href="https://github.com/Jordan-Hall/onx-core"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center px-3 py-2 opacity-60 hover:opacity-90"
@@ -276,7 +276,7 @@ export function Header(): JSX.Element {
           <div className="flex items-center gap-6">
             <a
               title="Nx is open source, check the code on GitHub"
-              href="https://github.com/nrwl/nx"
+              href="https://github.com/Jordan-Hall/onx-core"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center px-3 py-2 opacity-60 hover:opacity-90"

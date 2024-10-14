@@ -29,259 +29,6 @@
               "file": "shared/getting-started/why-nxcc"
             }
           ]
-        },
-        {
-          "name": "Features",
-          "id": "features",
-          "description": "Learn the core features of Nxcc with in depth guides.",
-          "itemList": [
-            {
-              "name": "Run Tasks",
-              "description": "Learn about the various ways you can use Nxcc to run tasks in your workspace.",
-              "tags": ["run-tasks", "cache-task-results"],
-              "id": "run-tasks",
-              "file": "shared/features/run-tasks"
-            },
-            {
-              "name": "Cache Task Results",
-              "description": "Learn how to define cacheable tasks, how to fine-tune with inputs and outputs, where the cache is stored and much more.",
-              "id": "cache-task-results",
-              "tags": ["cache-task-results"],
-              "file": "shared/features/cache-task-results"
-            },
-            {
-              "name": "Explore Your Workspace",
-              "id": "explore-graph",
-              "tags": ["explore-graph"],
-              "file": "shared/features/explore-graph"
-            },
-            {
-              "name": "Generate Code",
-              "id": "generate-code",
-              "tags": ["generate-code"],
-              "file": "shared/features/generate-code"
-            },
-            {
-              "name": "Automate Updating Dependencies",
-              "description": "Learn how Nxcc provides automated update scripts to help you keep your workspace, tooling and framework dependencies up to date.",
-              "id": "automate-updating-dependencies",
-              "tags": ["automate-updating-dependencies"],
-              "file": "shared/features/automate-updating-dependencies"
-            },
-            {
-              "name": "Enforce Module Boundaries",
-              "description": "Learn how to avoid dependency hell and scale a codebase by imposing constraints on your projects using the module boundary lint rule.",
-              "id": "enforce-module-boundaries",
-              "tags": ["enforce-module-boundaries"],
-              "file": "shared/features/enforce-module-boundaries"
-            },
-            {
-              "name": "Manage Releases",
-              "description": "Learn how Nxcc provides tools to help you manage releasing your projects.",
-              "id": "manage-releases",
-              "tags": ["nxcc-release"],
-              "file": "shared/features/manage-releases"
-            }
-          ]
-        },
-        {
-          "name": "Recipes",
-          "id": "recipes",
-          "description": "In depth recipes for common tasks",
-          "itemList": [
-            {
-              "name": "Installation",
-              "id": "installation",
-              "description": "Installing Nxcc",
-              "itemList": [
-                {
-                  "name": "Activate Powerpack",
-                  "id": "activate-powerpack",
-                  "tags": ["installation"],
-                  "file": "shared/recipes/installation/activate-powerpack"
-                },
-                {
-                  "name": "Install Nxcc in a Non-Javascript Repo",
-                  "id": "install-non-javascript",
-                  "tags": ["installation"],
-                  "file": "shared/recipes/installation/install-non-javascript"
-                },
-                {
-                  "name": "Update Your Global Nxcc Installation",
-                  "id": "update-global-installation",
-                  "tags": ["installation"],
-                  "file": "shared/recipes/installation/update-global-installation"
-                }
-              ]
-            },
-            {
-              "name": "Tasks & Caching",
-              "id": "running-tasks",
-              "description": "A series of recipes that show how to run tasks efficiently with Nxcc",
-              "itemList": [
-                {
-                  "name": "Configure Inputs for Task Caching",
-                  "id": "configure-inputs",
-                  "tags": ["run-tasks", "cache-task-results"],
-                  "file": "shared/recipes/running-tasks/configure-inputs"
-                },
-                {
-                  "name": "Configure Outputs for Task Caching",
-                  "id": "configure-outputs",
-                  "tags": ["run-tasks", "cache-task-results"],
-                  "file": "shared/recipes/running-tasks/configure-outputs"
-                },
-                {
-                  "name": "Define a Task Pipeline",
-                  "id": "defining-task-pipeline",
-                  "tags": ["run-tasks"],
-                  "file": "shared/recipes/running-tasks/defining-task-pipeline"
-                },
-                {
-                  "name": "Run Custom Commands",
-                  "id": "run-commands-executor",
-                  "tags": ["run-tasks"],
-                  "file": "shared/recipes/running-tasks/running-custom-commands"
-                },
-                {
-                  "name": "Pass Args to Commands",
-                  "id": "pass-args-to-commands",
-                  "tags": ["run-tasks"],
-                  "file": "shared/recipes/running-tasks/pass-args-to-commands"
-                },
-                {
-                  "name": "Run Tasks in Parallel",
-                  "id": "run-tasks-in-parallel",
-                  "tags": ["run-tasks"],
-                  "file": "shared/recipes/running-tasks/run-tasks-in-parallel"
-                },
-                {
-                  "name": "Run Root-Level NPM Scripts with Nxcc",
-                  "id": "root-level-scripts",
-                  "tags": ["run-tasks"],
-                  "file": "shared/recipes/running-tasks/root-level-scripts"
-                },
-                {
-                  "name": "Workspace Watching",
-                  "id": "workspace-watching",
-                  "tags": ["run-tasks", "workspace-watching"],
-                  "file": "shared/recipes/running-tasks/workspace-watching"
-                },
-                {
-                  "name": "Reduce Repetitive Configuration",
-                  "id": "reduce-repetitive-configuration",
-                  "tags": [],
-                  "file": "shared/recipes/running-tasks/reduce-repetitive-configuration"
-                },
-                {
-                  "name": "Change Cache Location",
-                  "id": "change-cache-location",
-                  "file": "shared/recipes/running-tasks/change-cache-location"
-                },
-                {
-                  "name": "Skip Task Caching",
-                  "id": "skipping-cache",
-                  "file": "shared/recipes/running-tasks/skipping-cache"
-                },
-                {
-                  "name": "Migrate to Inferred Tasks (Project Crystal)",
-                  "id": "convert-to-inferred",
-                  "tags": ["inferred-tasks", "automate-updating-dependencies"],
-                  "file": "shared/recipes/running-tasks/convert-to-inferred"
-                }
-              ]
-            },
-            {
-              "name": "Adopting Nxcc",
-              "id": "adopting-nxcc",
-              "description": "Adopting Nxcc incrementally, on existing project or from scratch.",
-              "itemList": [
-                {
-                  "name": "NPM/Yarn/PNPM workspaces",
-                  "id": "adding-to-monorepo",
-                  "file": "shared/migration/adding-to-monorepo"
-                },
-                {
-                  "name": "Migrate From Turborepo",
-                  "id": "from-turborepo",
-                  "file": "shared/migration/from-turborepo"
-                },
-                {
-                  "name": "Add to any Project",
-                  "id": "adding-to-existing-project",
-                  "file": "shared/migration/adding-to-existing-project"
-                },
-                {
-                  "name": "Import an Existing Project into an Nxcc Workspace",
-                  "id": "import-project",
-                  "file": "shared/migration/import-project"
-                },
-                {
-                  "name": "Preserving Git Histories",
-                  "id": "preserving-git-histories",
-                  "file": "shared/migration/preserving-git-histories"
-                },
-                {
-                  "name": "Manual migration",
-                  "id": "manual",
-                  "file": "shared/migration/manual"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Reference",
-          "id": "reference",
-          "description": "Understand how to use Nxcc functionalities, what arguments and options are available for each component.",
-          "itemList": [
-            {
-              "name": "Commands",
-              "id": "nxcc-commands",
-              "file": "shared/reference/commands"
-            },
-            {
-              "name": "Nxcc Configuration",
-              "id": "nxcc-json",
-              "file": "shared/reference/nxcc-json"
-            },
-            {
-              "name": "Project Configuration",
-              "id": "project-configuration",
-              "tags": [],
-              "file": "shared/reference/project-configuration"
-            },
-            {
-              "name": "Inputs and Named Inputs",
-              "id": "inputs",
-              "tags": ["cache-task-results"],
-              "file": "shared/reference/inputs"
-            },
-            {
-              "name": ".nxccignore",
-              "id": "nxccignore",
-              "tags": ["enforce-module-boundaries"],
-              "file": "shared/reference/nxccignore"
-            },
-            {
-              "name": "Environment Variables",
-              "id": "environment-variables",
-              "tags": ["environment-variables"],
-              "file": "shared/reference/environment-variables"
-            },
-            {
-              "name": "Glossary",
-              "id": "glossary",
-              "tags": [],
-              "file": "shared/reference/glossary"
-            },
-            {
-              "name": "Releases",
-              "id": "releases",
-              "tags": [],
-              "file": "shared/reference/releases"
-            }
-          ]
         }
       ]
     },
@@ -303,20 +50,9 @@
           "description": "Nxcc package",
           "itemList": [
             {
-              "name": "create-nxcc-workspace",
-              "id": "create-nxcc-workspace",
-              "file": "generated/cli/create-nxcc-workspace"
-            },
-            {
               "name": "init",
               "id": "init",
               "file": "generated/cli/init"
-            },
-            {
-              "name": "generate",
-              "id": "generate",
-              "tags": ["generate-code"],
-              "file": "generated/cli/generate"
             },
             {
               "name": "run",
@@ -408,11 +144,6 @@
               "file": "generated/cli/import"
             },
             {
-              "name": "exec",
-              "id": "exec",
-              "file": "generated/cli/exec"
-            },
-            {
               "name": "watch",
               "id": "watch",
               "tags": ["workspace-watching"],
@@ -450,6 +181,19 @@
               "file": "generated/cli/logout"
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "See Also",
+      "id": "see-also",
+      "description": "Links to other pieces of documentation",
+      "itemList": [
+        {
+          "name": "Site Map",
+          "id": "sitemap",
+          "tags": [],
+          "file": "shared/reference/sitemap"
         }
       ]
     }

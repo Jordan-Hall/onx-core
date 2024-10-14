@@ -43,7 +43,7 @@ export function generateManifests(workspace: string): Promise<void[]> {
   console.log(`${chalk.blue('i')} Generating Manifests`);
   const documentationPath = resolve(workspace, 'docs');
   const generatedDocumentationPath = resolve(documentationPath, 'generated');
-  
+
   const targetFolder: string = resolve(generatedDocumentationPath, 'manifests');
   const documents: Partial<DocumentMetadata>[] = readJsonSync(
     `${documentationPath}/map.json`,
@@ -94,22 +94,20 @@ export function generateManifests(workspace: string): Promise<void[]> {
     )
   );
 
-
-
   // /**
   //  * We can easily get all associated existing tags from each manifest.
   //  * @type {Record<string, {description: string, file: string, id: string, name: string, path: string}[]>}
   //  */
-  // const tags: Record<
-  //   string,
-  //   {
-  //     description: string;
-  //     file: string;
-  //     id: string;
-  //     name: string;
-  //     path: string;
-  //   }[]
-  // > = generateTags(manifests);
+  const tags: Record<
+    string,
+    {
+      description: string;
+      file: string;
+      id: string;
+      name: string;
+      path: string;
+    }[]
+  > = generateTags(manifests);
 
   /**
    * We can now create manifest files.
@@ -123,9 +121,9 @@ export function generateManifests(workspace: string): Promise<void[]> {
       )
     )
   );
-  // fileGenerationPromises.push(
-  //   generateJsonFile(resolve(targetFolder, `tags.json`), tags)
-  // );
+  fileGenerationPromises.push(
+    generateJsonFile(resolve(targetFolder, `tags.json`), tags)
+  );
   fileGenerationPromises.push(
     generateJsonFile(resolve(targetFolder, `menus.json`), menus)
   );
@@ -280,22 +278,10 @@ function createDocumentSections(
 ): DocumentSection[] {
   return [
     {
-      name: 'nx',
-      content: documents.find((x) => x.id === 'nx-documentation')!
+      name: 'nxcc',
+      content: documents.find((x) => x.id === 'nxcc-documentation')!
         .itemList as Partial<DocumentMetadata>[],
       prefix: '',
-    },
-    {
-      name: 'extending-nx',
-      content: documents.find((x) => x.id === 'extending-nx')!
-        .itemList as Partial<DocumentMetadata>[],
-      prefix: 'extending-nx',
-    },
-    {
-      name: 'ci',
-      content: documents.find((x) => x.id === 'ci')!
-        .itemList as Partial<DocumentMetadata>[],
-      prefix: 'ci',
     },
   ];
 }

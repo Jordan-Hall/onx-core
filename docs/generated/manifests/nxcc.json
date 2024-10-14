@@ -1,0 +1,80 @@
+{
+  "/getting-started": {
+    "id": "getting-started",
+    "name": "Getting Started",
+    "description": "Get started with basic information, concepts and tutorials.",
+    "mediaImage": "",
+    "file": "",
+    "itemList": [
+      {
+        "id": "intro",
+        "name": "Intro to Nxcc",
+        "description": "",
+        "mediaImage": "",
+        "file": "shared/getting-started/intro",
+        "itemList": [],
+        "isExternal": false,
+        "path": "/getting-started/intro",
+        "tags": []
+      },
+      {
+        "id": "installation",
+        "name": "Installation",
+        "description": "",
+        "mediaImage": "",
+        "file": "shared/getting-started/installation",
+        "itemList": [],
+        "isExternal": false,
+        "path": "/getting-started/installation",
+        "tags": []
+      },
+      {
+        "id": "why-nxcc",
+        "name": "Why Nxcc?",
+        "description": "",
+        "mediaImage": "",
+        "file": "shared/getting-started/why-nxcc",
+        "itemList": [],
+        "isExternal": false,
+        "path": "/getting-started/why-nxcc",
+        "tags": []
+      }
+    ],
+    "isExternal": false,
+    "path": "/getting-started",
+    "tags": []
+  },
+  "/getting-started/intro": {
+    "id": "intro",
+    "name": "Intro to Nxcc",
+    "description": "",
+    "mediaImage": "",
+    "file": "shared/getting-started/intro",
+    "itemList": [],
+    "isExternal": false,
+    "path": "/getting-started/intro",
+    "tags": []
+  },
+  "/getting-started/installation": {
+    "id": "installation",
+    "name": "Installation",
+    "description": "",
+    "mediaImage": "",
+    "file": "shared/getting-started/installation",
+    "itemList": [],
+    "isExternal": false,
+    "path": "/getting-started/installation",
+    "tags": []
+  },
+  "/getting-started/why-nxcc": {
+    "id": "why-nxcc",
+    "name": "Why Nxcc?",
+    "description": "",
+    "mediaImage": "",
+    "file": "shared/getting-started/why-nxcc",
+    "itemList": [],
+    "isExternal": false,
+    "path": "/getting-started/why-nxcc",
+    "tags": []
+  }
+}

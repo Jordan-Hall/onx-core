@@ -9,7 +9,6 @@
   "extends": ["plugin:storybook/recommended"],
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": "off",
-    "no-restricted-imports": ["error", "create-nx-workspace"],
     "@typescript-eslint/no-restricted-imports": [
       "error",
       {

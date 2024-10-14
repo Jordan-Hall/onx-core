@@ -52,7 +52,7 @@ export function readCachedProjectGraph(): ProjectGraph {
       If you are leveraging \`readCachedProjectGraph()\` directly then you will need to refactor your usage to first ensure that
       the ProjectGraph is created by calling \`await createProjectGraphAsync()\` somewhere before attempting to read the data.
 
-      If you encounter this error as part of running standard \`nx\` commands then please open an issue on https://github.com/nrwl/nx
+      If you encounter this error as part of running standard \`nx\` commands then please open an issue on https://github.com/Jordan-Hall/onx-core
 
       ${angularSpecificError}
     `);
@@ -310,7 +310,7 @@ export async function createProjectGraphAndSourceMapsAsync(
           title: `Nx Daemon was not able to compute the project graph.`,
           bodyLines: [
             `Log file with the error: ${errorLogFile}`,
-            `Please file an issue at https://github.com/nrwl/nx`,
+            `Please file an issue at https://github.com/Jordan-Hall/onx-core`,
             'Nx Daemon is going to be disabled until you run "nx reset".',
           ],
         });
