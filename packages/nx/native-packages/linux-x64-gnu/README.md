@@ -1,3 +1,3 @@
 # `nx-linux-x64-gnu`
 
-This is the **x86_64-unknown-linux-gnu** binary for `@nx/nx`
+This is the **x86_64-unknown-linux-gnu** binary for `@nxcc/nxcc`
