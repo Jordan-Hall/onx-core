@@ -38,7 +38,7 @@ export async function generateCliDocumentation(
   ).compilerOptions;
   registerTsConfigPaths(config);
 
-  console.log(`\n${chalk.blue('i')} Generating Documentation for Nx Commands`);
+  console.log(`\n${chalk.blue('i')} Generating Documentation for nxcc Commands`);
 
   const { commandsObject } = importFresh(
     '../../../packages/nx/src/command-line/nx-commands'
@@ -54,8 +54,8 @@ description: "${command.description}"
       h1(command.name),
       formatDescription(command.description, command.deprecated),
       h2('Usage'),
-      codeBlock(`nx ${command.commandString}`, 'shell'),
-      'Install `nx` globally to invoke the command directly using `nx`, or use `npx nx`, `yarn nx`, or `pnpm nx`.',
+      codeBlock(`nxcc ${command.commandString}`, 'shell'),
+      'Install `nxcc` globally to invoke the command directly using `nxcc`, or use `npx nxcc`, `yarn nxcc`, or `pnpm nxcc`.',
     ];
 
     if (examples[command.name] && examples[command.name].length > 0) {
@@ -63,7 +63,7 @@ description: "${command.description}"
       examples[command.name].forEach((example) => {
         templateLines.push(
           example.description + ':',
-          codeBlock(` nx ${example.command}`, 'shell')
+          codeBlock(` nxcc ${example.command}`, 'shell')
         );
       });
     }
@@ -77,7 +77,7 @@ description: "${command.description}"
           h3(subcommand.name.replace('$0', 'Base Command Options')),
           formatDescription(subcommand.description, subcommand.deprecated),
           codeBlock(
-            `nx ${command.commandString} ${subcommand.commandString.replace(
+            `nxcc ${command.commandString} ${subcommand.commandString.replace(
               '$0 ',
               ''
             )}`,
@@ -147,5 +147,5 @@ description: "${command.description}"
 
   delete process.env.NX_GENERATE_DOCS_PROCESS;
 
-  console.log(`${chalk.green('✓')} Generated Documentation for Nx Commands`);
+  console.log(`${chalk.green('✓')} Generated Documentation for nxcc Commands`);
 }

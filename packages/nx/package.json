@@ -33,7 +33,7 @@
   "author": "Victor Savkin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nrwl/nx/issues"
+    "url": "https://github.com/Jordan-Hall/onx-core/issues"
   },
   "homepage": "https://nx.dev",
   "dependencies": {

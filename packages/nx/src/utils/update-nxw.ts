@@ -3,7 +3,7 @@ import {
   nxWrapperPath,
 } from '../command-line/init/implementation/dot-nx/add-nx-scripts';
 import type { Tree } from '../generators/tree';
-import { normalizePath } from '../utils/path';
+import { normalizePath } from './path';
 
 export function updateNxw(tree: Tree) {
   const wrapperPath = normalizePath(nxWrapperPath());

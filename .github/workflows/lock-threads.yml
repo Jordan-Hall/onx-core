@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   action:
-    if: ${{ github.repository_owner == 'nrwl' }}
+    if: ${{ github.repository_owner == 'jordan-hall' }}
     runs-on: ubuntu-latest
     steps:
       - uses: dessant/lock-threads@v4

@@ -10,10 +10,10 @@ Overwrite un-formatted files.
 ## Usage
 
 ```shell
-nx format:write
+nxcc format:write
 ```
 
-Install `nx` globally to invoke the command directly using `nx`, or use `npx nx`, `yarn nx`, or `pnpm nx`.
+Install `nxcc` globally to invoke the command directly using `nxcc`, or use `npx nxcc`, `yarn nxcc`, or `pnpm nxcc`.
 
 ## Options
 

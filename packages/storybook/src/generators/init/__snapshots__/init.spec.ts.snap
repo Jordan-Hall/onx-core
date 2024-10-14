@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`@nx/storybook:init should not add storybook-static to .gitignore if it already exists 1`] = `
-"
-    storybook-static
-    dist
-    node_modules
-  "
-`;

@@ -215,4 +215,4 @@ When using release groups in which the member projects are versioned together, y
 
 After the first release, the `--first-release` option will no longer be required. Nx Release will expect to find git tags and changelog files for each package.
 
-Future releases will also generate entries in `CHANGELOG.md` based on the changes since the last release. Nx Release will parse the `feat` and `fix` type commits according to the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification and sort them into appropriate sections of the changelog. An example of these changelogs can be seen on the [Nx releases page](https://github.com/nrwl/nx/releases).
+Future releases will also generate entries in `CHANGELOG.md` based on the changes since the last release. Nx Release will parse the `feat` and `fix` type commits according to the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification and sort them into appropriate sections of the changelog. An example of these changelogs can be seen on the [Nx releases page](https://github.com/Jordan-Hall/onx-core/releases).

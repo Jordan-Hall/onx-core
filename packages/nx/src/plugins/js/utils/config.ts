@@ -19,7 +19,7 @@ export function jsPluginConfig(
   // See: https://github.com/lerna/lerna/issues/3807
   // Note that previous attempt to fix this caused issues with Nx itself, thus we're checking
   // for Lerna explicitly.
-  // See: https://github.com/nrwl/nx/pull/18784/commits/5416138e1ddc1945d5b289672dfb468e8c544e14
+  // See: https://github.com/Jordan-Hall/onx-core/pull/18784/commits/5416138e1ddc1945d5b289672dfb468e8c544e14
   const analyzeLockfile =
     !existsSync(join(workspaceRoot, 'lerna.json')) ||
     existsSync(join(workspaceRoot, 'nx.json'));

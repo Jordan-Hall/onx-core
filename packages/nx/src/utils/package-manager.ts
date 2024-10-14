@@ -436,7 +436,7 @@ export async function packageRegistryView(
      * yarn has `yarn info` but it behaves differently than (p)npm,
      * which makes it's usage unreliable
      *
-     * @see https://github.com/nrwl/nx/pull/9667#discussion_r842553994
+     * @see https://github.com/Jordan-Hall/onx-core/pull/9667#discussion_r842553994
      *
      * Bun has a pm ls function but it only relates to its lockfile
      * and acts differently from all other package managers
@@ -463,7 +463,7 @@ export async function packageRegistryPack(
      * whereas `yarn` pack creates a tarball of the active workspace, so it
      * does not work for getting the content of a library.
      *
-     * @see https://github.com/nrwl/nx/pull/9667#discussion_r842553994
+     * @see https://github.com/Jordan-Hall/onx-core/pull/9667#discussion_r842553994
      *
      * bun doesn't currently support pack
      */

@@ -6,7 +6,7 @@ on:
 
 jobs:
   do-not-merge:
-    if: ${{ github.repository_owner == 'nrwl' }}
+    if: ${{ github.repository_owner == 'jordan-hall' }}
     name: Prevent Merging
     runs-on: ubuntu-latest
     steps:

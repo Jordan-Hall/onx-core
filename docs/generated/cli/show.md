@@ -10,77 +10,77 @@ Show information about the workspace (e.g., list of projects).
 ## Usage
 
 ```shell
-nx show
+nxcc show
 ```
 
-Install `nx` globally to invoke the command directly using `nx`, or use `npx nx`, `yarn nx`, or `pnpm nx`.
+Install `nxcc` globally to invoke the command directly using `nxcc`, or use `npx nxcc`, `yarn nxcc`, or `pnpm nxcc`.
 
 ### Examples
 
 Show all projects in the workspace:
 
 ```shell
- nx show projects
+ nxcc show projects
 ```
 
 Show all projects with names starting with "api-". The "projects" option is useful to see which projects would be selected by run-many:
 
 ```shell
- nx show projects --projects api-*
+ nxcc show projects --projects api-*
 ```
 
 Show all projects with a tag starting with "ui-". The "projects" option is useful to see which projects would be selected by run-many:
 
 ```shell
- nx show projects --projects tag:ui-*
+ nxcc show projects --projects tag:ui-*
 ```
 
 Show all projects with a serve target:
 
 ```shell
- nx show projects --with-target serve
+ nxcc show projects --with-target serve
 ```
 
 Show affected projects in the workspace:
 
 ```shell
- nx show projects --affected
+ nxcc show projects --affected
 ```
 
 Show affected apps in the workspace:
 
 ```shell
- nx show projects --affected --type app
+ nxcc show projects --affected --type app
 ```
 
 Show affected projects in the workspace, excluding end-to-end projects:
 
 ```shell
- nx show projects --affected --exclude=*-e2e
+ nxcc show projects --affected --exclude=*-e2e
 ```
 
 If in an interactive terminal, opens the project detail view. If not in an interactive terminal, defaults to JSON:
 
 ```shell
- nx show project my-app
+ nxcc show project my-app
 ```
 
 Show detailed information about "my-app" in a json format:
 
 ```shell
- nx show project my-app --json
+ nxcc show project my-app --json
 ```
 
 Show information about "my-app" in a human readable format:
 
 ```shell
- nx show project my-app --json false
+ nxcc show project my-app --json false
 ```
 
 Opens a web browser to explore the configuration of "my-app":
 
 ```shell
- nx show project my-app --web
+ nxcc show project my-app --web
 ```
 
 ## Options
@@ -98,7 +98,7 @@ Opens a web browser to explore the configuration of "my-app":
 Show a list of projects in the workspace.
 
 ```shell
-nx show projects
+nxcc show projects
 ```
 
 ## Options
@@ -125,7 +125,7 @@ nx show projects
 Shows resolved project configuration for a given project.
 
 ```shell
-nx show project <projectName>
+nxcc show project <projectName>
 ```
 
 ## Options

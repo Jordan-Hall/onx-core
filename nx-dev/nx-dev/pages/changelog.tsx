@@ -271,7 +271,7 @@ export default function Changelog(props: ChangeLogProps): JSX.Element {
                   <p className="py-0.5">
                     <a
                       title="See release tag on GitHub"
-                      href={`https://github.com/nrwl/nx/releases/tag/${changelog.version}`}
+                      href={`https://github.com/Jordan-Hall/onx-core/releases/tag/${changelog.version}`}
                       target="_blank"
                       rel="noreferrer"
                       className="text-xl font-medium leading-5 text-slate-900 hover:underline dark:text-slate-100"
@@ -306,7 +306,7 @@ export default function Changelog(props: ChangeLogProps): JSX.Element {
                       {changelog.patches.map((version) => (
                         <a
                           key={version}
-                          href={`https://github.com/nrwl/nx/releases/tag/${version}`}
+                          href={`https://github.com/Jordan-Hall/onx-core/releases/tag/${version}`}
                           target="_blank"
                           rel="noreferrer"
                           className="inline-flex items-center rounded-md bg-slate-50 px-2 py-1 text-xs font-medium text-slate-600 ring-1 ring-inset ring-slate-500/10 hover:underline dark:bg-slate-600/30 dark:text-slate-500 dark:ring-slate-700"

@@ -1,8 +1,8 @@
 import { parse, join } from 'path';
 import { writeFileSync } from 'fs';
-import { LifeCycle, TaskResult } from '../../tasks-runner/life-cycle';
+import { LifeCycle, TaskResult } from '../life-cycle';
 import { Task } from '../../config/task-graph';
-import { TaskStatus } from '../../tasks-runner/tasks-runner';
+import { TaskStatus } from '../tasks-runner';
 import { cacheDir } from '../../utils/cache-directory';
 
 export class StoreRunInformationLifeCycle implements LifeCycle {

@@ -43,10 +43,7 @@ export function generateManifests(workspace: string): Promise<void[]> {
   console.log(`${chalk.blue('i')} Generating Manifests`);
   const documentationPath = resolve(workspace, 'docs');
   const generatedDocumentationPath = resolve(documentationPath, 'generated');
-  const generatedExternalDocumentationPath = resolve(
-    documentationPath,
-    'external-generated'
-  );
+  
   const targetFolder: string = resolve(generatedDocumentationPath, 'manifests');
   const documents: Partial<DocumentMetadata>[] = readJsonSync(
     `${documentationPath}/map.json`,
@@ -58,12 +55,6 @@ export function generateManifests(workspace: string): Promise<void[]> {
     ...readJsonSync(`${generatedDocumentationPath}/packages-metadata.json`, {
       encoding: 'utf8',
     }),
-    ...readJsonSync(
-      `${generatedExternalDocumentationPath}/packages-metadata.json`,
-      {
-        encoding: 'utf8',
-      }
-    ),
   ];
 
   /**
@@ -103,34 +94,22 @@ export function generateManifests(workspace: string): Promise<void[]> {
     )
   );
 
-  /**
-   * Creating packages menu with custom package logic.
-   * @type {{id: string, menu: MenuItem[]}}
-   */
-  const packagesMenu: {
-    id: string;
-    menu: MenuItem[];
-  } = createPackagesMenu(packagesManifest);
 
-  /**
-   * Add the packages menu to the main menu collection for simplicity.
-   */
-  menus.push(packagesMenu);
 
-  /**
-   * We can easily get all associated existing tags from each manifest.
-   * @type {Record<string, {description: string, file: string, id: string, name: string, path: string}[]>}
-   */
-  const tags: Record<
-    string,
-    {
-      description: string;
-      file: string;
-      id: string;
-      name: string;
-      path: string;
-    }[]
-  > = generateTags(manifests);
+  // /**
+  //  * We can easily get all associated existing tags from each manifest.
+  //  * @type {Record<string, {description: string, file: string, id: string, name: string, path: string}[]>}
+  //  */
+  // const tags: Record<
+  //   string,
+  //   {
+  //     description: string;
+  //     file: string;
+  //     id: string;
+  //     name: string;
+  //     path: string;
+  //   }[]
+  // > = generateTags(manifests);
 
   /**
    * We can now create manifest files.
@@ -144,9 +123,9 @@ export function generateManifests(workspace: string): Promise<void[]> {
       )
     )
   );
-  fileGenerationPromises.push(
-    generateJsonFile(resolve(targetFolder, `tags.json`), tags)
-  );
+  // fileGenerationPromises.push(
+  //   generateJsonFile(resolve(targetFolder, `tags.json`), tags)
+  // );
   fileGenerationPromises.push(
     generateJsonFile(resolve(targetFolder, `menus.json`), menus)
   );
@@ -213,74 +192,6 @@ function generateTags(manifests: Manifest[]) {
   });
 
   return tags;
-}
-
-function createPackagesMenu(packages: PackageManifest): {
-  id: string;
-  menu: MenuItem[];
-} {
-  const packagesMenu: MenuItem[] = Object.values(packages.records).map((p) => {
-    const item: MenuItem = {
-      id: p.name,
-      path: '/nx-api/' + p.name,
-      name: p.name,
-      children: [],
-      isExternal: false,
-      disableCollapsible: false,
-    };
-
-    if (!!Object.values(p.documents).length) {
-      // Might need to remove the path set in the "additional api resources" items
-      item.children.push({
-        id: 'documents',
-        path: '/' + ['nx-api', p.name, 'documents'].join('/'),
-        name: 'documents',
-        children: Object.values(p.documents).map((d) =>
-          menuItemRecurseOperations(d)
-        ),
-        isExternal: false,
-        disableCollapsible: false,
-      });
-    }
-
-    if (!!Object.values(p.executors).length) {
-      item.children.push({
-        id: 'executors',
-        path: '/' + ['nx-api', p.name, 'executors'].join('/'),
-        name: 'executors',
-        children: Object.values(p.executors).map((e) => ({
-          id: e.name,
-          path: '/' + ['nx-api', p.name, 'executors', e.name].join('/'),
-          name: e.name,
-          children: [],
-          isExternal: false,
-          disableCollapsible: false,
-        })),
-        isExternal: false,
-        disableCollapsible: false,
-      });
-    }
-
-    if (!!Object.values(p.generators).length) {
-      item.children.push({
-        id: 'generators',
-        path: '/' + ['nx-api', p.name, 'generators'].join('/'),
-        name: 'generators',
-        children: Object.values(p.generators).map((g) => ({
-          id: g.name,
-          path: '/' + ['nx-api', p.name, 'generators', g.name].join('/'),
-          name: g.name,
-          children: [],
-          isExternal: false,
-          disableCollapsible: false,
-        })),
-        isExternal: false,
-        disableCollapsible: false,
-      });
-    }
-    return item;
-  });
-  return { id: 'nx-api', menu: packagesMenu };
 }
 
 function getDocumentMenus(manifests: DocumentManifest[]): {

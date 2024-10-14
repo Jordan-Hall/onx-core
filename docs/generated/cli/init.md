@@ -10,10 +10,10 @@ Adds Nx to any type of workspace. It installs nx, creates an nx.json configurati
 ## Usage
 
 ```shell
-nx init
+nxcc init
 ```
 
-Install `nx` globally to invoke the command directly using `nx`, or use `npx nx`, `yarn nx`, or `pnpm nx`.
+Install `nxcc` globally to invoke the command directly using `nxcc`, or use `npx nxcc`, `yarn nxcc`, or `pnpm nxcc`.
 
 ## Options
 

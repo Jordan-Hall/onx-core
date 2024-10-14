@@ -10,77 +10,77 @@ Run target for affected projects.
 ## Usage
 
 ```shell
-nx affected
+nxcc affected
 ```
 
-Install `nx` globally to invoke the command directly using `nx`, or use `npx nx`, `yarn nx`, or `pnpm nx`.
+Install `nxcc` globally to invoke the command directly using `nxcc`, or use `npx nxcc`, `yarn nxcc`, or `pnpm nxcc`.
 
 ### Examples
 
 Run custom target for all affected projects:
 
 ```shell
- nx affected -t custom-target
+ nxcc affected -t custom-target
 ```
 
 Run tests in parallel:
 
 ```shell
- nx affected -t test --parallel=5
+ nxcc affected -t test --parallel=5
 ```
 
 Run lint, test, and build targets for affected projects. Requires Nx v15.4+:
 
 ```shell
- nx affected -t lint test build
+ nxcc affected -t lint test build
 ```
 
 Run tests for all the projects affected by changing the index.ts file:
 
 ```shell
- nx affected -t test --files=libs/mylib/src/index.ts
+ nxcc affected -t test --files=libs/mylib/src/index.ts
 ```
 
 Run tests for all the projects affected by the changes between main and HEAD (e.g., PR):
 
 ```shell
- nx affected -t test --base=main --head=HEAD
+ nxcc affected -t test --base=main --head=HEAD
 ```
 
 Run tests for all the projects affected by the last commit on main:
 
 ```shell
- nx affected -t test --base=main~1 --head=main
+ nxcc affected -t test --base=main~1 --head=main
 ```
 
 Run build for only projects with the tag `dotnet`:
 
 ```shell
- nx affected -t=build --exclude='*,!tag:dotnet'
+ nxcc affected -t=build --exclude='*,!tag:dotnet'
 ```
 
 Use the currently executing project name in your command:
 
 ```shell
- nx affected -t build --tag=$NX_TASK_TARGET_PROJECT:latest
+ nxcc affected -t build --tag=$NX_TASK_TARGET_PROJECT:latest
 ```
 
 Preview the task graph that Nx would run inside a webview:
 
 ```shell
- nx affected -t=build --graph
+ nxcc affected -t=build --graph
 ```
 
 Save the task graph to a file:
 
 ```shell
- nx affected -t=build --graph=output.json
+ nxcc affected -t=build --graph=output.json
 ```
 
 Print the task graph to the console:
 
 ```shell
- nx affected -t=build --graph=stdout
+ nxcc affected -t=build --graph=stdout
 ```
 
 ## Options

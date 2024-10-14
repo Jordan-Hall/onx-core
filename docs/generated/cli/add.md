@@ -10,29 +10,29 @@ Install a plugin and initialize it.
 ## Usage
 
 ```shell
-nx add <packageSpecifier>
+nxcc add <packageSpecifier>
 ```
 
-Install `nx` globally to invoke the command directly using `nx`, or use `npx nx`, `yarn nx`, or `pnpm nx`.
+Install `nxcc` globally to invoke the command directly using `nxcc`, or use `npx nxcc`, `yarn nxcc`, or `pnpm nxcc`.
 
 ### Examples
 
 Install the `@nx/react` package matching the installed version of the `nx` package and run its `@nx/react:init` generator:
 
 ```shell
- nx add @nx/react
+ nxcc add @nx/react
 ```
 
 Install the latest version of the `non-core-nx-plugin` package and run its `non-core-nx-plugin:init` generator if available:
 
 ```shell
- nx add non-core-nx-plugin
+ nxcc add non-core-nx-plugin
 ```
 
 Install version `17.0.0` of the `@nx/react` package and run its `@nx/react:init` generator:
 
 ```shell
- nx add @nx/react@17.0.0
+ nxcc add @nx/react@17.0.0
 ```
 
 ## Options

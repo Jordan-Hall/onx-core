@@ -21,7 +21,7 @@ describe('Build React applications and libraries with Vite', () => {
     cleanupProject();
   });
 
-  // Regression test: https://github.com/nrwl/nx/issues/21773
+  // Regression test: https://github.com/Jordan-Hall/onx-core/issues/21773
   it('should support SVGR and SVG asset in the same project', async () => {
     const appName = uniq('app');
 

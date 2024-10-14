@@ -1,9 +1,0 @@
-{
-  "name": "<%= importPath %>",
-  "version": "0.0.1",
-  "peerDependencies": {
-    "@angular/common": "<%= angularPeerDepVersion %>",
-    "@angular/core": "<%= angularPeerDepVersion %>"
-  },
-  "sideEffects": false
-}

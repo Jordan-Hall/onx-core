@@ -1,20 +1,18 @@
 {
-  "name": "@nx/nx-source",
-  "description": "Smart Monorepos · Fast CI",
-  "homepage": "https://nx.dev",
+  "name": "@nxcc/nxcc-source",
+  "description": "a fork of NX to remove the force remote cache paywall",
+  "homepage": "https://github.com/Jordan-Hall/onx-core",
   "private": true,
   "scripts": {
-    "build": "nx run-many --target build --parallel 8 --exclude nx-dev,typedoc-theme,tools-documentation-create-embeddings,nx-dev-util-ai",
+    "build": "nx run-many --target build --parallel 8 --exclude typedoc-theme,tools-documentation-create-embeddings,",
     "commit": "czg",
     "check-commit": "node ./scripts/commit-lint.js",
     "check-format": "nx format:check --all",
-    "check-imports": "node ./scripts/check-imports.js",
     "check-lock-files": "node ./scripts/check-lock-files.js",
     "check-documentation-map": "ts-node -P ./scripts/tsconfig.scripts.json ./scripts/documentation/map-link-checker.ts",
-    "check-codeowners": "ts-node -P ./scripts/tsconfig.scripts.json ./scripts/check-codeowners.ts",
-    "nx-release": "nx nx-release @nx/nx-source --parallel 8",
+    "nx-release": "nx nx-release @nxcc/nxcc-source --parallel 8",
     "prepublishOnly": "node ./scripts/update-package-group.js",
-    "local-registry": "nx local-registry @nx/nx-source",
+    "local-registry": "nx local-registry @nxcc/nxcc-source",
     "documentation": "ts-node -P scripts/tsconfig.scripts.json ./scripts/documentation/generators/main.ts && pnpm check-documentation-map",
     "submit-plugin": "node ./scripts/submit-plugin.js",
     "prepare": "is-ci || husky",
@@ -387,9 +385,7 @@
       "echo",
       "check-commit",
       "check-format",
-      "check-imports",
       "check-lock-files",
-      "check-codeowners",
       "documentation"
     ],
     "targets": {
@@ -399,7 +395,6 @@
           "{workspaceRoot}/packages/**",
           "{workspaceRoot}/docs/**",
           "{workspaceRoot}/scripts/documentation/**",
-          "!{workspaceRoot}/docs/external-generated",
           "!{workspaceRoot}/docs/generated",
           "!{workspaceRoot}/packages/**/*.spec.ts",
           "!{workspaceRoot}/packages/**/project.json",
@@ -411,7 +406,6 @@
         ]
       },
       "outputs": [
-        "{workspaceRoot}/docs/external-generated",
         "{workspaceRoot}/docs/generated"
       ]
     }

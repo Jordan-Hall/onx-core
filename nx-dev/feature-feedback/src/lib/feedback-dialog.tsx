@@ -113,7 +113,7 @@ function FeedbackDialog({
                     <a
                       id="github"
                       aria-hidden="true"
-                      href="https://github.com/nrwl/nx/issues/new?assignees=&labels=type%3A+docs&template=3-documentation.md"
+                      href="https://github.com/Jordan-Hall/onx-core/issues/new?assignees=&labels=type%3A+docs&template=3-documentation.md"
                       target="_blank"
                       rel="noreferrer"
                       title="Report an issue on GitHub"
