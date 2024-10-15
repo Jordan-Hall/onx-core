@@ -2,7 +2,7 @@
   "nx": {
     "githubRoot": "https://github.com/Jordan-Hall/nxrc/blob/master",
     "name": "nx",
-    "packageName": "nx",
+    "packageName": "nxrc",
     "description": "The core Nx plugin contains the core functionality of Nx like the project graph, nx commands and task orchestration.",
     "documents": {},
     "root": "/packages/nx",

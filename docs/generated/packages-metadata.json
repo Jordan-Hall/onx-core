@@ -44,7 +44,7 @@
     ],
     "githubRoot": "https://github.com/Jordan-Hall/nxrc/blob/master",
     "name": "nx",
-    "packageName": "nx",
+    "packageName": "nxrc",
     "root": "/packages/nx",
     "source": "/packages/nx/src"
   }
