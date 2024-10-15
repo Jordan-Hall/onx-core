@@ -10,83 +10,83 @@ Run target for multiple listed projects.
 ## Usage
 
 ```shell
-nxcc run-many
+nxrc run-many
 ```
 
-Install `nxcc` globally to invoke the command directly using `nxcc`, or use `npx nxcc`, `yarn nxcc`, or `pnpm nxcc`.
+Install `nxrc` globally to invoke the command directly using `nxrc`, or use `npx nxrc`, `yarn nxrc`, or `pnpm nxrc`.
 
 ### Examples
 
 Test all projects:
 
 ```shell
- nxcc run-many -t test
+ nxrc run-many -t test
 ```
 
 Test proj1 and proj2 in parallel:
 
 ```shell
- nxcc run-many -t test -p proj1 proj2
+ nxrc run-many -t test -p proj1 proj2
 ```
 
 Test proj1 and proj2 in parallel using 5 workers:
 
 ```shell
- nxcc run-many -t test -p proj1 proj2 --parallel=5
+ nxrc run-many -t test -p proj1 proj2 --parallel=5
 ```
 
 Test proj1 and proj2 in sequence:
 
 ```shell
- nxcc run-many -t test -p proj1 proj2 --parallel=false
+ nxrc run-many -t test -p proj1 proj2 --parallel=false
 ```
 
 Test all projects ending with `*-app` except `excluded-app`. Note: your shell may require you to escape the `*` like this: `\*`:
 
 ```shell
- nxcc run-many -t test --projects=*-app --exclude excluded-app
+ nxrc run-many -t test --projects=*-app --exclude excluded-app
 ```
 
 Test all projects with tags starting with `api-`. Note: your shell may require you to escape the `*` like this: `\*`:
 
 ```shell
- nxcc run-many -t test --projects=tag:api-*
+ nxrc run-many -t test --projects=tag:api-*
 ```
 
 Test all projects with a `type:ui` tag:
 
 ```shell
- nxcc run-many -t test --projects=tag:type:ui
+ nxrc run-many -t test --projects=tag:type:ui
 ```
 
 Test all projects with a `type:feature` or `type:ui` tag:
 
 ```shell
- nxcc run-many -t test --projects=tag:type:feature,tag:type:ui
+ nxrc run-many -t test --projects=tag:type:feature,tag:type:ui
 ```
 
 Run lint, test, and build targets for all projects. Requires Nx v15.4+:
 
 ```shell
- nxcc run-many --targets=lint,test,build
+ nxrc run-many --targets=lint,test,build
 ```
 
 Preview the task graph that Nx would run inside a webview:
 
 ```shell
- nxcc run-many -t=build --graph
+ nxrc run-many -t=build --graph
 ```
 
 Save the task graph to a file:
 
 ```shell
- nxcc run-many -t=build --graph=output.json
+ nxrc run-many -t=build --graph=output.json
 ```
 
 Print the task graph to the console:
 
 ```shell
- nxcc run-many -t=build --graph=stdout
+ nxrc run-many -t=build --graph=stdout
 ```
 
 ## Options

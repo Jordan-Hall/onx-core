@@ -1,3 +1,3 @@
 # `nx-linux-arm-gnueabihf`
 
-This is the **armv7-unknown-linux-gnueabihf** binary for `@nxcc/nxcc`
+This is the **armv7-unknown-linux-gnueabihf** binary for `@nxrc/nxrc`

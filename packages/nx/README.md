@@ -1,4 +1,4 @@
-# NXCC - Custom Remote Caching Support
+# NXRC - Custom Remote Caching Support
 
 It's with a heavy heart that I’ve decided to fork the core NX package (`nx`). I’ve been a huge supporter of NX for over 6 years, promoting and using it extensively. However, due to the recent decision to move remote caching behind the Powerpack paywall, I feel, on principle, that this fork is necessary until the feature is restored.
 
@@ -27,10 +27,10 @@ For reference, see:
 To use this fork:
 
 ```
-npm install nxcc
+npm install nxrc
 ```
 
-For commands replace `nx` with `nxcc`
+For commands replace `nx` with `nxrc`
 
 ## Contributing
 

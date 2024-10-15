@@ -1,5 +1,5 @@
 {
-  "name": "nx",
+  "name": "nxrc",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/nx",
   "projectType": "library",

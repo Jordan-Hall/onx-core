@@ -1,1 +1,1 @@
-export * from '@nxcc/nxcc-wasm32-wasi'
+export * from '@nxrc/nxrc-wasm32-wasi'

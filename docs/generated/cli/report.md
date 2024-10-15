@@ -10,10 +10,10 @@ Reports useful version numbers to copy into the Nx issue template.
 ## Usage
 
 ```shell
-nxcc report
+nxrc report
 ```
 
-Install `nxcc` globally to invoke the command directly using `nxcc`, or use `npx nxcc`, `yarn nxcc`, or `pnpm nxcc`.
+Install `nxrc` globally to invoke the command directly using `nxrc`, or use `npx nxrc`, `yarn nxrc`, or `pnpm nxrc`.
 
 ## Options
 

@@ -1,8 +1,8 @@
-# Contributing to Nxcc (NX fork)
+# Contributing to Nxrc (NX fork)
 
 ## Overview
 
-We are forking NXCC with a primary focus on the core package, 'nx'. This decision arises from the need to provide a fully compatible alternative for the community, enabling them to create their own remote caching solutions without incurring costs associated with PowerPack.
+We are forking NXRC with a primary focus on the core package, 'nx'. This decision arises from the need to provide a fully compatible alternative for the community, enabling them to create their own remote caching solutions without incurring costs associated with PowerPack.
 
 ## Goals
 
@@ -10,12 +10,12 @@ We are forking NXCC with a primary focus on the core package, 'nx'. This decisio
 
 2. **Cost-Effective Solution**: Eliminate the need for users to pay for PowerPack by providing a fully functional caching solution that meets their needs.
 
-3. **Community-Centric Development**: Foster an environment where the community can contribute to and customize their caching solutions, empowering users to shape the future of NXCC.
+3. **Community-Centric Development**: Foster an environment where the community can contribute to and customize their caching solutions, empowering users to shape the future of NXRC.
 
 ## Features
 
 - **Core Package Enhancements**: Focus on improving the 'nx' package to support robust remote caching capabilities.
-- **Open Source Contribution**: Encourage contributions from the community to enhance the functionality and performance of NXCC.
+- **Open Source Contribution**: Encourage contributions from the community to enhance the functionality and performance of NXRC.
 
 - **API Integration**: Develop an API within the Rust solution, potentially retaining the 'create workspace' functionality to facilitate a smooth user experience.
 
@@ -33,7 +33,7 @@ Source code and documentation are included in the top-level folders listed below
 - `docs` - Markdown and configuration files for documentation including tutorials, guides for each supported platform,
   and API docs.
 - `e2e` - E2E tests.
-- `packages` - Source code for Nxcc package
+- `packages` - Source code for Nxrc package
 - `scripts` - Miscellaneous scripts for project tasks such as building documentation, testing, and code formatting.
 - `tmp` - Folder used by e2e tests. If you are a WebStorm user, make sure to mark this folder as excluded.
 
@@ -285,8 +285,8 @@ You can file new issues by filling out our [issue form](https://github.com/Jorda
 Please follow the following guidelines:
 
 - Make sure unit tests pass (`nx affected --target=test`)
-  - Target a specific project with: `nx run proj:test` (i.e. `nx run nxcc:test` to target `packages/nxcc`)
-  - Target a specific unit test file (i.e. `packages/nxcc/src/utils/ast-command-line-utils.spec.ts`)
+  - Target a specific project with: `nx run proj:test` (i.e. `nx run nxrc:test` to target `packages/nxrc`)
+  - Target a specific unit test file (i.e. `packages/nxrc/src/utils/ast-command-line-utils.spec.ts`)
     with `npx jest angular/src/utils/ast-utils` or `npx jest packages/angular/src/utils/ast-utils`
   - For more options on running tests - check `npx jest --help` or visit [jestjs.io](https://jestjs.io/)
   - Debug with `node --inspect-brk ./node_modules/jest/bin/jest.js build/packages/angular/src/utils/ast-utils.spec.js`

@@ -10,35 +10,35 @@ Clears cached Nx artifacts and metadata about the workspace and shuts down the N
 ## Usage
 
 ```shell
-nxcc reset
+nxrc reset
 ```
 
-Install `nxcc` globally to invoke the command directly using `nxcc`, or use `npx nxcc`, `yarn nxcc`, or `pnpm nxcc`.
+Install `nxrc` globally to invoke the command directly using `nxrc`, or use `npx nxrc`, `yarn nxrc`, or `pnpm nxrc`.
 
 ### Examples
 
 Clears the internal state of the daemon and metadata that Nx is tracking. Helpful if you are getting strange errors and want to start fresh:
 
 ```shell
- nxcc reset
+ nxrc reset
 ```
 
 Clears the Nx Cache directory. This will remove all local cache entries for tasks, but will not affect the remote cache:
 
 ```shell
- nxcc reset --only-cache
+ nxrc reset --only-cache
 ```
 
 Stops the Nx Daemon, it will be restarted fresh when the next Nx command is run.:
 
 ```shell
- nxcc reset --only-daemon
+ nxrc reset --only-daemon
 ```
 
 Clears the workspace data directory. Used by Nx to store cached data about the current workspace (e.g. partial results, incremental data, etc):
 
 ```shell
- nxcc reset --only-workspace-data
+ nxrc reset --only-workspace-data
 ```
 
 ## Options

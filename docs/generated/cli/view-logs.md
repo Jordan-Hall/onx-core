@@ -10,10 +10,10 @@ Enables you to view and interact with the logs via the advanced analytic UI from
 ## Usage
 
 ```shell
-nxcc view-logs
+nxrc view-logs
 ```
 
-Install `nxcc` globally to invoke the command directly using `nxcc`, or use `npx nxcc`, `yarn nxcc`, or `pnpm nxcc`.
+Install `nxrc` globally to invoke the command directly using `nxrc`, or use `npx nxrc`, `yarn nxrc`, or `pnpm nxrc`.
 
 ## Options
 

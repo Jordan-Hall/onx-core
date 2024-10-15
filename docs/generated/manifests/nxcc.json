@@ -8,7 +8,7 @@
     "itemList": [
       {
         "id": "intro",
-        "name": "Intro to Nxcc",
+        "name": "Intro to Nxrc",
         "description": "",
         "mediaImage": "",
         "file": "shared/getting-started/intro",
@@ -29,14 +29,14 @@
         "tags": []
       },
       {
-        "id": "why-nxcc",
-        "name": "Why Nxcc?",
+        "id": "why-nxrc",
+        "name": "Why Nxrc?",
         "description": "",
         "mediaImage": "",
-        "file": "shared/getting-started/why-nxcc",
+        "file": "shared/getting-started/why-nxrc",
         "itemList": [],
         "isExternal": false,
-        "path": "/getting-started/why-nxcc",
+        "path": "/getting-started/why-nxrc",
         "tags": []
       }
     ],
@@ -46,7 +46,7 @@
   },
   "/getting-started/intro": {
     "id": "intro",
-    "name": "Intro to Nxcc",
+    "name": "Intro to Nxrc",
     "description": "",
     "mediaImage": "",
     "file": "shared/getting-started/intro",
@@ -66,15 +66,15 @@
     "path": "/getting-started/installation",
     "tags": []
   },
-  "/getting-started/why-nxcc": {
-    "id": "why-nxcc",
-    "name": "Why Nxcc?",
+  "/getting-started/why-nxrc": {
+    "id": "why-nxrc",
+    "name": "Why Nxrc?",
     "description": "",
     "mediaImage": "",
-    "file": "shared/getting-started/why-nxcc",
+    "file": "shared/getting-started/why-nxrc",
     "itemList": [],
     "isExternal": false,
-    "path": "/getting-started/why-nxcc",
+    "path": "/getting-started/why-nxrc",
     "tags": []
   }
 }

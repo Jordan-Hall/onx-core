@@ -1,3 +1,3 @@
 # `nx-freebsd-x64`
 
-This is the **x86_64-unknown-freebsd** binary for `@nxcc/nxcc`
+This is the **x86_64-unknown-freebsd** binary for `@nxrc/nxrc`

@@ -16,65 +16,65 @@ Creates a migrations file or runs migrations from the migrations file.
 ## Usage
 
 ```shell
-nxcc migrate [packageAndVersion]
+nxrc migrate [packageAndVersion]
 ```
 
-Install `nxcc` globally to invoke the command directly using `nxcc`, or use `npx nxcc`, `yarn nxcc`, or `pnpm nxcc`.
+Install `nxrc` globally to invoke the command directly using `nxrc`, or use `npx nxrc`, `yarn nxrc`, or `pnpm nxrc`.
 
 ### Examples
 
 Update all Nx plugins to "latest". This will generate migrations.json:
 
 ```shell
- nxcc migrate latest
+ nxrc migrate latest
 ```
 
 Update all Nx plugins to "9.0.0". This will generate migrations.json:
 
 ```shell
- nxcc migrate 9.0.0
+ nxrc migrate 9.0.0
 ```
 
 Update @nx/workspace and generate the list of migrations starting with version 8.0.0 of @nx/workspace and @nx/node, regardless of what is installed locally:
 
 ```shell
- nxcc migrate @nx/workspace@9.0.0 --from="@nx/workspace@8.0.0,@nx/node@8.0.0"
+ nxrc migrate @nx/workspace@9.0.0 --from="@nx/workspace@8.0.0,@nx/node@8.0.0"
 ```
 
 Update @nx/workspace to "9.0.0". If it tries to update @nx/react or @nx/angular, use version "9.0.1":
 
 ```shell
- nxcc migrate @nx/workspace@9.0.0 --to="@nx/react@9.0.1,@nx/angular@9.0.1"
+ nxrc migrate @nx/workspace@9.0.0 --to="@nx/react@9.0.1,@nx/angular@9.0.1"
 ```
 
 Update another-package to "12.0.0". This will update other packages and will generate migrations.json file:
 
 ```shell
- nxcc migrate another-package@12.0.0
+ nxrc migrate another-package@12.0.0
 ```
 
 Collect package updates and migrations in interactive mode. In this mode, the user will be prompted whether to apply any optional package update and migration:
 
 ```shell
- nxcc migrate latest --interactive
+ nxrc migrate latest --interactive
 ```
 
 Collect package updates and migrations starting with version 14.5.0 of "nx" (and Nx first-party plugins), regardless of what is installed locally, while excluding migrations that should have been applied on previous updates:
 
 ```shell
- nxcc migrate latest --from=nx@14.5.0 --exclude-applied-migrations
+ nxrc migrate latest --from=nx@14.5.0 --exclude-applied-migrations
 ```
 
 Run migrations from the provided migrations.json file. You can modify migrations.json and run this command many times:
 
 ```shell
- nxcc migrate --run-migrations=migrations.json
+ nxrc migrate --run-migrations=migrations.json
 ```
 
 Create a dedicated commit for each successfully completed migration. You can customize the prefix used for each commit by additionally setting --commit-prefix="PREFIX_HERE ":
 
 ```shell
- nxcc migrate --run-migrations --create-commits
+ nxrc migrate --run-migrations --create-commits
 ```
 
 ## Options

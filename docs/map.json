@@ -1,12 +1,12 @@
 {
   "$schema": "./../scripts/documentation/map-schema.json",
   "title": "Documentation map reference",
-  "description": "This is used to create documentation routing and hierarchy on the Nxcccc website.",
+  "description": "This is used to create documentation routing and hierarchy on the Nxrccc website.",
   "content": [
     {
-      "name": "Nxcc",
-      "id": "nxcc-documentation",
-      "description": "Nxcc documentation for you to discover!",
+      "name": "Nxrc",
+      "id": "nxrc-documentation",
+      "description": "Nxrc documentation for you to discover!",
       "itemList": [
         {
           "name": "Getting Started",
@@ -14,7 +14,7 @@
           "description": "Get started with basic information, concepts and tutorials.",
           "itemList": [
             {
-              "name": "Intro to Nxcc",
+              "name": "Intro to Nxrc",
               "id": "intro",
               "file": "shared/getting-started/intro"
             },
@@ -24,9 +24,9 @@
               "file": "shared/getting-started/installation"
             },
             {
-              "name": "Why Nxcc?",
-              "id": "why-nxcc",
-              "file": "shared/getting-started/why-nxcc"
+              "name": "Why Nxrc?",
+              "id": "why-nxrc",
+              "file": "shared/getting-started/why-nxrc"
             }
           ]
         }
@@ -45,9 +45,9 @@
       "description": "Package reference.",
       "itemList": [
         {
-          "name": "nxcc",
-          "id": "nxcc",
-          "description": "Nxcc package",
+          "name": "nxrc",
+          "id": "nxrc",
+          "description": "Nxrc package",
           "itemList": [
             {
               "name": "init",
@@ -112,8 +112,8 @@
               "file": "generated/cli/list"
             },
             {
-              "name": "connect-to-nxcc-cloud",
-              "id": "connect-to-nxcc-cloud",
+              "name": "connect-to-nxrc-cloud",
+              "id": "connect-to-nxrc-cloud",
               "tags": ["cache-task-results", "distribute-task-execution"],
               "file": "generated/cli/connect"
             },
@@ -162,7 +162,7 @@
             {
               "name": "release",
               "id": "release",
-              "tags": ["nxcc-release"],
+              "tags": ["nxrc-release"],
               "file": "generated/cli/release"
             },
             {

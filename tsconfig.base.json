@@ -16,8 +16,16 @@
     "rootDir": ".",
     "allowJs": true,
     "paths": {
-      "@nxcc/docs": ["docs"],
-      "@nxcc/docs/*": ["docs/*"],
+      "@nxrc/docs": ["docs"],
+      "@nxrc/docs/*": ["docs/*"],
+      "@nx/graph-internal/project-details": [
+        "graph/project-details/src/index.ts"
+      ],
+      "@nx/graph-internal/ui-code-block": ["graph/ui-code-block/src/index.ts"],
+      "@nx/graph-internal/ui-project-details": [
+        "graph/ui-project-details/src/index.ts"
+      ],
+      "@nx/graph-internal/ui-theme": ["graph/ui-theme/src/index.ts"],
       "@nx/nx-dev/data-access-careers/node-only": [
         "nx-dev/data-access-careers/src/node.index.ts"
       ],
@@ -77,8 +85,8 @@
       "@nx/nx-dev/ui-sponsor-card": ["nx-dev/ui-sponsor-card/src/index.ts"],
       "@nx/nx-dev/ui-theme": ["nx-dev/ui-theme/src/index.ts"],
       "@nx/nx-dev/util-ai": ["nx-dev/util-ai/src/index.ts"],
-      "nxcc": ["packages/nx"],
-      "nxcc/*": ["packages/nx/*"]
+      "nxrc": ["packages/nx"],
+      "nxrc/*": ["packages/nx/*"]
     }
   }
 }

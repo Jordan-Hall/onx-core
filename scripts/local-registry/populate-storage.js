@@ -12,7 +12,7 @@ async function populateLocalRegistryStorage() {
     const publishVersion = process.env.PUBLISHED_VERSION ?? 'major';
     const isVerbose = process.env.NX_VERBOSE_LOGGING === 'true';
     registryTeardown = await startLocalRegistry({
-      localRegistryTarget: '@nxcc/nxcc-source:local-registry',
+      localRegistryTarget: '@nxrc/nxrc-source:local-registry',
       verbose: isVerbose,
       clearStorage: true,
     });
