@@ -1,5 +1,5 @@
-- Nxcc
+- Nxrc
   - [Getting Started](/getting-started)
-    - [Intro to Nxcc](/getting-started/intro)
+    - [Intro to Nxrc](/getting-started/intro)
     - [Installation](/getting-started/installation)
-    - [Why Nxcc?](/getting-started/why-nxcc)
+    - [Why Nxrc?](/getting-started/why-nxrc)

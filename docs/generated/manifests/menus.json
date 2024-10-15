@@ -1,6 +1,6 @@
 [
   {
-    "id": "nxcc",
+    "id": "nxrc",
     "menu": [
       {
         "name": "Getting Started",
@@ -9,7 +9,7 @@
         "isExternal": false,
         "children": [
           {
-            "name": "Intro to Nxcc",
+            "name": "Intro to Nxrc",
             "path": "/getting-started/intro",
             "id": "intro",
             "isExternal": false,
@@ -25,9 +25,9 @@
             "disableCollapsible": false
           },
           {
-            "name": "Why Nxcc?",
-            "path": "/getting-started/why-nxcc",
-            "id": "why-nxcc",
+            "name": "Why Nxrc?",
+            "path": "/getting-started/why-nxrc",
+            "id": "why-nxrc",
             "isExternal": false,
             "children": [],
             "disableCollapsible": false
@@ -36,7 +36,7 @@
         "disableCollapsible": false
       },
       {
-        "name": "Intro to Nxcc",
+        "name": "Intro to Nxrc",
         "path": "/getting-started/intro",
         "id": "intro",
         "isExternal": false,
@@ -52,9 +52,9 @@
         "disableCollapsible": false
       },
       {
-        "name": "Why Nxcc?",
-        "path": "/getting-started/why-nxcc",
-        "id": "why-nxcc",
+        "name": "Why Nxrc?",
+        "path": "/getting-started/why-nxrc",
+        "id": "why-nxrc",
         "isExternal": false,
         "children": [],
         "disableCollapsible": false

@@ -10,10 +10,10 @@ Orchestrate versioning and publishing of applications and libraries.
 ## Usage
 
 ```shell
-nxcc release
+nxrc release
 ```
 
-Install `nxcc` globally to invoke the command directly using `nxcc`, or use `npx nxcc`, `yarn nxcc`, or `pnpm nxcc`.
+Install `nxrc` globally to invoke the command directly using `nxrc`, or use `npx nxrc`, `yarn nxrc`, or `pnpm nxrc`.
 
 ## Options
 
@@ -34,7 +34,7 @@ Install `nxcc` globally to invoke the command directly using `nxcc`, or use `npx
 Create a version and release for the workspace, generate a changelog, and optionally publish the packages.
 
 ```shell
-nxcc release [specifier]
+nxrc release [specifier]
 ```
 
 ## Options
@@ -53,7 +53,7 @@ nxcc release [specifier]
 Create a version and release for one or more applications and libraries.
 
 ```shell
-nxcc release version [specifier]
+nxrc release version [specifier]
 ```
 
 ## Options
@@ -78,7 +78,7 @@ nxcc release version [specifier]
 Generate a changelog for one or more projects, and optionally push to Github.
 
 ```shell
-nxcc release changelog [version]
+nxrc release changelog [version]
 ```
 
 ## Options
@@ -105,7 +105,7 @@ nxcc release changelog [version]
 Publish a versioned project to a registry.
 
 ```shell
-nxcc release publish
+nxrc release publish
 ```
 
 ## Options
@@ -138,7 +138,7 @@ nxcc release publish
 Create a version plan file to specify the desired semver bump for one or more projects or groups, as well as the relevant changelog entry.
 
 ```shell
-nxcc release plan [bump]
+nxrc release plan [bump]
 ```
 
 ## Options
@@ -162,7 +162,7 @@ nxcc release plan [bump]
 Ensure that all touched projects have an applicable version plan created for them.
 
 ```shell
-nxcc release plan:check
+nxrc release plan:check
 ```
 
 ## Options

@@ -45,10 +45,10 @@ body:
       required: true
 
   - type: textarea
-    id: nxcc-report
+    id: nxrc-report
     attributes:
-      label: Nxcc Report
-      description: Please paste the output of `nxcc report`. This will be automatically formatted into code, so no need for backticks.
+      label: Nxrc Report
+      description: Please paste the output of `nxrc report`. This will be automatically formatted into code, so no need for backticks.
       render: shell
     validations:
       required: true
@@ -65,7 +65,7 @@ body:
     attributes:
       label: Package Manager Version
       description: |
-        If `nxcc report` doesn't work, please provide the name and version of your package manager. 
+        If `nxrc report` doesn't work, please provide the name and version of your package manager. 
         You can find this information by running `yarn --version`, `pnpm --version`, or `npm --version`, depending on which package manager you are using.
 
   - type: checkboxes

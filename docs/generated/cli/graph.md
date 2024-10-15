@@ -10,65 +10,65 @@ Graph dependencies within workspace.
 ## Usage
 
 ```shell
-nxcc graph
+nxrc graph
 ```
 
-Install `nxcc` globally to invoke the command directly using `nxcc`, or use `npx nxcc`, `yarn nxcc`, or `pnpm nxcc`.
+Install `nxrc` globally to invoke the command directly using `nxrc`, or use `npx nxrc`, `yarn nxrc`, or `pnpm nxrc`.
 
 ### Examples
 
 Open the project graph of the workspace in the browser:
 
 ```shell
- nxcc graph
+ nxrc graph
 ```
 
 Save the project graph into a json file:
 
 ```shell
- nxcc graph --file=output.json
+ nxrc graph --file=output.json
 ```
 
 Generate a static website with project graph into an html file, accompanied by an asset folder called static:
 
 ```shell
- nxcc graph --file=output.html
+ nxrc graph --file=output.html
 ```
 
 Print the project graph as JSON to the console:
 
 ```shell
- nxcc graph --print
+ nxrc graph --print
 ```
 
 Show the graph where every node is either an ancestor or a descendant of todos-feature-main:
 
 ```shell
- nxcc graph --focus=todos-feature-main
+ nxrc graph --focus=todos-feature-main
 ```
 
 Include project-one and project-two in the project graph:
 
 ```shell
- nxcc graph --include=project-one,project-two
+ nxrc graph --include=project-one,project-two
 ```
 
 Exclude project-one and project-two from the project graph:
 
 ```shell
- nxcc graph --exclude=project-one,project-two
+ nxrc graph --exclude=project-one,project-two
 ```
 
 Show the graph where every node is either an ancestor or a descendant of todos-feature-main, but exclude project-one and project-two:
 
 ```shell
- nxcc graph --focus=todos-feature-main --exclude=project-one,project-two
+ nxrc graph --focus=todos-feature-main --exclude=project-one,project-two
 ```
 
 Watch for changes to project graph and update in-browser:
 
 ```shell
- nxcc graph --watch
+ nxrc graph --watch
 ```
 
 ## Options

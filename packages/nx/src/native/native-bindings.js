@@ -65,7 +65,7 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        return require('@nxcc/nxcc-android-arm64')
+        return require('@nxrc/nxrc-android-arm64')
       } catch (e) {
         loadErrors.push(e)
       }
@@ -77,7 +77,7 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        return require('@nxcc/nxcc-android-arm-eabi')
+        return require('@nxrc/nxrc-android-arm-eabi')
       } catch (e) {
         loadErrors.push(e)
       }
@@ -93,7 +93,7 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        return require('@nxcc/nxcc-win32-x64-msvc')
+        return require('@nxrc/nxrc-win32-x64-msvc')
       } catch (e) {
         loadErrors.push(e)
       }
@@ -105,7 +105,7 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        return require('@nxcc/nxcc-win32-ia32-msvc')
+        return require('@nxrc/nxrc-win32-ia32-msvc')
       } catch (e) {
         loadErrors.push(e)
       }
@@ -117,7 +117,7 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        return require('@nxcc/nxcc-win32-arm64-msvc')
+        return require('@nxrc/nxrc-win32-arm64-msvc')
       } catch (e) {
         loadErrors.push(e)
       }
@@ -132,7 +132,7 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        return require('@nxcc/nxcc-darwin-universal')
+        return require('@nxrc/nxrc-darwin-universal')
       } catch (e) {
         loadErrors.push(e)
       }
@@ -144,7 +144,7 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        return require('@nxcc/nxcc-darwin-x64')
+        return require('@nxrc/nxrc-darwin-x64')
       } catch (e) {
         loadErrors.push(e)
       }
@@ -156,7 +156,7 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        return require('@nxcc/nxcc-darwin-arm64')
+        return require('@nxrc/nxrc-darwin-arm64')
       } catch (e) {
         loadErrors.push(e)
       }
@@ -172,7 +172,7 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        return require('@nxcc/nxcc-freebsd-x64')
+        return require('@nxrc/nxrc-freebsd-x64')
       } catch (e) {
         loadErrors.push(e)
       }
@@ -184,7 +184,7 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        return require('@nxcc/nxcc-freebsd-arm64')
+        return require('@nxrc/nxrc-freebsd-arm64')
       } catch (e) {
         loadErrors.push(e)
       }
@@ -201,7 +201,7 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        return require('@nxcc/nxcc-linux-x64-musl')
+        return require('@nxrc/nxrc-linux-x64-musl')
       } catch (e) {
         loadErrors.push(e)
       }
@@ -213,7 +213,7 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        return require('@nxcc/nxcc-linux-x64-gnu')
+        return require('@nxrc/nxrc-linux-x64-gnu')
       } catch (e) {
         loadErrors.push(e)
       }
@@ -227,7 +227,7 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        return require('@nxcc/nxcc-linux-arm64-musl')
+        return require('@nxrc/nxrc-linux-arm64-musl')
       } catch (e) {
         loadErrors.push(e)
       }
@@ -239,7 +239,7 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        return require('@nxcc/nxcc-linux-arm64-gnu')
+        return require('@nxrc/nxrc-linux-arm64-gnu')
       } catch (e) {
         loadErrors.push(e)
       }
@@ -253,7 +253,7 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        return require('@nxcc/nxcc-linux-arm-musleabihf')
+        return require('@nxrc/nxrc-linux-arm-musleabihf')
       } catch (e) {
         loadErrors.push(e)
       }
@@ -265,7 +265,7 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        return require('@nxcc/nxcc-linux-arm-gnueabihf')
+        return require('@nxrc/nxrc-linux-arm-gnueabihf')
       } catch (e) {
         loadErrors.push(e)
       }
@@ -279,7 +279,7 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        return require('@nxcc/nxcc-linux-riscv64-musl')
+        return require('@nxrc/nxrc-linux-riscv64-musl')
       } catch (e) {
         loadErrors.push(e)
       }
@@ -291,7 +291,7 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        return require('@nxcc/nxcc-linux-riscv64-gnu')
+        return require('@nxrc/nxrc-linux-riscv64-gnu')
       } catch (e) {
         loadErrors.push(e)
       }
@@ -304,7 +304,7 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        return require('@nxcc/nxcc-linux-ppc64-gnu')
+        return require('@nxrc/nxrc-linux-ppc64-gnu')
       } catch (e) {
         loadErrors.push(e)
       }
@@ -316,7 +316,7 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        return require('@nxcc/nxcc-linux-s390x-gnu')
+        return require('@nxrc/nxrc-linux-s390x-gnu')
       } catch (e) {
         loadErrors.push(e)
       }
@@ -341,7 +341,7 @@ if (!nativeBinding || process.env.NAPI_RS_FORCE_WASI) {
   }
   if (!nativeBinding) {
     try {
-      nativeBinding = require('@nxcc/nxcc-wasm32-wasi')
+      nativeBinding = require('@nxrc/nxrc-wasm32-wasi')
     } catch (err) {
       if (process.env.NAPI_RS_FORCE_WASI) {
         console.error(err)
@@ -361,19 +361,11 @@ if (!nativeBinding) {
   throw new Error(`Failed to load native binding`)
 }
 
-module.exports.ChildProcess = nativeBinding.ChildProcess
 module.exports.HashPlanner = nativeBinding.HashPlanner
 module.exports.ImportResult = nativeBinding.ImportResult
-module.exports.NxCache = nativeBinding.NxCache
-module.exports.NxTaskHistory = nativeBinding.NxTaskHistory
-module.exports.RustPseudoTerminal = nativeBinding.RustPseudoTerminal
-module.exports.TaskDetails = nativeBinding.TaskDetails
 module.exports.TaskHasher = nativeBinding.TaskHasher
-module.exports.Watcher = nativeBinding.Watcher
 module.exports.WorkspaceContext = nativeBinding.WorkspaceContext
-module.exports.connectToNxDb = nativeBinding.connectToNxDb
 module.exports.copy = nativeBinding.copy
-module.exports.EventType = nativeBinding.EventType
 module.exports.expandOutputs = nativeBinding.expandOutputs
 module.exports.findImports = nativeBinding.findImports
 module.exports.getBinaryTarget = nativeBinding.getBinaryTarget

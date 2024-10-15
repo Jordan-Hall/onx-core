@@ -1,5 +1,5 @@
 {
-  "name": "@nxcc/nxcc-source",
+  "name": "@nxrc/nxrc-source",
   "$schema": "node_modules/nx/schemas/project-schema.json",
   "targets": {
     "local-registry": {

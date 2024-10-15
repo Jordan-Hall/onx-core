@@ -1,8 +1,8 @@
 [
   {
-    "name": "nxcc",
-    "packageName": "nxcc",
-    "description": "The core nxcc plugin contains the core functionality of nxcc like the project graph, nxcc commands and task orchestration.",
+    "name": "nxrc",
+    "packageName": "nxrc",
+    "description": "The core nxrc plugin contains the core functionality of nxrc like the project graph, nxrc commands and task orchestration.",
     "path": "generated/packages/nx.json",
     "schemas": {
       "executors": ["noop", "run-commands", "run-script"],

@@ -1,5 +1,5 @@
 {
-  "name": "nx",
+  "name": "nxrc",
   "version": "0.0.1",
   "private": false,
   "description": "The core Nx plugin contains the core functionality of Nx like the project graph, nx commands and task orchestration.",
@@ -83,16 +83,16 @@
     }
   },
   "optionalDependencies": {
-    "@nxcc/nxcc-darwin-x64": "*",
-    "@nxcc/nxcc-darwin-arm64": "*",
-    "@nxcc/nxcc-linux-x64-gnu": "*",
-    "@nxcc/nxcc-linux-x64-musl": "*",
-    "@nxcc/nxcc-win32-x64-msvc": "*",
-    "@nxcc/nxcc-linux-arm64-gnu": "*",
-    "@nxcc/nxcc-linux-arm64-musl": "*",
-    "@nxcc/nxcc-linux-arm-gnueabihf": "*",
-    "@nxcc/nxcc-win32-arm64-msvc": "*",
-    "@nxcc/nxcc-freebsd-x64": "*"
+    "@nxrc/nxrc-darwin-x64": "*",
+    "@nxrc/nxrc-darwin-arm64": "*",
+    "@nxrc/nxrc-linux-x64-gnu": "*",
+    "@nxrc/nxrc-linux-x64-musl": "*",
+    "@nxrc/nxrc-win32-x64-msvc": "*",
+    "@nxrc/nxrc-linux-arm64-gnu": "*",
+    "@nxrc/nxrc-linux-arm64-musl": "*",
+    "@nxrc/nxrc-linux-arm-gnueabihf": "*",
+    "@nxrc/nxrc-win32-arm64-msvc": "*",
+    "@nxrc/nxrc-freebsd-x64": "*"
   },
   "nx-migrations": {
     "migrations": "./migrations.json",
@@ -171,7 +171,7 @@
   },
   "napi": {
     "binaryName": "nx",
-    "packageName": "@nxcc/nxcc",
+    "packageName": "@nxrc/nxrc",
     "wasm": {
       "initialMemory": 1024,
       "maximumMemory": 32768

@@ -10,29 +10,29 @@ Watch for changes within projects, and execute commands.
 ## Usage
 
 ```shell
-nxcc watch
+nxrc watch
 ```
 
-Install `nxcc` globally to invoke the command directly using `nxcc`, or use `npx nxcc`, `yarn nxcc`, or `pnpm nxcc`.
+Install `nxrc` globally to invoke the command directly using `nxrc`, or use `npx nxrc`, `yarn nxrc`, or `pnpm nxrc`.
 
 ### Examples
 
 Watch the "app" project and echo the project name and the files that changed:
 
 ```shell
- nxcc watch --projects=app -- echo \$NX_PROJECT_NAME \$NX_FILE_CHANGES
+ nxrc watch --projects=app -- echo \$NX_PROJECT_NAME \$NX_FILE_CHANGES
 ```
 
 Watch "app1" and "app2" and echo the project name whenever a specified project or its dependencies change:
 
 ```shell
- nxcc watch --projects=app1,app2 --includeDependentProjects -- echo \$NX_PROJECT_NAME
+ nxrc watch --projects=app1,app2 --includeDependentProjects -- echo \$NX_PROJECT_NAME
 ```
 
 Watch all projects (including newly created projects) in the workspace:
 
 ```shell
- nxcc watch --all -- echo \$NX_PROJECT_NAME
+ nxrc watch --all -- echo \$NX_PROJECT_NAME
 ```
 
 ## Options

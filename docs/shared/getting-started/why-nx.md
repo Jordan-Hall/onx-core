@@ -1,4 +1,4 @@
-# Why Nxcc?
+# Why Nxrc?
 
 NxCC is a powerful fork of NX designed to enhance developer productivity by maintaining the beloved features of NX while providing more flexibility and openness. We understand the challenges developers face when configuring, maintaining, and integrating various tools and frameworks. NxCC aims to simplify this process, enabling easy scaling from individual developers to entire organizations without the complexities of low-level build tooling.
 
@@ -15,5 +15,5 @@ NxCC retains the modular architecture of NX, allowing you to use only the featur
 Integrating NxCC into your existing projects is straightforward. Simply run the following command to get started:
 
 ```shell
-npx nxcc init
+npx nxrc init
 ```

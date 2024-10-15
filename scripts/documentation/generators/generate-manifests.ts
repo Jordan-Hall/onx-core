@@ -278,8 +278,8 @@ function createDocumentSections(
 ): DocumentSection[] {
   return [
     {
-      name: 'nxcc',
-      content: documents.find((x) => x.id === 'nxcc-documentation')!
+      name: 'nxrc',
+      content: documents.find((x) => x.id === 'nxrc-documentation')!
         .itemList as Partial<DocumentMetadata>[],
       prefix: '',
     },

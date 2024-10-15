@@ -6488,7 +6488,7 @@ packages:
       - verdaccio
     dev: true
 
-  /@nxcc/nxcc-darwin-arm64@19.0.4:
+  /@nxrc/nxrc-darwin-arm64@19.0.4:
     resolution: {integrity: sha512-EwTMKVFdMF42b+DG3ACtrGVE3iiAgOw+VJ4Vekm59+ZkTg6GrZly2VNbthoNSJd6/uPQssoljx36NZH953ieBw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
@@ -6497,7 +6497,7 @@ packages:
     dev: true
     optional: true
 
-  /@nxcc/nxcc-darwin-x64@19.0.4:
+  /@nxrc/nxrc-darwin-x64@19.0.4:
     resolution: {integrity: sha512-W+SVaYOHWRHcws7wZVcWyxoT57r1qXLMUBvpTVBf5PsVfsI+t9sINwzZjcXWaGNVcPGrVYUZF6Cp3/exkPNUBw==}
     engines: {node: '>= 10'}
     cpu: [x64]
@@ -6506,7 +6506,7 @@ packages:
     dev: true
     optional: true
 
-  /@nxcc/nxcc-freebsd-x64@19.0.4:
+  /@nxrc/nxrc-freebsd-x64@19.0.4:
     resolution: {integrity: sha512-8Wl2+TOXiRDLbI8mwsbx1sHQLKAaNvfTm2e5Kf+4ay4W/UsrHONRDRA4d/LhMOLQMo+2+q2q+u8DziqT0w0Vaw==}
     engines: {node: '>= 10'}
     cpu: [x64]
@@ -6515,7 +6515,7 @@ packages:
     dev: true
     optional: true
 
-  /@nxcc/nxcc-linux-arm-gnueabihf@19.0.4:
+  /@nxrc/nxrc-linux-arm-gnueabihf@19.0.4:
     resolution: {integrity: sha512-C3PBsyNM5Npq8G8h/WHjUwwlKZpfWK4tK1ZeNseb6LtoNIgNF0PVrJQERqXABt29lanoQ4SeJ8RPgppB3xgCwg==}
     engines: {node: '>= 10'}
     cpu: [arm]
@@ -6524,7 +6524,7 @@ packages:
     dev: true
     optional: true
 
-  /@nxcc/nxcc-linux-arm64-gnu@19.0.4:
+  /@nxrc/nxrc-linux-arm64-gnu@19.0.4:
     resolution: {integrity: sha512-d7gJv/QlaaBKTHpN+DmnQvo1FBNOGfh9b819WMaNXgDLSNpw9CpaOBZPbPgduee3OaGwbfWmll8VDYzUZgKWuw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
@@ -6533,7 +6533,7 @@ packages:
     dev: true
     optional: true
 
-  /@nxcc/nxcc-linux-arm64-musl@19.0.4:
+  /@nxrc/nxrc-linux-arm64-musl@19.0.4:
     resolution: {integrity: sha512-lQ76O4AtXAQJ6r1MdVDVp4GG+o2vylWFjcyZvZpclhjag+fWKSdO0igL/14HsqNwCPmcPtaHmgqQNlw3MMtL3w==}
     engines: {node: '>= 10'}
     cpu: [arm64]
@@ -6542,7 +6542,7 @@ packages:
     dev: true
     optional: true
 
-  /@nxcc/nxcc-linux-x64-gnu@19.0.4:
+  /@nxrc/nxrc-linux-x64-gnu@19.0.4:
     resolution: {integrity: sha512-1K95WMdKHM4pMACzsO9m9TWqSXwL5cg9/1UuS9LUKhjY/bX2y3iTtzT0tFBptCVzRVLZG8wAZphxwQfBIQvnCQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
@@ -6551,7 +6551,7 @@ packages:
     dev: true
     optional: true
 
-  /@nxcc/nxcc-linux-x64-musl@19.0.4:
+  /@nxrc/nxrc-linux-x64-musl@19.0.4:
     resolution: {integrity: sha512-iZ+TH/qT2R6nb+bqL8oJDDeUUEJmzYxtacFlf5yLjaiG5nvOxq7cu/lUw/LEqT+BUgK33T7acr3BDC0/q2bFZQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
@@ -6560,7 +6560,7 @@ packages:
     dev: true
     optional: true
 
-  /@nxcc/nxcc-win32-arm64-msvc@19.0.4:
+  /@nxrc/nxrc-win32-arm64-msvc@19.0.4:
     resolution: {integrity: sha512-YiRyGZecH4hIy5shZz8SNX5NwY+dZC3Xs09QlMeLKNhf6klfmjJYNtd+9250V4cjJS3opKYf08uG4x+EtuEB5A==}
     engines: {node: '>= 10'}
     cpu: [arm64]
@@ -6569,7 +6569,7 @@ packages:
     dev: true
     optional: true
 
-  /@nxcc/nxcc-win32-x64-msvc@19.0.4:
+  /@nxrc/nxrc-win32-x64-msvc@19.0.4:
     resolution: {integrity: sha512-eHEdPjV0GlblyBM501xfe47tPRzugw2U+YOkZh++Ago9MDOrs/ULS9+RM3NhvZl2WnkpNYDbQMjzbQ0r7rxlTA==}
     engines: {node: '>= 10'}
     cpu: [x64]
@@ -12987,16 +12987,16 @@ packages:
       yargs: 17.7.2
       yargs-parser: 21.1.1
     optionalDependencies:
-      '@nxcc/nxcc-darwin-arm64': 19.0.4
-      '@nxcc/nxcc-darwin-x64': 19.0.4
-      '@nxcc/nxcc-freebsd-x64': 19.0.4
-      '@nxcc/nxcc-linux-arm-gnueabihf': 19.0.4
-      '@nxcc/nxcc-linux-arm64-gnu': 19.0.4
-      '@nxcc/nxcc-linux-arm64-musl': 19.0.4
-      '@nxcc/nxcc-linux-x64-gnu': 19.0.4
-      '@nxcc/nxcc-linux-x64-musl': 19.0.4
-      '@nxcc/nxcc-win32-arm64-msvc': 19.0.4
-      '@nxcc/nxcc-win32-x64-msvc': 19.0.4
+      '@nxrc/nxrc-darwin-arm64': 19.0.4
+      '@nxrc/nxrc-darwin-x64': 19.0.4
+      '@nxrc/nxrc-freebsd-x64': 19.0.4
+      '@nxrc/nxrc-linux-arm-gnueabihf': 19.0.4
+      '@nxrc/nxrc-linux-arm64-gnu': 19.0.4
+      '@nxrc/nxrc-linux-arm64-musl': 19.0.4
+      '@nxrc/nxrc-linux-x64-gnu': 19.0.4
+      '@nxrc/nxrc-linux-x64-musl': 19.0.4
+      '@nxrc/nxrc-win32-arm64-msvc': 19.0.4
+      '@nxrc/nxrc-win32-x64-msvc': 19.0.4
     transitivePeerDependencies:
       - debug
     dev: true

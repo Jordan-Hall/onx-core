@@ -10,10 +10,10 @@ Import code and git history from another repository into this repository.
 ## Usage
 
 ```shell
-nxcc import [sourceRepository] [destinationDirectory]
+nxrc import [sourceRepository] [destinationDirectory]
 ```
 
-Install `nxcc` globally to invoke the command directly using `nxcc`, or use `npx nxcc`, `yarn nxcc`, or `pnpm nxcc`.
+Install `nxrc` globally to invoke the command directly using `nxrc`, or use `npx nxrc`, `yarn nxrc`, or `pnpm nxrc`.
 
 ## Options
 
