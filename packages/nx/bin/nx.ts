@@ -31,7 +31,7 @@ function main() {
     assertSupportedPlatform();
   }
 
-  require('nx/src/utils/perf-logging');
+  require('nxrc/src/utils/perf-logging');
 
   const workspace = findWorkspaceRoot(process.cwd());
 
@@ -54,7 +54,7 @@ function main() {
     (process.argv[2] === 'graph' && !workspace)
   ) {
     process.env.NX_DAEMON = 'false';
-    require('nx/src/command-line/nx-commands').commandsObject.argv;
+    require('nxrc/src/command-line/nx-commands').commandsObject.argv;
   } else {
     if (!daemonClient.enabled() && workspace !== null) {
       setupWorkspaceContext(workspace.dir);
@@ -161,13 +161,13 @@ function resolveNx(workspace: WorkspaceTypeAndRoot | null) {
 
   // prefer Nx installed in .nx/installation
   try {
-    return require.resolve('nx/bin/nx.js', {
+    return require.resolve('nxrc/bin/nx.js', {
       paths: [getNxInstallationPath(workspace ? workspace.dir : globalsRoot)],
     });
   } catch {}
 
   // check for root install
-  return require.resolve('nx/bin/nx.js', {
+  return require.resolve('nxrc/bin/nx.js', {
     paths: [workspace ? workspace.dir : globalsRoot],
   });
 }
@@ -202,7 +202,7 @@ function warnIfUsingOutdatedGlobalInstall(
   if (isOutdatedGlobalInstall) {
     const bodyLines = localNxVersion
       ? [
-          `Your repository uses a higher version of Nx (${localNxVersion}) than your global CLI version (${globalNxVersion})`,
+          `Your repository uses a higher version of nxrc (${localNxVersion}) than your global CLI version (${globalNxVersion})`,
         ]
       : [];
 
@@ -210,7 +210,7 @@ function warnIfUsingOutdatedGlobalInstall(
       'For more information, see https://nx.dev/more-concepts/global-nx'
     );
     output.warn({
-      title: `It's time to update Nx 🎉`,
+      title: `It's time to update nxrc 🎉`,
       bodyLines,
     });
   }
@@ -242,7 +242,7 @@ function checkOutdatedGlobalInstallation(
 function getLocalNxVersion(workspace: WorkspaceTypeAndRoot): string | null {
   try {
     const { packageJson } = readModulePackageJson(
-      'nx',
+      'nxrc',
       getNxRequirePaths(workspace.dir)
     );
     return packageJson.version;
@@ -251,7 +251,7 @@ function getLocalNxVersion(workspace: WorkspaceTypeAndRoot): string | null {
 
 function _getLatestVersionOfNx(): string {
   try {
-    return execSync('npm view nx@latest version', {
+    return execSync('npm view nxrc@latest version', {
       windowsHide: true,
     })
       .toString()

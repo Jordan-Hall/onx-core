@@ -32,7 +32,7 @@ import {
 import { output, readJsonFile } from '@nx/devkit';
 import { readFileSync } from 'fs';
 import { join } from 'path';
-import { resetWorkspaceContext } from 'nx/src/utils/workspace-context';
+import { resetWorkspaceContext } from 'nxrc/src/utils/workspace-context';
 
 let projName: string;
 

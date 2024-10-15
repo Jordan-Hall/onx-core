@@ -9,7 +9,7 @@ import { projectDetailsMachine } from './app/console-project-details/project-det
 // nx-ignore-next-line
 import type { ProjectGraphProjectNode } from '@nx/devkit';
 // nx-ignore-next-line
-import type { GraphError } from 'nx/src/command-line/graph/graph';
+import type { GraphError } from 'nxrc/src/command-line/graph/graph';
 /* eslint-enable @nx/enforce-module-boundaries */
 import { StrictMode } from 'react';
 import { inspect } from '@xstate/inspect';
@@ -73,7 +73,7 @@ if (window.__NX_RENDER_GRAPH__ === false) {
     render(
       <p>
         No environment could be found. Please run{' '}
-        <pre>npx nx run graph-client:generate-dev-environment-js</pre>.
+        <pre>npx nxrc run graph-client:generate-dev-environment-js</pre>.
       </p>,
       container
     );

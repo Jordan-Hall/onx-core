@@ -21,7 +21,7 @@ describe('use-minimal-config-for-tasks-runner-options migration', () => {
     writeJson<NxJsonConfiguration>(tree, 'nx.json', {
       tasksRunnerOptions: {
         default: {
-          runner: 'nx/tasks-runners/default',
+          runner: 'nxrc/tasks-runners/default',
           options: {
             cacheableOperations: ['build', 'test'],
           },
@@ -49,7 +49,7 @@ describe('use-minimal-config-for-tasks-runner-options migration', () => {
     writeJson<NxJsonConfiguration>(tree, 'nx.json', {
       tasksRunnerOptions: {
         default: {
-          runner: 'nx/tasks-runners/default',
+          runner: 'nxrc/tasks-runners/default',
           options: {},
         },
         custom: {
@@ -64,7 +64,7 @@ describe('use-minimal-config-for-tasks-runner-options migration', () => {
     const nxJson = readJson<NxJsonConfiguration>(tree, 'nx.json');
     expect(nxJson.tasksRunnerOptions).toEqual({
       default: {
-        runner: 'nx/tasks-runners/default',
+        runner: 'nxrc/tasks-runners/default',
         options: {},
       },
       custom: {
@@ -204,7 +204,7 @@ describe('use-minimal-config-for-tasks-runner-options migration', () => {
     writeJson<NxJsonConfiguration>(tree, 'nx.json', {
       tasksRunnerOptions: {
         default: {
-          runner: 'nx/tasks-runners/default',
+          runner: 'nxrc/tasks-runners/default',
           options: {
             cacheableOperations: 'invalid',
           },

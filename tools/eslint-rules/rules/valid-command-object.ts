@@ -38,7 +38,7 @@ export const rule = ESLintUtils.RuleCreator(() => __filename)({
     if (
       !context.physicalFilename.endsWith('command-object.ts') &&
       !(
-        context.physicalFilename.includes('nx/src/command-line/') &&
+        context.physicalFilename.includes('nxrc/src/command-line/') &&
         // Ignore the examples file, those descriptions work differently
         !context.physicalFilename.endsWith('examples.ts') &&
         // Ignore spec files

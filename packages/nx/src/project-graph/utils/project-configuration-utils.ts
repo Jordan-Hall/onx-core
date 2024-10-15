@@ -717,7 +717,7 @@ function targetDefaultShouldBeApplied(
   // isn't part of Nx's core plugins, so target defaults are
   // applied on top of it.
   const [, plugin] = sourceInfo;
-  return !plugin?.startsWith('nx/');
+  return !plugin?.startsWith('nxrc/');
 }
 
 function deepClone(obj) {
@@ -748,7 +748,7 @@ export function mergeTargetDefaultWithTargetDefinition(
             targetDefaultShouldBeApplied(sourceMapKey, sourceMap)
           ) {
             result.options[optionKey] = targetDefault.options[optionKey];
-            sourceMap[sourceMapKey] = ['nx.json', 'nx/target-defaults'];
+            sourceMap[sourceMapKey] = ['nx.json', 'nxrc/target-defaults'];
           }
         }
         break;
@@ -758,14 +758,14 @@ export function mergeTargetDefaultWithTargetDefinition(
           result.configurations = {};
           sourceMap[`targets.${targetName}.configurations`] = [
             'nx.json',
-            'nx/target-defaults',
+            'nxrc/target-defaults',
           ];
         }
         for (const configuration in targetDefault.configurations) {
           if (!result.configurations[configuration]) {
             result.configurations[configuration] = {};
             sourceMap[`targets.${targetName}.configurations.${configuration}`] =
-              ['nx.json', 'nx/target-defaults'];
+              ['nx.json', 'nxrc/target-defaults'];
           }
           const normalizedConfigurationDefaults = resolveNxTokensInOptions(
             targetDefault.configurations[configuration],
@@ -782,7 +782,7 @@ export function mergeTargetDefaultWithTargetDefinition(
             ) {
               result.configurations[configuration][configurationKey] =
                 targetDefault.configurations[configuration][configurationKey];
-              sourceMap[sourceMapKey] = ['nx.json', 'nx/target-defaults'];
+              sourceMap[sourceMapKey] = ['nx.json', 'nxrc/target-defaults'];
             }
           }
         }
@@ -795,7 +795,7 @@ export function mergeTargetDefaultWithTargetDefinition(
           targetDefaultShouldBeApplied(sourceMapKey, sourceMap)
         ) {
           result[key] = targetDefault[key];
-          sourceMap[sourceMapKey] = ['nx.json', 'nx/target-defaults'];
+          sourceMap[sourceMapKey] = ['nx.json', 'nxrc/target-defaults'];
         }
         break;
       }

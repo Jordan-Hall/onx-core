@@ -5,7 +5,7 @@ import { join } from 'path';
 import { dirSync } from 'tmp';
 
 import * as isCI from 'is-ci';
-import { PackageManager } from 'nx/src/utils/package-manager';
+import { PackageManager } from 'nxrc/src/utils/package-manager';
 import { tmpProjPath } from './create-project-utils';
 import { e2eConsoleLogger } from './log-utils';
 

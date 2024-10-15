@@ -7,9 +7,9 @@ import { Shell } from './shell';
 import type {
   GraphError,
   ProjectGraphClientResponse,
-} from 'nx/src/command-line/graph/graph';
+} from 'nxrc/src/command-line/graph/graph';
 // nx-ignore-next-line
-import type { ProjectGraphProjectNode } from 'nx/src/config/project-graph';
+import type { ProjectGraphProjectNode } from 'nxrc/src/config/project-graph';
 /* eslint-enable @nx/enforce-module-boundaries */
 import {
   getEnvironmentConfig,

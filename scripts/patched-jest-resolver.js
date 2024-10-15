@@ -64,7 +64,7 @@ module.exports = function (path, options) {
   // Try to use the defaultResolver
   try {
     if (path.startsWith('@nx/')) throw new Error('custom resolution');
-    if (path.startsWith('nx/')) throw new Error('custom resolution');
+    if (path.startsWith('nxrc/')) throw new Error('custom resolution');
 
     if (path.indexOf('@nx/workspace') > -1) {
       throw new Error(

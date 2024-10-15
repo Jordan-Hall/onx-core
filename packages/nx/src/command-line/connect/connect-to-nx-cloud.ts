@@ -35,7 +35,7 @@ export function onlyDefaultRunnerIsUsed(nxJson: NxJsonConfiguration) {
     );
   }
 
-  return defaultRunner === 'nx/tasks-runners/default';
+  return defaultRunner === 'nxrc/tasks-runners/default';
 }
 
 export async function connectToNxCloudIfExplicitlyAsked(

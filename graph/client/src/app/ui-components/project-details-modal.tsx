@@ -1,6 +1,6 @@
 /* eslint-disable @nx/enforce-module-boundaries */
 // nx-ignore-next-line
-import { ProjectGraphClientResponse } from 'nx/src/command-line/graph/graph';
+import { ProjectGraphClientResponse } from 'nxrc/src/command-line/graph/graph';
 // nx-ignore-next-line
 import { ProjectDetailsWrapper } from '@nx/graph-internal/project-details';
 /* eslint-enable @nx/enforce-module-boundaries */

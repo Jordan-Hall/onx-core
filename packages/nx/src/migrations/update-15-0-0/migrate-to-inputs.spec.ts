@@ -280,7 +280,7 @@ describe('15.0.0 migration (migrate-to-inputs)', () => {
 
   it('should not make any changes if the workspace extends npm.json', async () => {
     const workspace = readNxJson(tree);
-    workspace.extends = 'nx/presets/npm.json';
+    workspace.extends = 'nxrc/presets/npm.json';
     updateNxJson(tree, workspace);
 
     await migrateToInputs(tree);

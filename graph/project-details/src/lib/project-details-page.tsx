@@ -2,7 +2,7 @@
 // nx-ignore-next-line
 import { ProjectGraphProjectNode } from '@nx/devkit';
 // nx-ignore-next-line
-import { GraphError } from 'nx/src/command-line/graph/graph';
+import { GraphError } from 'nxrc/src/command-line/graph/graph';
 /* eslint-enable @nx/enforce-module-boundaries */
 
 import {

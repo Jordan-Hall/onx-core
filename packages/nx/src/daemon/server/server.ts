@@ -365,7 +365,7 @@ function nxVersionChanged(): boolean {
   return nxVersion !== getInstalledNxVersion();
 }
 
-const nxPackageJsonPath = require.resolve('nx/package.json');
+const nxPackageJsonPath = require.resolve('nxrc/package.json');
 
 function getInstalledNxVersion() {
   try {

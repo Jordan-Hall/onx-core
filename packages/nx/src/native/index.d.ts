@@ -7,6 +7,12 @@ export declare class ExternalObject<T> {
     [K: symbol]: T
   }
 }
+export declare class ChildProcess {
+  kill(): void
+  onExit(callback: (message: string) => void): void
+  onOutput(callback: (message: string) => void): void
+}
+
 export declare class HashPlanner {
   constructor(nxJson: NxJson, projectGraph: ExternalObject<ProjectGraph>)
   getPlans(taskIds: Array<string>, taskGraph: TaskGraph): Record<string, string[]>
@@ -20,9 +26,57 @@ export declare class ImportResult {
   staticImportExpressions: Array<string>
 }
 
+export declare class NxCache {
+  cacheDirectory: string
+  constructor(workspaceRoot: string, cachePath: string, dbConnection: ExternalObject<Connection>, linkTaskDetails?: boolean | undefined | null)
+  get(hash: string): CachedResult | null
+  put(hash: string, terminalOutput: string, outputs: Array<string>, code: number): void
+  applyRemoteCacheResults(hash: string, result: CachedResult): void
+  getTaskOutputsPath(hash: string): string
+  copyFilesFromCache(cachedResult: CachedResult, outputs: Array<string>): void
+  removeOldCacheRecords(): void
+  checkCacheFsInSync(): boolean
+}
+
+export declare class NxTaskHistory {
+  constructor(db: ExternalObject<Connection>)
+  recordTaskRuns(taskRuns: Array<TaskRun>): void
+  getFlakyTasks(hashes: Array<string>): Array<string>
+  getEstimatedTaskTimings(targets: Array<TaskTarget>): Record<string, number>
+}
+
+export declare class RustPseudoTerminal {
+  constructor()
+  runCommand(command: string, commandDir?: string | undefined | null, jsEnv?: Record<string, string> | undefined | null, execArgv?: Array<string> | undefined | null, quiet?: boolean | undefined | null, tty?: boolean | undefined | null): ChildProcess
+  /**
+   * This allows us to run a pseudoterminal with a fake node ipc channel
+   * this makes it possible to be backwards compatible with the old implementation
+   */
+  fork(id: string, forkScript: string, pseudoIpcPath: string, commandDir: string | undefined | null, jsEnv: Record<string, string> | undefined | null, execArgv: Array<string> | undefined | null, quiet: boolean): ChildProcess
+}
+
+export declare class TaskDetails {
+  constructor(db: ExternalObject<Connection>)
+  recordTaskDetails(tasks: Array<HashedTask>): void
+}
+
 export declare class TaskHasher {
   constructor(workspaceRoot: string, projectGraph: ExternalObject<ProjectGraph>, projectFileMap: ExternalObject<ProjectFiles>, allWorkspaceFiles: ExternalObject<Array<FileData>>, tsConfig: Buffer, tsConfigPaths: Record<string, Array<string>>, options?: HasherOptions | undefined | null)
   hashPlans(hashPlans: ExternalObject<Record<string, Array<HashInstruction>>>, jsEnv: Record<string, string>): NapiDashMap
+}
+
+export declare class Watcher {
+  origin: string
+  /**
+   * Creates a new Watcher instance.
+   * Will always ignore the following directories:
+   * * .git/
+   * * node_modules/
+   * * .nx/
+   */
+  constructor(origin: string, additionalGlobs?: Array<string> | undefined | null, useIgnore?: boolean | undefined | null)
+  watch(callback: (err: string | null, events: WatchEvent[]) => void): void
+  stop(): Promise<void>
 }
 
 export declare class WorkspaceContext {
@@ -37,6 +91,14 @@ export declare class WorkspaceContext {
   getFilesInDirectory(directory: string): Array<string>
 }
 
+export interface CachedResult {
+  code: number
+  terminalOutput: string
+  outputsPath: string
+}
+
+export declare export function connectToNxDb(cacheDir: string, nxVersion: string, dbName?: string | undefined | null): ExternalObject<Connection>
+
 export declare export function copy(src: string, dest: string): void
 
 export interface DepsOutputsInput {
@@ -46,6 +108,12 @@ export interface DepsOutputsInput {
 
 export interface EnvironmentInput {
   env: string
+}
+
+export declare const enum EventType {
+  delete = 'delete',
+  update = 'update',
+  create = 'create'
 }
 
 export declare export function expandOutputs(directory: string, entries: Array<string>): Array<string>
@@ -91,6 +159,13 @@ export declare export function hashArray(input: Array<string>): string
 export interface HashDetails {
   value: string
   details: Record<string, string>
+}
+
+export interface HashedTask {
+  hash: string
+  project: string
+  target: string
+  configuration?: string
 }
 
 export interface HasherOptions {
@@ -165,6 +240,14 @@ export interface TaskGraph {
   dependencies: Record<string, Array<string>>
 }
 
+export interface TaskRun {
+  hash: string
+  status: string
+  code: number
+  start: number
+  end: number
+}
+
 export interface TaskTarget {
   project: string
   target: string
@@ -185,6 +268,11 @@ export interface UpdatedWorkspaceFiles {
 }
 
 export declare export function validateOutputs(outputs: Array<string>): void
+
+export interface WatchEvent {
+  path: string
+  type: EventType
+}
 
 /** Public NAPI error codes that are for Node */
 export declare const enum WorkspaceErrors {

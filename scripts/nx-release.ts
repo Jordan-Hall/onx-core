@@ -5,7 +5,7 @@ import { execSync } from 'node:child_process';
 import { rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { URL } from 'node:url';
-import { isRelativeVersionKeyword } from 'nx/src/command-line/release/utils/semver';
+import { isRelativeVersionKeyword } from 'nxrc/src/command-line/release/utils/semver';
 import { ReleaseType, inc, major, parse } from 'semver';
 import * as yargs from 'yargs';
 

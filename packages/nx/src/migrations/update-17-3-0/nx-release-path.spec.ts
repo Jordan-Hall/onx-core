@@ -21,10 +21,10 @@ describe('nxReleasePath', () => {
           },
           workspaceChangelog: {
             createRelease: 'github',
-            renderer: 'nx/changelog-renderer',
+            renderer: 'nxrc/changelog-renderer',
           },
           projectChangelogs: {
-            renderer: 'nx/changelog-renderer',
+            renderer: 'nxrc/changelog-renderer',
           },
         },
         version: {
@@ -39,8 +39,8 @@ describe('nxReleasePath', () => {
     tree.write(
       'some-script.js',
       `
-      import { releaseVersion } from 'nx/src/command-line/release';
-      const { releaseChangelog } = require("nx/src/command-line/release");
+      import { releaseVersion } from 'nxrc/src/command-line/release';
+      const { releaseChangelog } = require("nxrc/src/command-line/release");
     `
     );
 
@@ -48,8 +48,8 @@ describe('nxReleasePath', () => {
     tree.write(
       'some-other-file.ts',
       `
-      import { foo } from 'nx/src/command-line/release/nested/thing';
-      const { releaseChangelog } = require("nx/src/command-line/release/another/nested/thing");
+      import { foo } from 'nxrc/src/command-line/release/nested/thing';
+      const { releaseChangelog } = require("nxrc/src/command-line/release/another/nested/thing");
     `
     );
 
@@ -59,7 +59,7 @@ describe('nxReleasePath', () => {
     expect(tree.read('some-other-file.ts').toString('utf-8'))
       .toMatchInlineSnapshot(`
       "
-            import { foo } from 'nx/src/command-line/release/nested/thing';
+            import { foo } from 'nxrc/src/command-line/release/nested/thing';
             const { releaseChangelog } = require("nx/src/command-line/release/another/nested/thing");
           "
     `);
@@ -68,7 +68,7 @@ describe('nxReleasePath', () => {
     expect(tree.read('some-script.js').toString('utf-8'))
       .toMatchInlineSnapshot(`
       "
-            import { releaseVersion } from 'nx/release';
+            import { releaseVersion } from 'nxrc/release';
             const { releaseChangelog } = require("nx/release");
           "
     `);

@@ -4,7 +4,7 @@ import type {
   ExpandedTaskInputsReponse,
   ProjectGraphClientResponse,
   TaskGraphClientResponse,
-} from 'nx/src/command-line/graph/graph';
+} from 'nxrc/src/command-line/graph/graph';
 import type { AppConfig, ExternalApi } from '@nx/graph/shared';
 import {
   ProjectDetailsEvents,

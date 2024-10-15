@@ -30,7 +30,7 @@ describe('Invoke Runner', () => {
     updateFile(
       'runner.js',
       `
-      const { initTasksRunner } = require('nx/src/index');
+      const { initTasksRunner } = require('nxrc/src/index');
 
       async function main(){
         const r = await initTasksRunner({});

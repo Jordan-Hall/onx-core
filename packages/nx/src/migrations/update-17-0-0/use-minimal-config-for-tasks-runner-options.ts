@@ -77,7 +77,7 @@ export default async function migrate(tree: Tree) {
       delete options.cacheableOperations;
     }
     if (
-      ['nx-cloud', '@nrwl/nx-cloud', 'nx/tasks-runners/default'].includes(
+      ['nx-cloud', '@nrwl/nx-cloud', 'nxrc/tasks-runners/default'].includes(
         runner
       )
     ) {

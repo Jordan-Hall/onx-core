@@ -1877,7 +1877,7 @@ describe('project-configuration-utils', () => {
         'targets.build': ['dummy', 'dummy.ts'],
         'targets.build.options': ['dummy', 'dummy.ts'],
         'targets.build.options.command': ['dummy', 'dummy.ts'],
-        'targets.build.options.cwd': ['project.json', 'nx/project-json'],
+        'targets.build.options.cwd': ['project.json', 'nxrc/project-json'],
       };
       const result = mergeTargetDefaultWithTargetDefinition(
         'build',
@@ -1908,13 +1908,13 @@ describe('project-configuration-utils', () => {
       expect(result.options.command).toEqual('tsc');
       expect(sourceMap['targets.build.options.command']).toEqual([
         'nx.json',
-        'nx/target-defaults',
+        'nxrc/target-defaults',
       ]);
       // Cwd was defined by a core plugin so it should be left unchanged.
       expect(result.options.cwd).toEqual('{workspaceRoot}');
       expect(sourceMap['targets.build.options.cwd']).toEqual([
         'project.json',
-        'nx/project-json',
+        'nxrc/project-json',
       ]);
       // other source map entries should be left unchanged
       expect(sourceMap['targets']).toEqual(['dummy', 'dummy.ts']);
@@ -1926,8 +1926,8 @@ describe('project-configuration-utils', () => {
         'targets.build': ['dummy', 'dummy.ts'],
         'targets.build.options': ['dummy', 'dummy.ts'],
         'targets.build.options.command': ['dummy', 'dummy.ts'],
-        'targets.build.options.cwd': ['project.json', 'nx/project-json'],
-        'targets.build.dependsOn': ['project.json', 'nx/project-json'],
+        'targets.build.options.cwd': ['project.json', 'nxrc/project-json'],
+        'targets.build.dependsOn': ['project.json', 'nxrc/project-json'],
       };
       const result = mergeTargetDefaultWithTargetDefinition(
         'build',

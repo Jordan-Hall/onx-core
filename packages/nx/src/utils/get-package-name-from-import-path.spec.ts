@@ -5,7 +5,7 @@ describe('getPackageNameFromImportPath', () => {
     ['@nx/workspace', '@nx/workspace'],
     ['@nx/workspace/plugin', '@nx/workspace'],
     ['@nx/workspace/other', '@nx/workspace'],
-    ['nx/plugin', 'nx'],
+    ['nxrc/plugin', 'nx'],
     ['nx', 'nx'],
   ])('should return %s for %s', (input, expected) => {
     expect(getPackageNameFromImportPath(input)).toEqual(expected);

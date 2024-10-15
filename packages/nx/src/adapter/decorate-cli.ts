@@ -14,7 +14,7 @@ export function decorateCli() {
 
   const newContent = `${angularCLIInit.slice(0, start)}
   if (!process.env['NX_CLI_SET']) {
-    require('nx/bin/nx');
+    require('nxrc/bin/nx');
     return new Promise(function(res, rej) {});
   }
   ${angularCLIInit.substring(start)}

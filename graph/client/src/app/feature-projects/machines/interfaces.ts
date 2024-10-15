@@ -5,7 +5,7 @@ import {
   ProjectFileMap,
   ProjectGraphDependency,
   ProjectGraphProjectNode,
-} from 'nx/src/config/project-graph';
+} from 'nxrc/src/config/project-graph';
 /* eslint-enable @nx/enforce-module-boundaries */
 import { ActionObject, ActorRef, State, StateNodeConfig } from 'xstate';
 import { GraphRenderEvents } from '../../machines/interfaces';

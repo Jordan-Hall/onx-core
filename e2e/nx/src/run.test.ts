@@ -14,7 +14,7 @@ import {
   updateFile,
   updateJson,
 } from '@nx/e2e/utils';
-import { PackageJson } from 'nx/src/utils/package-json';
+import { PackageJson } from 'nxrc/src/utils/package-json';
 import * as path from 'path';
 
 describe('Nx Running Tests', () => {

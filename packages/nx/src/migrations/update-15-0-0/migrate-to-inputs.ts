@@ -30,7 +30,7 @@ export default async function (tree: Tree) {
   const nxJson = readNxJson(tree);
 
   // If this is a npm workspace, don't make any changes
-  if (nxJson.extends === 'nx/presets/npm.json') {
+  if (nxJson.extends === 'nxrc/presets/npm.json') {
     return;
   }
 

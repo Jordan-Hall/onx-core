@@ -64,7 +64,7 @@ describe('connect-to-nx-cloud', () => {
             onlyDefaultRunnerIsUsed({
               tasksRunnerOptions: {
                 default: {
-                  runner: 'nx/tasks-runners/default',
+                  runner: 'nxrc/tasks-runners/default',
                 },
               },
             })

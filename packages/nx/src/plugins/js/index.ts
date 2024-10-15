@@ -25,7 +25,7 @@ import { workspaceRoot } from '../../utils/workspace-root';
 import { nxVersion } from '../../utils/versions';
 import { execSync } from 'child_process';
 
-export const name = 'nx/js/dependencies-and-lockfile';
+export const name = 'nxrc/js/dependencies-and-lockfile';
 
 interface ParsedLockFile {
   externalNodes?: ProjectGraph['externalNodes'];

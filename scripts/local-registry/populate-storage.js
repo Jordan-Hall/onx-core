@@ -4,7 +4,7 @@ const { startLocalRegistry } = require('@nx/js/plugins/jest/local-registry');
 const { exec } = require('node:child_process');
 const {
   LARGE_BUFFER,
-} = require('nx/src/executors/run-commands/run-commands.impl');
+} = require('nxrc/src/executors/run-commands/run-commands.impl');
 
 async function populateLocalRegistryStorage() {
   let registryTeardown;

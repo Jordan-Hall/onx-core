@@ -7,15 +7,15 @@ export default function nxReleasePath(tree: Tree) {
     const contents = tree.read(file).toString('utf-8');
     if (
       // the deep import usage should be replaced by the new location
-      contents.includes('nx/src/command-line/release') ||
+      contents.includes('nxrc/src/command-line/release') ||
       // changelog-renderer has moved into nx/release
-      contents.includes('nx/changelog-renderer')
+      contents.includes('nxrc/changelog-renderer')
     ) {
       const finalContents = contents
         // replace instances of old changelog renderer location
-        .replace(/nx\/changelog-renderer/g, 'nx/release/changelog-renderer')
+        .replace(/nxrc\/changelog-renderer/g, 'nxrc/release/changelog-renderer')
         // replace instances of deep import for programmatic API (only perform the replacement if an actual import by checking for trailing ' or ")
-        .replace(/nx\/src\/command-line\/release(['"])/g, 'nx/release$1');
+        .replace(/nxrc\/src\/command-line\/release(['"])/g, 'nxrc/release$1');
       tree.write(file, finalContents);
     }
   });

@@ -25,7 +25,7 @@ import { TracingPanel } from './panels/tracing-panel';
 import { ProjectList } from './project-list';
 /* eslint-disable @nx/enforce-module-boundaries */
 // nx-ignore-next-line
-import { ProjectGraphClientResponse } from 'nx/src/command-line/graph/graph';
+import { ProjectGraphClientResponse } from 'nxrc/src/command-line/graph/graph';
 /* eslint-enable @nx/enforce-module-boundaries */
 import {
   fetchProjectGraph,

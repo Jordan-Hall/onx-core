@@ -839,32 +839,32 @@ export const FallbackType = {
       },
     },
     sourceMap: {
-      root: ['nx/core/project-json', 'project.json'],
-      name: ['nx/core/project-json', 'project.json'],
-      targets: ['nx/core/package-json', 'project.json'],
-      'targets.echo': ['nx/core/package-json-workspaces', 'package.json'],
+      root: ['nxrc/core/project-json', 'project.json'],
+      name: ['nxrc/core/project-json', 'project.json'],
+      targets: ['nxrc/core/package-json', 'project.json'],
+      'targets.echo': ['nxrc/core/package-json-workspaces', 'package.json'],
       'targets.echo.executor': [
-        'nx/core/package-json-workspaces',
+        'nxrc/core/package-json-workspaces',
         'package.json',
       ],
       'targets.echo.options': [
-        'nx/core/package-json-workspaces',
+        'nxrc/core/package-json-workspaces',
         'package.json',
       ],
       'targets.echo.metadata': [
-        'nx/core/package-json-workspaces',
+        'nxrc/core/package-json-workspaces',
         'package.json',
       ],
       'targets.echo.options.script': [
-        'nx/core/package-json-workspaces',
+        'nxrc/core/package-json-workspaces',
         'package.json',
       ],
       'targets.echo.metadata.scriptContent': [
-        'nx/core/package-json-workspaces',
+        'nxrc/core/package-json-workspaces',
         'package.json',
       ],
       'targets.echo.metadata.runCommand': [
-        'nx/core/package-json-workspaces',
+        'nxrc/core/package-json-workspaces',
         'package.json',
       ],
     },

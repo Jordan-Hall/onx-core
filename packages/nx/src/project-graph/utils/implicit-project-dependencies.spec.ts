@@ -8,7 +8,7 @@ jest.mock('fs', () => {
     existsSync: (p) => (p.endsWith('.node') ? true : memFs.existsSync(p)),
   };
 });
-jest.mock('nx/src/utils/workspace-root', () => ({
+jest.mock('nxrc/src/utils/workspace-root', () => ({
   workspaceRoot: '/root',
 }));
 

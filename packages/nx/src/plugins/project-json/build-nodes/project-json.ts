@@ -10,7 +10,7 @@ import {
 import { PackageJson } from '../../../utils/package-json';
 
 export const ProjectJsonProjectsPlugin: NxPluginV2 = {
-  name: 'nx/core/project-json',
+  name: 'nxrc/core/project-json',
   createNodesV2: [
     '{project.json,**/project.json}',
     (configFiles, _, context) => {

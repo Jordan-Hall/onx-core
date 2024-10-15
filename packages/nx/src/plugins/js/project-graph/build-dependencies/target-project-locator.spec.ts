@@ -18,11 +18,11 @@ jest.mock('@nx/devkit', () => ({
   workspaceRoot: '/root',
 }));
 
-jest.mock('nx/src/utils/workspace-root', () => ({
+jest.mock('nxrc/src/utils/workspace-root', () => ({
   workspaceRoot: '/root',
 }));
 
-jest.mock('nx/src/plugins/js/utils/resolve-relative-to-dir', () => ({
+jest.mock('nxrc/src/plugins/js/utils/resolve-relative-to-dir', () => ({
   resolveRelativeToDir: jest.fn().mockImplementation((pathOrPackage) => {
     // We intentionally don't want to find this package on disk to test fallback behavior
     if (pathOrPackage.startsWith('@nxrc/nxrc-win32-x64-msvc')) {

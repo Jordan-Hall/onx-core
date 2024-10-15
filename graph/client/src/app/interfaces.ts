@@ -3,7 +3,7 @@
 import type {
   ProjectGraphClientResponse,
   TaskGraphClientResponse,
-} from 'nx/src/command-line/graph/graph';
+} from 'nxrc/src/command-line/graph/graph';
 /* eslint-enable @nx/enforce-module-boundaries */
 
 export interface WorkspaceLayout {
