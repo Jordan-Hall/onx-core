@@ -135,7 +135,7 @@ export function syncHandler(options: SyncOptions): Promise<number> {
           e.message,
           ...(options.verbose && !!e.stack ? [`\n${e.stack}`] : []),
           '',
-          'Please rerun with `--verbose` and report the error at: https://github.com/Jordan-Hall/onx-core/issues/new/choose',
+          'Please rerun with `--verbose` and report the error at: https://github.com/Jordan-Hall/nxrc/issues/new/choose',
         ],
       });
 

@@ -533,7 +533,7 @@ describe('explicit project dependencies', () => {
            * currently causes Nx to interpret the import/require as if they were not templatized and were declarared directly
            * in the source code.
            */
-          // Also reported here: https://github.com/Jordan-Hall/onx-core/issues/8938
+          // Also reported here: https://github.com/Jordan-Hall/nxrc/issues/8938
           // {
           //   path: 'libs/proj/file-1.ts',
           //   content: `

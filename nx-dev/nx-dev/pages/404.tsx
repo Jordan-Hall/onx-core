@@ -63,7 +63,7 @@ export function FourOhFour(): JSX.Element {
                 </Link>
                 , or{' '}
                 <Link
-                  href="https://github.com/Jordan-Hall/onx-core/issues/new?assignees=&labels=type%3A+docs&template=3-documentation.md"
+                  href="https://github.com/Jordan-Hall/nxrc/issues/new?assignees=&labels=type%3A+docs&template=3-documentation.md"
                   target="_blank"
                   rel="noreferrer"
                   className="font-semibold underline"

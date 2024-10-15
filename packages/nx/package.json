@@ -5,7 +5,7 @@
   "description": "The core Nx plugin contains the core functionality of Nx like the project graph, nx commands and task orchestration.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Jordan-Hall/onx-core.git",
+    "url": "https://github.com/Jordan-Hall/nxrc.git",
     "directory": "packages/nx"
   },
   "scripts": {
@@ -13,27 +13,17 @@
   },
   "keywords": [
     "Monorepo",
-    "Angular",
-    "React",
-    "Web",
-    "Node",
-    "Nest",
-    "Jest",
-    "Cypress",
-    "CLI",
-    "Testing",
-    "Front-end",
-    "Backend",
-    "Mobile"
+    "nx wrapper",
+    "nx",
+    "Remote Caching"
   ],
   "bin": {
-    "nx": "./bin/nx.js",
-    "nx-cloud": "./bin/nx-cloud.js"
+    "nxrc": "./bin/nx.js"
   },
-  "author": "Victor Savkin",
+  "author": "Jordan Hall",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Jordan-Hall/onx-core/issues"
+    "url": "https://github.com/Jordan-Hall/nxrc/issues"
   },
   "homepage": "https://nx.dev",
   "dependencies": {

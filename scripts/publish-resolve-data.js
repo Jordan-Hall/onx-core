@@ -211,7 +211,7 @@ function getSuccessCommentForPR({
   | **Triggered by** | @${context.actor} |
   | **Branch** | [${ref}](https://github.com/${repo}/tree/${ref}) |
   | **Commit** | [${pr_short_sha}](https://github.com/${repo}/commit/${pr_full_sha}) |
-  | **Workflow run** | [${context.runId}](https://github.com/Jordan-Hall/onx-core/actions/runs/${context.runId}) |
+  | **Workflow run** | [${context.runId}](https://github.com/Jordan-Hall/nxrc/actions/runs/${context.runId}) |
 
   To request a new release for this pull request, mention someone from the Nx team or the \`@nrwl/nx-pipelines-reviewers\`.
 `;

@@ -12,8 +12,8 @@ This fork restores remote caching through a new `nx.json` config property, givin
 
 For reference, see:
 
-- [NX Issue #28150](https://github.com/Jordan-Hall/onx-core/issues/28150)
-- [NX Issue #28434](https://github.com/Jordan-Hall/onx-core/issues/28434)
+- [NX Issue #28150](https://github.com/Jordan-Hall/nxrc/issues/28150)
+- [NX Issue #28434](https://github.com/Jordan-Hall/nxrc/issues/28434)
 - [Custom Remote Cache Issue #48](https://github.com/NiklasPor/nx-remotecache-custom/issues/48)
 
 ## Key Features

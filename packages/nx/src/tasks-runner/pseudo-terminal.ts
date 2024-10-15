@@ -215,7 +215,7 @@ function supportedPtyPlatform() {
 
   // TODO: Re-enable Windows support when it's stable
   // Currently, there's an issue with control chars.
-  // See: https://github.com/Jordan-Hall/onx-core/issues/22358
+  // See: https://github.com/Jordan-Hall/nxrc/issues/22358
   if (process.env.NX_WINDOWS_PTY_SUPPORT !== 'true') {
     return false;
   }

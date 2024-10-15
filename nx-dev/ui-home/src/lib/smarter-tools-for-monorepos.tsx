@@ -149,7 +149,7 @@ export function SmarterToolsForMonorepos(): JSX.Element {
               </Card>
               <Card>
                 <Link
-                  href="https://github.com/Jordan-Hall/onx-core-recipes/blob/main/go/README.md"
+                  href="https://github.com/Jordan-Hall/nxrc-recipes/blob/main/go/README.md"
                   prefetch={false}
                   title="Nx with Go"
                   className="h-full w-full p-2 sm:p-4"
@@ -447,7 +447,7 @@ export function SmarterToolsForMonorepos(): JSX.Element {
             <div className="grid grid-cols-12 gap-8">
               <Card>
                 <Link
-                  href="https://github.com/Jordan-Hall/onx-core-recipes/tree/main/dot-net-standalone"
+                  href="https://github.com/Jordan-Hall/nxrc-recipes/tree/main/dot-net-standalone"
                   prefetch={false}
                   title="Nx with DotNet"
                   className="h-full w-full p-2 sm:p-4"
@@ -689,7 +689,7 @@ export function SmarterToolsForMonorepos(): JSX.Element {
               </Card>
               <Card>
                 <Link
-                  href="https://github.com/Jordan-Hall/onx-core-recipes/blob/main/go/README.md"
+                  href="https://github.com/Jordan-Hall/nxrc-recipes/blob/main/go/README.md"
                   prefetch={false}
                   title="Nx with Go"
                   className="h-full w-full p-2 sm:p-4"
@@ -899,7 +899,7 @@ export function SmarterToolsForMonorepos(): JSX.Element {
               </Card>
               <Card>
                 <Link
-                  href="https://github.com/Jordan-Hall/onx-core-recipes/tree/main/dot-net-standalone"
+                  href="https://github.com/Jordan-Hall/nxrc-recipes/tree/main/dot-net-standalone"
                   prefetch={false}
                   title="Nx with DotNet"
                   className="h-full w-full p-2 sm:p-4"

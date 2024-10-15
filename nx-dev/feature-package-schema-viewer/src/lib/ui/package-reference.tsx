@@ -127,7 +127,7 @@ function EmptyList({
       <div className="ml-3 py-2">
         <p className="text-sm font-medium">
           <Link
-            href="https://github.com/Jordan-Hall/onx-core/discussions"
+            href="https://github.com/Jordan-Hall/nxrc/discussions"
             className="focus:outline-none"
             rel="noreferrer"
             target="_blank"
@@ -138,7 +138,7 @@ function EmptyList({
         </p>
         <div className="prose prose-slate dark:prose-invert prose-sm">
           <a
-            href="https://github.com/Jordan-Hall/onx-core/discussions"
+            href="https://github.com/Jordan-Hall/nxrc/discussions"
             target="_blank"
             rel="noreferrer"
           >

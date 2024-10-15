@@ -1,7 +1,7 @@
 {
   "name": "@nxrc/nxrc-source",
   "description": "a fork of NX to remove the force remote cache paywall",
-  "homepage": "https://github.com/Jordan-Hall/onx-core",
+  "homepage": "https://github.com/Jordan-Hall/nxrc",
   "private": true,
   "scripts": {
     "build": "nx run-many --target build --parallel 8 --exclude typedoc-theme,tools-documentation-create-embeddings,nx-dev",

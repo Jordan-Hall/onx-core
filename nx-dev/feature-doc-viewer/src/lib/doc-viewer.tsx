@@ -150,7 +150,7 @@ export function DocViewer({
                           <a
                             aria-hidden="true"
                             href={[
-                              'https://github.com/Jordan-Hall/onx-core/blob/master',
+                              'https://github.com/Jordan-Hall/nxrc/blob/master',
                               document.filePath
                                 .replace(
                                   'nx-dev/nx-dev/public/documentation',
@@ -209,7 +209,7 @@ export function DocViewer({
                 <a
                   aria-hidden="true"
                   href={[
-                    'https://github.com/Jordan-Hall/onx-core/blob/master',
+                    'https://github.com/Jordan-Hall/nxrc/blob/master',
                     document.filePath
                       .replace('nx-dev/nx-dev/public/documentation', 'docs')
                       .replace('public/documentation', 'docs'),

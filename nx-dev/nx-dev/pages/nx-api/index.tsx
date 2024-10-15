@@ -45,7 +45,7 @@ export default function Packages({
         {
           description:
             'The Nx Plugin for Rspack contains executors and generators that support building applications using Rspack.',
-          githubRoot: 'https://github.com/Jordan-Hall/onx-core/blob/master',
+          githubRoot: 'https://github.com/Jordan-Hall/nxrc/blob/master',
           name: 'rspack',
           packageName: '@nrwl/rspack',
           path: '/nx-api/rspack',

@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Jordan-Hall/onx-core.git",
+    "url": "https://github.com/Jordan-Hall/nxrc.git",
     "directory": "packages/nx/native-packages/linux-arm-gnueabihf"
   },
   "os": [

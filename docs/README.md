@@ -234,7 +234,7 @@ If the type of the card is set to `type="video"` the `url` is a valid YouTube ur
 We can display a special button inviting the reader to go to a GitHub repository.
 
 ```markdown
-{% github-repository url="https://github.com/Jordan-Hall/onx-core-examples" /%}
+{% github-repository url="https://github.com/Jordan-Hall/nxrc-examples" /%}
 ```
 
 #### Stackblitz Buttons

@@ -251,7 +251,7 @@ describe('Extra Nx Misc Tests', () => {
     }, 1000000);
 
     it('should handle caching output directories containing trailing slashes', async () => {
-      // this test relates to https://github.com/Jordan-Hall/onx-core/issues/10549
+      // this test relates to https://github.com/Jordan-Hall/nxrc/issues/10549
       // 'cp -a /path/dir/ dest/' operates differently to 'cp -a /path/dir dest/'
       // --> which means actual build works but subsequent populate from cache (using cp -a) does not
       // --> the fix is to remove trailing slashes to ensure consistent & expected behaviour

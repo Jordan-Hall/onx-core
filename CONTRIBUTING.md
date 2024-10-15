@@ -22,9 +22,9 @@ We are forking NXRC with a primary focus on the core package, 'nx'. This decisio
 ## Found an Issue?
 
 If you find a bug in the source code or a mistake in the documentation, you can help us
-by [submitting an issue](https://github.com/Jordan-Hall/onx-core/blob/master/CONTRIBUTING.md#submit-issue)
-to [our GitHub Repository](https://github.com/Jordan-Hall/onx-core). Even better, you
-can [submit a Pull Request](https://github.com/Jordan-Hall/onx-core/blob/master/CONTRIBUTING.md#submit-pr) with a fix.
+by [submitting an issue](https://github.com/Jordan-Hall/nxrc/blob/master/CONTRIBUTING.md#submit-issue)
+to [our GitHub Repository](https://github.com/Jordan-Hall/nxrc). Even better, you
+can [submit a Pull Request](https://github.com/Jordan-Hall/nxrc/blob/master/CONTRIBUTING.md#submit-pr) with a fix.
 
 ## Project Structure
 
@@ -278,7 +278,7 @@ bugs. Interestingly, from our experience, users often find coding problems thems
 reproduction repository. We understand that sometimes it might be hard to extract essentials bits of code from a larger
 codebase, but we really need to isolate the problem before we can fix it.
 
-You can file new issues by filling out our [issue form](https://github.com/Jordan-Hall/onx-core/issues/new/choose).
+You can file new issues by filling out our [issue form](https://github.com/Jordan-Hall/nxrc/issues/new/choose).
 
 ### <a name="submit-pr"></a> Submitting a PR
 

@@ -130,7 +130,7 @@ export function findPackageMetadataList(
       return isPrivate
         ? null
         : {
-            githubRoot: 'https://github.com/Jordan-Hall/onx-core/blob/master',
+            githubRoot: 'https://github.com/Jordan-Hall/nxrc/blob/master',
             name: folderName,
             packageName: packageJson.name,
             description: packageJson.description,
