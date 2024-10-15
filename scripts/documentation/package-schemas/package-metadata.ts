@@ -110,8 +110,6 @@ export function findPackageMetadataList(
 ): PackageData[] {
   const packagesDir = resolve(join(absoluteRoot, packagesDirectory));
 
-
-
   // Do not use map.json, but add a documentation property on the package.json directly that can be easily resolved
   return sync(`${packagesDir}/${prefix}*`, {
     ignore: [`${packagesDir}/cli`, `${packagesDir}/*-e2e`],
